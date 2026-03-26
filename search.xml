@@ -359,79 +359,6 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
-    <title>hexo整合emoji</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>想不想让你的博客支持这样的表情？</p>
-<p>:smile:<br>:smiley:<br>:smirk:<br>:worried:<br>:expressionless:</p>
-<span id="more"></span>
-
-<pre><code>:smile:
-:smiley:
-:smirk:
-:worried:
-:expressionless:
-</code></pre>
-<p>这样</p>
-<p>:weary:<br>:sweat_smile:<br>:disappointed_relieved:<br>:sob:<br>:joy:</p>
-<pre><code>:weary:
-:sweat_smile:
-:disappointed_relieved:
-:sob:
-:joy:
-</code></pre>
-<p>还有这样</p>
-<p>:scream:<br>:angry:<br>:triumph:<br>:sunglasses:<br>:smiling_imp:</p>
-<pre><code>:scream:
-:angry:
-:triumph:
-:sunglasses:
-:smiling_imp:
-</code></pre>
-<p><strong>敲黑板！看这里！！</strong></p>
-<p>一共两种方式</p>
-<h2 id="第一种（改动markdown渲染模板）"><a href="#第一种（改动markdown渲染模板）" class="headerlink" title="第一种（改动markdown渲染模板）"></a>第一种（改动markdown渲染模板）</h2><p>这种方式有问题，改了之后会对渲染文章的时候文章标题点击无效。</p>
-<h3 id="安装markdown-it"><a href="#安装markdown-it" class="headerlink" title="安装markdown-it"></a>安装markdown-it</h3><p>把原来的hexo渲染换成基于markdown-it的渲染。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line"></span><br><span class="line">npm i hexo-renderer-markdown-it --save</span><br><span class="line"></span><br><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置hexo的-config-yml文件"><a href="#配置hexo的-config-yml文件" class="headerlink" title="配置hexo的_config.yml文件"></a>配置hexo的_config.yml文件</h3><p>在hexo的配置文件下添加markdown-it配置代码：</p>
-<pre><code>markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: &#39;“”‘’&#39;
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-emoji  #用emoji插件
-  anchors:
-    level: 2
-    collisionSuffix: &#39;v&#39;
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
-</code></pre>
-<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><p>在 Hexo 中默认的 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></table></figure>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在主题中添加配置</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">unicode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">styles:</span></span><br><span class="line">  <span class="attr">localEmojis:</span></span><br></pre></td></tr></table></figure>
-
-<p>finish !!!</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>emoji</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>湖南茶陵可可农家:家的味道</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<p>作为标准的吃货一枚</p>
@@ -477,6 +404,22 @@ git add -A      //全部添加到缓存区
       </categories>
       <tags>
         <tag>可可农家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超级实用的谷歌插件</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
+<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
+<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
+<li>新浪微博图床 免费的图片服务器</li>
+<li>Proxy SwitchyOmega 一个自动代理的工具</li>
+</ol>
+<span id="more"></span>
+<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
+]]></content>
+      <tags>
+        <tag>google</tag>
       </tags>
   </entry>
   <entry>
@@ -566,46 +509,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>日志体系</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
-</ol>
-<span id="more"></span>
-
-<p>未完待续！</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>超级实用的谷歌插件</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
-<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
-<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
-<li>新浪微博图床 免费的图片服务器</li>
-<li>Proxy SwitchyOmega 一个自动代理的工具</li>
-</ol>
-<span id="more"></span>
-<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
-]]></content>
-      <tags>
-        <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>和吕:高山茶籽油</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
@@ -637,40 +540,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>和吕</tag>
         <tag>茶籽油</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>spring笔记</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
-<p>Spring可以让您从“plain old Java objects”（POJO）中构建应用程序和通过非侵入性的POJO实现企业应用服务。此功能适用于Java SE的编程模型，全部的或部分的适应Java EE模型。</p>
-<p>中文文档API:<a href="https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html">https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html</a></p>
-<span id="more"></span>
-
-<h1 id="spring特点"><a href="#spring特点" class="headerlink" title="spring特点"></a>spring特点</h1><ol>
-<li>轻量级</li>
-<li>控制反转<ul>
-<li><p>依赖注入和控制反转</p>
-<p>Spring框架控制反转（IOC）组件通过提供一系列的标准化的方法把完全不同的组件组合成一个能够使用的应用程序来解决这个问题。Spring框架把形式化的设计模式编写为优秀的对象，你可以容易的集成到自己的应用程序中。许多组织和机构使用Spring框架，以这种方式(使用Spring的模式对象)来设计健壮的，可维护的应用程序。</p>
-<p>通俗易懂的一个回答:<a href="https://www.zhihu.com/question/32108444">https://www.zhihu.com/question/32108444</a>.</p>
-</li>
-</ul>
-</li>
-<li>面向切面</li>
-<li>容器</li>
-<li>框架集合<br><img src="http://image.cdd9527.cn/20190505155703276180877.png" alt="20190505155703276180877.png"></li>
-</ol>
-<h1 id="spring核心组件"><a href="#spring核心组件" class="headerlink" title="spring核心组件"></a>spring核心组件</h1><p><img src="http://image.cdd9527.cn/20190505155703278433827.png" alt="20190505155703278433827.png"></p>
-<h1 id="spring常用模块"><a href="#spring常用模块" class="headerlink" title="spring常用模块"></a>spring常用模块</h1><p><img src="http://image.cdd9527.cn/20190505155703280559469.png" alt="20190505155703280559469.png"></p>
-<h1 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h1><p><img src="http://image.cdd9527.cn/20190505155703283036262.png" alt="20190505155703283036262.png"></p>
-<p>未完待续。。:smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>spring</tag>
       </tags>
   </entry>
   <entry>
@@ -710,6 +579,153 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>日志体系</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
+</ol>
+<span id="more"></span>
+
+<p>未完待续！</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo整合emoji</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>想不想让你的博客支持这样的表情？</p>
+<p>:smile:<br>:smiley:<br>:smirk:<br>:worried:<br>:expressionless:</p>
+<span id="more"></span>
+
+<pre><code>:smile:
+:smiley:
+:smirk:
+:worried:
+:expressionless:
+</code></pre>
+<p>这样</p>
+<p>:weary:<br>:sweat_smile:<br>:disappointed_relieved:<br>:sob:<br>:joy:</p>
+<pre><code>:weary:
+:sweat_smile:
+:disappointed_relieved:
+:sob:
+:joy:
+</code></pre>
+<p>还有这样</p>
+<p>:scream:<br>:angry:<br>:triumph:<br>:sunglasses:<br>:smiling_imp:</p>
+<pre><code>:scream:
+:angry:
+:triumph:
+:sunglasses:
+:smiling_imp:
+</code></pre>
+<p><strong>敲黑板！看这里！！</strong></p>
+<p>一共两种方式</p>
+<h2 id="第一种（改动markdown渲染模板）"><a href="#第一种（改动markdown渲染模板）" class="headerlink" title="第一种（改动markdown渲染模板）"></a>第一种（改动markdown渲染模板）</h2><p>这种方式有问题，改了之后会对渲染文章的时候文章标题点击无效。</p>
+<h3 id="安装markdown-it"><a href="#安装markdown-it" class="headerlink" title="安装markdown-it"></a>安装markdown-it</h3><p>把原来的hexo渲染换成基于markdown-it的渲染。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line"></span><br><span class="line">npm i hexo-renderer-markdown-it --save</span><br><span class="line"></span><br><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置hexo的-config-yml文件"><a href="#配置hexo的-config-yml文件" class="headerlink" title="配置hexo的_config.yml文件"></a>配置hexo的_config.yml文件</h3><p>在hexo的配置文件下添加markdown-it配置代码：</p>
+<pre><code>markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: &#39;“”‘’&#39;
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  #用emoji插件
+  anchors:
+    level: 2
+    collisionSuffix: &#39;v&#39;
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+</code></pre>
+<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><p>在 Hexo 中默认的 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></table></figure>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在主题中添加配置</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">unicode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">styles:</span></span><br><span class="line">  <span class="attr">localEmojis:</span></span><br></pre></td></tr></table></figure>
+
+<p>finish !!!</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>emoji</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac破解百度云盘限速</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
+<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
+<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
+<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
+<span id="more"></span>
+<p>二、开源软件: Aria2GUI</p>
+<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
+<p>解压后直接拖到应用里面运行即可</p>
+<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>百度云破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Guava——Joiner</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
+<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
+<li><p>on 以空格为分隔符</p>
+</li>
+<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
+<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
+
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java8</tag>
+        <tag>Joiner</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客主动推送到搜索引擎</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="百度主动推送"><a href="#百度主动推送" class="headerlink" title="百度主动推送"></a>百度主动推送</h1><ol>
@@ -739,25 +755,53 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>mac破解百度云盘限速</title>
+    <title>spring笔记</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
-<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
-<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
-<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
+    <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
+<p>Spring可以让您从“plain old Java objects”（POJO）中构建应用程序和通过非侵入性的POJO实现企业应用服务。此功能适用于Java SE的编程模型，全部的或部分的适应Java EE模型。</p>
+<p>中文文档API:<a href="https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html">https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html</a></p>
 <span id="more"></span>
-<p>二、开源软件: Aria2GUI</p>
-<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
-<p>解压后直接拖到应用里面运行即可</p>
-<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
+
+<h1 id="spring特点"><a href="#spring特点" class="headerlink" title="spring特点"></a>spring特点</h1><ol>
+<li>轻量级</li>
+<li>控制反转<ul>
+<li><p>依赖注入和控制反转</p>
+<p>Spring框架控制反转（IOC）组件通过提供一系列的标准化的方法把完全不同的组件组合成一个能够使用的应用程序来解决这个问题。Spring框架把形式化的设计模式编写为优秀的对象，你可以容易的集成到自己的应用程序中。许多组织和机构使用Spring框架，以这种方式(使用Spring的模式对象)来设计健壮的，可维护的应用程序。</p>
+<p>通俗易懂的一个回答:<a href="https://www.zhihu.com/question/32108444">https://www.zhihu.com/question/32108444</a>.</p>
+</li>
+</ul>
+</li>
+<li>面向切面</li>
+<li>容器</li>
+<li>框架集合<br><img src="http://image.cdd9527.cn/20190505155703276180877.png" alt="20190505155703276180877.png"></li>
+</ol>
+<h1 id="spring核心组件"><a href="#spring核心组件" class="headerlink" title="spring核心组件"></a>spring核心组件</h1><p><img src="http://image.cdd9527.cn/20190505155703278433827.png" alt="20190505155703278433827.png"></p>
+<h1 id="spring常用模块"><a href="#spring常用模块" class="headerlink" title="spring常用模块"></a>spring常用模块</h1><p><img src="http://image.cdd9527.cn/20190505155703280559469.png" alt="20190505155703280559469.png"></p>
+<h1 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h1><p><img src="http://image.cdd9527.cn/20190505155703283036262.png" alt="20190505155703283036262.png"></p>
+<p>未完待续。。:smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>购买二手房注意事项</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
+<span id="more"></span>
+
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
 <p>end :smile:</p>
 ]]></content>
       <categories>
-        <category>mac</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>mac</tag>
-        <tag>百度云破解</tag>
+        <tag>二手房</tag>
       </tags>
   </entry>
   <entry>
@@ -859,43 +903,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
-<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
-<span id="more"></span>
-
-<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
-</li>
-<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
-</li>
-<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
-</li>
-<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启IDE;</p>
-</li>
-<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
-</li>
-<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
-</li>
-<li><p>点击激活按钮，激活成功;</p>
-</li>
-</ul>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring Boot中的缓存支持</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
@@ -932,31 +939,40 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>Guava——Joiner</title>
+    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
-<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
-<li><p>on 以空格为分隔符</p>
-</li>
-<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
+<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
 <span id="more"></span>
 
-<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
-<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
+<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
+</li>
+<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
+</li>
+<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
+</li>
+<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启IDE;</p>
+</li>
+<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
+</li>
+<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
+</li>
+<li><p>点击激活按钮，激活成功;</p>
+</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
-
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
 <p>end :smile:</p>
 ]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
-        <tag>java8</tag>
-        <tag>Joiner</tag>
+        <tag>idea</tag>
       </tags>
   </entry>
   <entry>
@@ -1198,22 +1214,6 @@ rm -rf /var/lib/mysql
         <tag>HTTPS</tag>
         <tag>Certbot</tag>
         <tag>反向代理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>二手房</tag>
       </tags>
   </entry>
 </search>
