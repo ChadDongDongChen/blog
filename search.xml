@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>建站第一篇文章</title>
-    <url>/posts/10001-hello-world/</url>
-    <content><![CDATA[<h1 id="建站的准备"><a href="#建站的准备" class="headerlink" title="建站的准备"></a>建站的准备</h1><h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2><h3 id="安装Git-Bash"><a href="#安装Git-Bash" class="headerlink" title="安装Git Bash"></a>安装Git Bash</h3><span id="more"></span>
-
-<p><a href="https://gitforwindows.org/">下载地址</a></p>
-<h3 id="安装NodeJs"><a href="#安装NodeJs" class="headerlink" title="安装NodeJs"></a>安装NodeJs</h3><p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧。<br><a href="https://nodejs.org/en/">下载地址</a></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>找个文件夹用来放博客，右键打开Git bash here<br>输入命令</p>
-<pre><code>npm install -g hexo-cli
-hexo i blog //init的缩写 blog是项目名
-cd blog //切换到站点根目录
-hexo g //generetor的缩写
-hexo s //server的缩写
-</code></pre>
-<p>打开浏览器输入localhost:4000查看，默认的比较丑。需要更换主题的可以去这里找<a href="https://hexo.io/themes/">https://hexo.io/themes/</a>（ps:需要github账号才能下载使用）</p>
-<p>我喜欢的主题地址：</p>
-<p><a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak">https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak</a></p>
-]]></content>
-      <categories>
-        <category>更新日誌</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>Hexo</tag>
-        <tag>更新日誌</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>推荐一部好看的动画片</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="开局一张图-movie-camera"><a href="#开局一张图-movie-camera" class="headerlink" title="开局一张图 :movie_camera:"></a>开局一张图 :movie_camera:</h1><span id="more"></span>
@@ -42,135 +14,6 @@ hexo s //server的缩写
       </categories>
       <tags>
         <tag>东哥推荐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo整合emoji</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>想不想让你的博客支持这样的表情？</p>
-<p>:smile:<br>:smiley:<br>:smirk:<br>:worried:<br>:expressionless:</p>
-<span id="more"></span>
-
-<pre><code>:smile:
-:smiley:
-:smirk:
-:worried:
-:expressionless:
-</code></pre>
-<p>这样</p>
-<p>:weary:<br>:sweat_smile:<br>:disappointed_relieved:<br>:sob:<br>:joy:</p>
-<pre><code>:weary:
-:sweat_smile:
-:disappointed_relieved:
-:sob:
-:joy:
-</code></pre>
-<p>还有这样</p>
-<p>:scream:<br>:angry:<br>:triumph:<br>:sunglasses:<br>:smiling_imp:</p>
-<pre><code>:scream:
-:angry:
-:triumph:
-:sunglasses:
-:smiling_imp:
-</code></pre>
-<p><strong>敲黑板！看这里！！</strong></p>
-<p>一共两种方式</p>
-<h2 id="第一种（改动markdown渲染模板）"><a href="#第一种（改动markdown渲染模板）" class="headerlink" title="第一种（改动markdown渲染模板）"></a>第一种（改动markdown渲染模板）</h2><p>这种方式有问题，改了之后会对渲染文章的时候文章标题点击无效。</p>
-<h3 id="安装markdown-it"><a href="#安装markdown-it" class="headerlink" title="安装markdown-it"></a>安装markdown-it</h3><p>把原来的hexo渲染换成基于markdown-it的渲染。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line"></span><br><span class="line">npm i hexo-renderer-markdown-it --save</span><br><span class="line"></span><br><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置hexo的-config-yml文件"><a href="#配置hexo的-config-yml文件" class="headerlink" title="配置hexo的_config.yml文件"></a>配置hexo的_config.yml文件</h3><p>在hexo的配置文件下添加markdown-it配置代码：</p>
-<pre><code>markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: &#39;“”‘’&#39;
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-emoji  #用emoji插件
-  anchors:
-    level: 2
-    collisionSuffix: &#39;v&#39;
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
-</code></pre>
-<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><p>在 Hexo 中默认的 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></table></figure>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在主题中添加配置</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">unicode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">styles:</span></span><br><span class="line">  <span class="attr">localEmojis:</span></span><br></pre></td></tr></table></figure>
-
-<p>finish !!!</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>emoji</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用mongodb</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
-<li>添加maven依赖</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<ul>
-<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
-</ul>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>现在可以美滋滋的使用MongoTemplate了</li>
-</ul>
-<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
-<ul>
-<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
-<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
-<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
-<li>-p,--password：代表连接数据库的账号对应的密码；</li>
-<li>-d,--db：代表连接的数据库；</li>
-<li>-c,--collection：代表连接数据库中的集合；</li>
-<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
-<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
-<li>-o, --out：代表导出的文件名；</li>
-<li>-q, --query：代表查询条件；</li>
-<li>--skip：跳过指定数量的数据；</li>
-<li>--limit：读取指定数量的数据记录；</li>
-<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
-</ul>
-<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
-<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
-<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
-<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
-<p>4 启动服务 net start mongodb</p>
-<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
-<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
-<p>表示成功 </p>
-<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
-<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
-<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
-
-<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mongodb</category>
-      </categories>
-      <tags>
-        <tag>mongodb</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -219,6 +62,34 @@ yield from range(x)
       <tags>
         <tag>.md</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建站第一篇文章</title>
+    <url>/posts/10001-hello-world/</url>
+    <content><![CDATA[<h1 id="建站的准备"><a href="#建站的准备" class="headerlink" title="建站的准备"></a>建站的准备</h1><h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2><h3 id="安装Git-Bash"><a href="#安装Git-Bash" class="headerlink" title="安装Git Bash"></a>安装Git Bash</h3><span id="more"></span>
+
+<p><a href="https://gitforwindows.org/">下载地址</a></p>
+<h3 id="安装NodeJs"><a href="#安装NodeJs" class="headerlink" title="安装NodeJs"></a>安装NodeJs</h3><p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧。<br><a href="https://nodejs.org/en/">下载地址</a></p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>找个文件夹用来放博客，右键打开Git bash here<br>输入命令</p>
+<pre><code>npm install -g hexo-cli
+hexo i blog //init的缩写 blog是项目名
+cd blog //切换到站点根目录
+hexo g //generetor的缩写
+hexo s //server的缩写
+</code></pre>
+<p>打开浏览器输入localhost:4000查看，默认的比较丑。需要更换主题的可以去这里找<a href="https://hexo.io/themes/">https://hexo.io/themes/</a>（ps:需要github账号才能下载使用）</p>
+<p>我喜欢的主题地址：</p>
+<p><a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak">https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak</a></p>
+]]></content>
+      <categories>
+        <category>更新日誌</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Hexo</tag>
+        <tag>更新日誌</tag>
+        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
@@ -432,19 +303,132 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
-    <title>超级实用的谷歌插件</title>
+    <title>使用mongodb</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
-<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
-<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
-<li>新浪微博图床 免费的图片服务器</li>
-<li>Proxy SwitchyOmega 一个自动代理的工具</li>
-</ol>
+    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
+<li>添加maven依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
-]]></content>
+
+<ul>
+<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>现在可以美滋滋的使用MongoTemplate了</li>
+</ul>
+<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
+<ul>
+<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
+<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
+<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
+<li>-p,--password：代表连接数据库的账号对应的密码；</li>
+<li>-d,--db：代表连接的数据库；</li>
+<li>-c,--collection：代表连接数据库中的集合；</li>
+<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
+<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
+<li>-o, --out：代表导出的文件名；</li>
+<li>-q, --query：代表查询条件；</li>
+<li>--skip：跳过指定数量的数据；</li>
+<li>--limit：读取指定数量的数据记录；</li>
+<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
+</ul>
+<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
+<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
+<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
+<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
+<p>4 启动服务 net start mongodb</p>
+<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
+<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
+<p>表示成功 </p>
+<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
+<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
+<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mongodb</category>
+      </categories>
       <tags>
-        <tag>google</tag>
+        <tag>mongodb</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo整合emoji</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>想不想让你的博客支持这样的表情？</p>
+<p>:smile:<br>:smiley:<br>:smirk:<br>:worried:<br>:expressionless:</p>
+<span id="more"></span>
+
+<pre><code>:smile:
+:smiley:
+:smirk:
+:worried:
+:expressionless:
+</code></pre>
+<p>这样</p>
+<p>:weary:<br>:sweat_smile:<br>:disappointed_relieved:<br>:sob:<br>:joy:</p>
+<pre><code>:weary:
+:sweat_smile:
+:disappointed_relieved:
+:sob:
+:joy:
+</code></pre>
+<p>还有这样</p>
+<p>:scream:<br>:angry:<br>:triumph:<br>:sunglasses:<br>:smiling_imp:</p>
+<pre><code>:scream:
+:angry:
+:triumph:
+:sunglasses:
+:smiling_imp:
+</code></pre>
+<p><strong>敲黑板！看这里！！</strong></p>
+<p>一共两种方式</p>
+<h2 id="第一种（改动markdown渲染模板）"><a href="#第一种（改动markdown渲染模板）" class="headerlink" title="第一种（改动markdown渲染模板）"></a>第一种（改动markdown渲染模板）</h2><p>这种方式有问题，改了之后会对渲染文章的时候文章标题点击无效。</p>
+<h3 id="安装markdown-it"><a href="#安装markdown-it" class="headerlink" title="安装markdown-it"></a>安装markdown-it</h3><p>把原来的hexo渲染换成基于markdown-it的渲染。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line"></span><br><span class="line">npm i hexo-renderer-markdown-it --save</span><br><span class="line"></span><br><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置hexo的-config-yml文件"><a href="#配置hexo的-config-yml文件" class="headerlink" title="配置hexo的_config.yml文件"></a>配置hexo的_config.yml文件</h3><p>在hexo的配置文件下添加markdown-it配置代码：</p>
+<pre><code>markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: &#39;“”‘’&#39;
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  #用emoji插件
+  anchors:
+    level: 2
+    collisionSuffix: &#39;v&#39;
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+</code></pre>
+<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><p>在 Hexo 中默认的 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></table></figure>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在主题中添加配置</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">unicode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">styles:</span></span><br><span class="line">  <span class="attr">localEmojis:</span></span><br></pre></td></tr></table></figure>
+
+<p>finish !!!</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>emoji</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -493,40 +477,6 @@ git add -A      //全部添加到缓存区
       </categories>
       <tags>
         <tag>可可农家</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>和吕:高山茶籽油</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
-<span id="more"></span>
-<ul>
-<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
-<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
-</ul>
-<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
-<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
-<ul>
-<li>保护皮肤</li>
-<li>减肥功效</li>
-<li>去除妊娠纹</li>
-<li>防眼角皱纹</li>
-<li>美白护肤</li>
-<li>治疗暗疮</li>
-<li>保持女性的体态美</li>
-<li>补充维生素</li>
-</ul>
-<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
-<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
-<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
-<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>和吕</tag>
-        <tag>茶籽油</tag>
       </tags>
   </entry>
   <entry>
@@ -616,27 +566,53 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>日志体系</title>
+    <title>超级实用的谷歌插件</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
+    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
+<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
+<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
+<li>新浪微博图床 免费的图片服务器</li>
+<li>Proxy SwitchyOmega 一个自动代理的工具</li>
 </ol>
 <span id="more"></span>
-
-<p>未完待续！</p>
+<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
+]]></content>
+      <tags>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和吕:高山茶籽油</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
+<span id="more"></span>
+<ul>
+<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
+<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
+</ul>
+<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
+<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
+<ul>
+<li>保护皮肤</li>
+<li>减肥功效</li>
+<li>去除妊娠纹</li>
+<li>防眼角皱纹</li>
+<li>美白护肤</li>
+<li>治疗暗疮</li>
+<li>保持女性的体态美</li>
+<li>补充维生素</li>
+</ul>
+<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
+<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
+<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
+<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
 ]]></content>
       <categories>
-        <category>java</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>java</tag>
-        <tag>日志</tag>
+        <tag>和吕</tag>
+        <tag>茶籽油</tag>
       </tags>
   </entry>
   <entry>
@@ -673,6 +649,30 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>java</tag>
         <tag>jvm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日志体系</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
+</ol>
+<span id="more"></span>
+
+<p>未完待续！</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -732,34 +732,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>Guava——Joiner</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
-<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
-<li><p>on 以空格为分隔符</p>
-</li>
-<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
-<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
-
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java8</tag>
-        <tag>Joiner</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客主动推送到搜索引擎</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="百度主动推送"><a href="#百度主动推送" class="headerlink" title="百度主动推送"></a>百度主动推送</h1><ol>
@@ -786,6 +758,34 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>hexo</tag>
         <tag>博客主动推送</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Guava——Joiner</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
+<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
+<li><p>on 以空格为分隔符</p>
+</li>
+<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
+<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
+
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java8</tag>
+        <tag>Joiner</tag>
       </tags>
   </entry>
   <entry>
@@ -887,22 +887,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>二手房</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring Boot中的缓存支持</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
@@ -936,162 +920,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>springboot</tag>
         <tag>cache</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
-<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
-<span id="more"></span>
-
-<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
-</li>
-<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
-</li>
-<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
-</li>
-<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启IDE;</p>
-</li>
-<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
-</li>
-<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
-</li>
-<li><p>点击激活按钮，激活成功;</p>
-</li>
-</ul>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</title>
-    <url>/posts/10022-nginx-https-certbot/</url>
-    <content><![CDATA[<hr>
-<h1 id="Nginx-Certbot-自动HTTPS证书与反向代理完整教程"><a href="#Nginx-Certbot-自动HTTPS证书与反向代理完整教程" class="headerlink" title="Nginx + Certbot 自动HTTPS证书与反向代理完整教程"></a>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</h1><p>本文将手把手教你如何为域名（如 <code>artalk.cdd9527.cn</code>）配置 HTTPS，并通过 Nginx 实现反向代理，同时支持证书自动续期。</p>
-<hr>
-<h2 id="一、准备条件"><a href="#一、准备条件" class="headerlink" title="一、准备条件"></a>一、准备条件</h2><p>在开始之前，请确保满足以下条件：</p>
-<ul>
-<li><p>已拥有域名（如 <code>artalk.cdd9527.cn</code>）</p>
-</li>
-<li><p>域名已解析到服务器 IP</p>
-</li>
-<li><p>服务器已安装 Nginx</p>
-</li>
-<li><p>已开放端口：</p>
-<ul>
-<li>80（HTTP）</li>
-<li>443（HTTPS）</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="二、安装-Certbot"><a href="#二、安装-Certbot" class="headerlink" title="二、安装 Certbot"></a>二、安装 Certbot</h2><h3 id="Ubuntu-Debian"><a href="#Ubuntu-Debian" class="headerlink" title="Ubuntu &#x2F; Debian"></a>Ubuntu &#x2F; Debian</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install certbot python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="三、申请-HTTPS-证书"><a href="#三、申请-HTTPS-证书" class="headerlink" title="三、申请 HTTPS 证书"></a>三、申请 HTTPS 证书</h2><p>执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot --nginx -d artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
-
-<h3 id="过程中会提示："><a href="#过程中会提示：" class="headerlink" title="过程中会提示："></a>过程中会提示：</h3><h4 id="1-输入邮箱"><a href="#1-输入邮箱" class="headerlink" title="1. 输入邮箱"></a>1. 输入邮箱</h4><p>用于证书续期提醒</p>
-<h4 id="2-是否同意协议"><a href="#2-是否同意协议" class="headerlink" title="2. 是否同意协议"></a>2. 是否同意协议</h4><p>输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Y</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-是否接收邮件"><a href="#3-是否接收邮件" class="headerlink" title="3. 是否接收邮件"></a>3. 是否接收邮件</h4><p>建议：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="四、成功标志"><a href="#四、成功标志" class="headerlink" title="四、成功标志"></a>四、成功标志</h2><p>如果看到：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Congratulations! Your certificate and chain have been saved</span><br></pre></td></tr></table></figure>
-
-<p>说明证书申请成功 ✅</p>
-<hr>
-<h2 id="五、Nginx-标准配置（推荐）"><a href="#五、Nginx-标准配置（推荐）" class="headerlink" title="五、Nginx 标准配置（推荐）"></a>五、Nginx 标准配置（推荐）</h2><h3 id="1️⃣-HTTP-自动跳转-HTTPS"><a href="#1️⃣-HTTP-自动跳转-HTTPS" class="headerlink" title="1️⃣ HTTP 自动跳转 HTTPS"></a>1️⃣ HTTP 自动跳转 HTTPS</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$host</span><span class="variable">$request_uri</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="2️⃣-HTTPS-反向代理"><a href="#2️⃣-HTTPS-反向代理" class="headerlink" title="2️⃣ HTTPS + 反向代理"></a>2️⃣ HTTPS + 反向代理</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">443</span> ssl;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_certificate</span> /etc/letsencrypt/live/artalk.cdd9527.cn/fullchain.pem;</span><br><span class="line">    <span class="attribute">ssl_certificate_key</span> /etc/letsencrypt/live/artalk.cdd9527.cn/privkey.pem;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_protocols</span> TLSv1.<span class="number">2</span> TLSv1.<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">ssl_ciphers</span> HIGH:!aNULL:!MD5;</span><br><span class="line"></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:5006;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="六、访问效果"><a href="#六、访问效果" class="headerlink" title="六、访问效果"></a>六、访问效果</h2><p>现在访问：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
-
-<p>实际访问路径：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户 → Nginx(443) → 本地服务(5006)</span><br></pre></td></tr></table></figure>
-
-<p>👉 不再暴露端口，更安全</p>
-<hr>
-<h2 id="七、自动续期"><a href="#七、自动续期" class="headerlink" title="七、自动续期"></a>七、自动续期</h2><p>Certbot 会自动添加定时任务</p>
-<h3 id="手动测试："><a href="#手动测试：" class="headerlink" title="手动测试："></a>手动测试：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot renew --dry-run</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="八、常见问题"><a href="#八、常见问题" class="headerlink" title="八、常见问题"></a>八、常见问题</h2><h3 id="1️⃣-提示-nginx-插件不存在"><a href="#1️⃣-提示-nginx-插件不存在" class="headerlink" title="1️⃣ 提示 nginx 插件不存在"></a>1️⃣ 提示 nginx 插件不存在</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The requested nginx plugin does not appear to be installed</span><br></pre></td></tr></table></figure>
-
-<p>解决：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt install python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="2️⃣-验证失败（80端口问题）"><a href="#2️⃣-验证失败（80端口问题）" class="headerlink" title="2️⃣ 验证失败（80端口问题）"></a>2️⃣ 验证失败（80端口问题）</h3><p>原因：</p>
-<ul>
-<li>80端口未开放</li>
-<li>被防火墙拦截</li>
-</ul>
-<p>解决：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ufw allow 80</span><br><span class="line">ufw allow 443</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="3️⃣-域名解析错误"><a href="#3️⃣-域名解析错误" class="headerlink" title="3️⃣ 域名解析错误"></a>3️⃣ 域名解析错误</h3><p>检查：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="4️⃣-Nginx-配置错误"><a href="#4️⃣-Nginx-配置错误" class="headerlink" title="4️⃣ Nginx 配置错误"></a>4️⃣ Nginx 配置错误</h3><p>检查：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="九、进阶建议"><a href="#九、进阶建议" class="headerlink" title="九、进阶建议"></a>九、进阶建议</h2><h3 id="推荐优化："><a href="#推荐优化：" class="headerlink" title="推荐优化："></a>推荐优化：</h3><ul>
-<li>不暴露业务端口（如 5006）</li>
-<li>所有服务统一走 Nginx</li>
-<li>多域名统一管理</li>
-</ul>
-<hr>
-<h2 id="十、总结"><a href="#十、总结" class="headerlink" title="十、总结"></a>十、总结</h2><p>完整流程如下：</p>
-<ol>
-<li>安装 Certbot</li>
-<li>申请证书</li>
-<li>配置 Nginx</li>
-<li>开启 HTTPS</li>
-<li>自动续期</li>
-</ol>
-<p>👉 核心原则：</p>
-<ul>
-<li>80端口：用于跳转 + 验证</li>
-<li>443端口：用于正式服务</li>
-</ul>
-<hr>
-<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
-<li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
-<li><a href="https://nginx.org/">https://nginx.org/</a></li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>运维</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
-        <tag>HTTPS</tag>
-        <tag>Certbot</tag>
-        <tag>反向代理</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1214,6 +1042,178 @@ rm -rf /var/lib/mysql
         <tag>Ubuntu</tag>
         <tag>安装教程</tag>
         <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
+<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
+<span id="more"></span>
+
+<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
+</li>
+<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
+</li>
+<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
+</li>
+<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启IDE;</p>
+</li>
+<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
+</li>
+<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
+</li>
+<li><p>点击激活按钮，激活成功;</p>
+</li>
+</ul>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>购买二手房注意事项</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
+<span id="more"></span>
+
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>二手房</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</title>
+    <url>/posts/10022-nginx-https-certbot/</url>
+    <content><![CDATA[<hr>
+<h1 id="Nginx-Certbot-自动HTTPS证书与反向代理完整教程"><a href="#Nginx-Certbot-自动HTTPS证书与反向代理完整教程" class="headerlink" title="Nginx + Certbot 自动HTTPS证书与反向代理完整教程"></a>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</h1><p>本文将手把手教你如何为域名（如 <code>artalk.cdd9527.cn</code>）配置 HTTPS，并通过 Nginx 实现反向代理，同时支持证书自动续期。</p>
+<hr>
+<h2 id="一、准备条件"><a href="#一、准备条件" class="headerlink" title="一、准备条件"></a>一、准备条件</h2><p>在开始之前，请确保满足以下条件：</p>
+<ul>
+<li><p>已拥有域名（如 <code>artalk.cdd9527.cn</code>）</p>
+</li>
+<li><p>域名已解析到服务器 IP</p>
+</li>
+<li><p>服务器已安装 Nginx</p>
+</li>
+<li><p>已开放端口：</p>
+<ul>
+<li>80（HTTP）</li>
+<li>443（HTTPS）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="二、安装-Certbot"><a href="#二、安装-Certbot" class="headerlink" title="二、安装 Certbot"></a>二、安装 Certbot</h2><h3 id="Ubuntu-Debian"><a href="#Ubuntu-Debian" class="headerlink" title="Ubuntu &#x2F; Debian"></a>Ubuntu &#x2F; Debian</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install certbot python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、申请-HTTPS-证书"><a href="#三、申请-HTTPS-证书" class="headerlink" title="三、申请 HTTPS 证书"></a>三、申请 HTTPS 证书</h2><p>执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot --nginx -d artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<h3 id="过程中会提示："><a href="#过程中会提示：" class="headerlink" title="过程中会提示："></a>过程中会提示：</h3><h4 id="1-输入邮箱"><a href="#1-输入邮箱" class="headerlink" title="1. 输入邮箱"></a>1. 输入邮箱</h4><p>用于证书续期提醒</p>
+<h4 id="2-是否同意协议"><a href="#2-是否同意协议" class="headerlink" title="2. 是否同意协议"></a>2. 是否同意协议</h4><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Y</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-是否接收邮件"><a href="#3-是否接收邮件" class="headerlink" title="3. 是否接收邮件"></a>3. 是否接收邮件</h4><p>建议：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="四、成功标志"><a href="#四、成功标志" class="headerlink" title="四、成功标志"></a>四、成功标志</h2><p>如果看到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Congratulations! Your certificate and chain have been saved</span><br></pre></td></tr></table></figure>
+
+<p>说明证书申请成功 ✅</p>
+<hr>
+<h2 id="五、Nginx-标准配置（推荐）"><a href="#五、Nginx-标准配置（推荐）" class="headerlink" title="五、Nginx 标准配置（推荐）"></a>五、Nginx 标准配置（推荐）</h2><h3 id="1️⃣-HTTP-自动跳转-HTTPS"><a href="#1️⃣-HTTP-自动跳转-HTTPS" class="headerlink" title="1️⃣ HTTP 自动跳转 HTTPS"></a>1️⃣ HTTP 自动跳转 HTTPS</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$host</span><span class="variable">$request_uri</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2️⃣-HTTPS-反向代理"><a href="#2️⃣-HTTPS-反向代理" class="headerlink" title="2️⃣ HTTPS + 反向代理"></a>2️⃣ HTTPS + 反向代理</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">443</span> ssl;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_certificate</span> /etc/letsencrypt/live/artalk.cdd9527.cn/fullchain.pem;</span><br><span class="line">    <span class="attribute">ssl_certificate_key</span> /etc/letsencrypt/live/artalk.cdd9527.cn/privkey.pem;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_protocols</span> TLSv1.<span class="number">2</span> TLSv1.<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">ssl_ciphers</span> HIGH:!aNULL:!MD5;</span><br><span class="line"></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:5006;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="六、访问效果"><a href="#六、访问效果" class="headerlink" title="六、访问效果"></a>六、访问效果</h2><p>现在访问：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<p>实际访问路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户 → Nginx(443) → 本地服务(5006)</span><br></pre></td></tr></table></figure>
+
+<p>👉 不再暴露端口，更安全</p>
+<hr>
+<h2 id="七、自动续期"><a href="#七、自动续期" class="headerlink" title="七、自动续期"></a>七、自动续期</h2><p>Certbot 会自动添加定时任务</p>
+<h3 id="手动测试："><a href="#手动测试：" class="headerlink" title="手动测试："></a>手动测试：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot renew --dry-run</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="八、常见问题"><a href="#八、常见问题" class="headerlink" title="八、常见问题"></a>八、常见问题</h2><h3 id="1️⃣-提示-nginx-插件不存在"><a href="#1️⃣-提示-nginx-插件不存在" class="headerlink" title="1️⃣ 提示 nginx 插件不存在"></a>1️⃣ 提示 nginx 插件不存在</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The requested nginx plugin does not appear to be installed</span><br></pre></td></tr></table></figure>
+
+<p>解决：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt install python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2️⃣-验证失败（80端口问题）"><a href="#2️⃣-验证失败（80端口问题）" class="headerlink" title="2️⃣ 验证失败（80端口问题）"></a>2️⃣ 验证失败（80端口问题）</h3><p>原因：</p>
+<ul>
+<li>80端口未开放</li>
+<li>被防火墙拦截</li>
+</ul>
+<p>解决：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ufw allow 80</span><br><span class="line">ufw allow 443</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3️⃣-域名解析错误"><a href="#3️⃣-域名解析错误" class="headerlink" title="3️⃣ 域名解析错误"></a>3️⃣ 域名解析错误</h3><p>检查：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4️⃣-Nginx-配置错误"><a href="#4️⃣-Nginx-配置错误" class="headerlink" title="4️⃣ Nginx 配置错误"></a>4️⃣ Nginx 配置错误</h3><p>检查：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="九、进阶建议"><a href="#九、进阶建议" class="headerlink" title="九、进阶建议"></a>九、进阶建议</h2><h3 id="推荐优化："><a href="#推荐优化：" class="headerlink" title="推荐优化："></a>推荐优化：</h3><ul>
+<li>不暴露业务端口（如 5006）</li>
+<li>所有服务统一走 Nginx</li>
+<li>多域名统一管理</li>
+</ul>
+<hr>
+<h2 id="十、总结"><a href="#十、总结" class="headerlink" title="十、总结"></a>十、总结</h2><p>完整流程如下：</p>
+<ol>
+<li>安装 Certbot</li>
+<li>申请证书</li>
+<li>配置 Nginx</li>
+<li>开启 HTTPS</li>
+<li>自动续期</li>
+</ol>
+<p>👉 核心原则：</p>
+<ul>
+<li>80端口：用于跳转 + 验证</li>
+<li>443端口：用于正式服务</li>
+</ul>
+<hr>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+<li><a href="https://nginx.org/">https://nginx.org/</a></li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Nginx</tag>
+        <tag>HTTPS</tag>
+        <tag>Certbot</tag>
+        <tag>反向代理</tag>
       </tags>
   </entry>
 </search>
