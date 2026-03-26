@@ -29,6 +29,22 @@ hexo s //server的缩写
       </tags>
   </entry>
   <entry>
+    <title>推荐一部好看的动画片</title>
+    <url>/posts/10003-movie/</url>
+    <content><![CDATA[<h1 id="开局一张图-movie-camera"><a href="#开局一张图-movie-camera" class="headerlink" title="开局一张图 :movie_camera:"></a>开局一张图 :movie_camera:</h1><span id="more"></span>
+
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530265627560&di=8315a7dd3876079366991ee720c18c11&imgtype=0&src=http://img.mp.itc.cn/upload/20161202/aa37f535f08f4dd0b2eb4e269a0676d4_th.jpeg" alt="图片名称"></p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在远离大都会的小山村，住着巫女世家出身的高中女孩宫水三叶（上白石萌音 配音）。校园和家庭的原因本就让她充满烦恼，而近一段时间发生的奇怪事件，又让三叶摸不清头脑。不知从何时起，三叶在梦中就会变成一个住在东京的高中男孩。那里有陌生的同学和朋友，有亲切的前辈和繁华的街道，一切都是如此诱人而真实。另一方面，住在东京的高中男孩立花泷（神木隆之介 配音）则总在梦里来到陌生的小山村，以女孩子的身份过着全新的生活。许是受那颗神秘彗星的影响，立花和三叶在梦中交换了身份。他们以他者的角度体验着对方的人生，这期间有愤怒、有欢笑也有暖心。只是两人并不知道，身份交换的背后隐藏着重大而锥心的秘密…</p>
+<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><iframe height=440 width="100%" src='http://player.youku.com/embed/XMjk4NzA1OTMzNg==' frameborder=0 allowfullscreen></iframe>
+]]></content>
+      <categories>
+        <category>电影</category>
+      </categories>
+      <tags>
+        <tag>东哥推荐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 编辑器语法指南</title>
     <url>/posts/10002-Markdown/</url>
     <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
@@ -74,78 +90,6 @@ yield from range(x)
       <tags>
         <tag>.md</tag>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>推荐一部好看的动画片</title>
-    <url>/posts/10003-movie/</url>
-    <content><![CDATA[<h1 id="开局一张图-movie-camera"><a href="#开局一张图-movie-camera" class="headerlink" title="开局一张图 :movie_camera:"></a>开局一张图 :movie_camera:</h1><span id="more"></span>
-
-<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530265627560&di=8315a7dd3876079366991ee720c18c11&imgtype=0&src=http://img.mp.itc.cn/upload/20161202/aa37f535f08f4dd0b2eb4e269a0676d4_th.jpeg" alt="图片名称"></p>
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在远离大都会的小山村，住着巫女世家出身的高中女孩宫水三叶（上白石萌音 配音）。校园和家庭的原因本就让她充满烦恼，而近一段时间发生的奇怪事件，又让三叶摸不清头脑。不知从何时起，三叶在梦中就会变成一个住在东京的高中男孩。那里有陌生的同学和朋友，有亲切的前辈和繁华的街道，一切都是如此诱人而真实。另一方面，住在东京的高中男孩立花泷（神木隆之介 配音）则总在梦里来到陌生的小山村，以女孩子的身份过着全新的生活。许是受那颗神秘彗星的影响，立花和三叶在梦中交换了身份。他们以他者的角度体验着对方的人生，这期间有愤怒、有欢笑也有暖心。只是两人并不知道，身份交换的背后隐藏着重大而锥心的秘密…</p>
-<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><iframe height=440 width="100%" src='http://player.youku.com/embed/XMjk4NzA1OTMzNg==' frameborder=0 allowfullscreen></iframe>
-]]></content>
-      <categories>
-        <category>电影</category>
-      </categories>
-      <tags>
-        <tag>东哥推荐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用mongodb</title>
-    <url>/posts/10005-mongodb/</url>
-    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
-<li>添加maven依赖</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<ul>
-<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
-</ul>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>现在可以美滋滋的使用MongoTemplate了</li>
-</ul>
-<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
-<ul>
-<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
-<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
-<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
-<li>-p,--password：代表连接数据库的账号对应的密码；</li>
-<li>-d,--db：代表连接的数据库；</li>
-<li>-c,--collection：代表连接数据库中的集合；</li>
-<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
-<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
-<li>-o, --out：代表导出的文件名；</li>
-<li>-q, --query：代表查询条件；</li>
-<li>--skip：跳过指定数量的数据；</li>
-<li>--limit：读取指定数量的数据记录；</li>
-<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
-</ul>
-<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
-<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
-<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
-<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
-<p>4 启动服务 net start mongodb</p>
-<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
-<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
-<p>表示成功 </p>
-<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
-<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
-<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
-
-<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mongodb</category>
-      </categories>
-      <tags>
-        <tag>mongodb</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -219,6 +163,62 @@ yield from range(x)
       <tags>
         <tag>emoji</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用mongodb</title>
+    <url>/posts/10005-mongodb/</url>
+    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
+<li>添加maven依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<ul>
+<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>现在可以美滋滋的使用MongoTemplate了</li>
+</ul>
+<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
+<ul>
+<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
+<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
+<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
+<li>-p,--password：代表连接数据库的账号对应的密码；</li>
+<li>-d,--db：代表连接的数据库；</li>
+<li>-c,--collection：代表连接数据库中的集合；</li>
+<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
+<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
+<li>-o, --out：代表导出的文件名；</li>
+<li>-q, --query：代表查询条件；</li>
+<li>--skip：跳过指定数量的数据；</li>
+<li>--limit：读取指定数量的数据记录；</li>
+<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
+</ul>
+<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
+<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
+<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
+<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
+<p>4 启动服务 net start mongodb</p>
+<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
+<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
+<p>表示成功 </p>
+<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
+<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
+<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mongodb</category>
+      </categories>
+      <tags>
+        <tag>mongodb</tag>
+        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -432,6 +432,104 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
+    <title>超级实用的谷歌插件</title>
+    <url>/posts/10007-google/</url>
+    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
+<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
+<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
+<li>新浪微博图床 免费的图片服务器</li>
+<li>Proxy SwitchyOmega 一个自动代理的工具</li>
+</ol>
+<span id="more"></span>
+<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
+]]></content>
+      <tags>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>湖南茶陵可可农家:家的味道</title>
+    <url>/posts/10008-keke/</url>
+    <content><![CDATA[<p>作为标准的吃货一枚</p>
+<p>对美食那是从来都不愿错过的</p>
+<p>在咱们茶陵</p>
+<p>就有很多好吃的农家手工小吃</p>
+<p>下面就大家去看一看</p>
+<p>不知道是否有你也爱吃的</p>
+<span id="more"></span>
+
+<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
+<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
+<p>正题来了,我觉得好吃的都列在下面了。</p>
+<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
+<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
+<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
+<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
+<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
+<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
+<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
+<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
+<p>看了后是不是一直在吞口水，哈哈~</p>
+<p>以上全都是手工制作</p>
+<p>来看看制作的花絮吧</p>
+<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
+<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
+</li>
+<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
+</li>
+<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
+</li>
+<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
+</li>
+</ul>
+<p>想吃的话，赶紧找我或者下面这个人吧</p>
+<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>可可农家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和吕:高山茶籽油</title>
+    <url>/posts/10010-chayou/</url>
+    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
+<span id="more"></span>
+<ul>
+<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
+<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
+</ul>
+<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
+<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
+<ul>
+<li>保护皮肤</li>
+<li>减肥功效</li>
+<li>去除妊娠纹</li>
+<li>防眼角皱纹</li>
+<li>美白护肤</li>
+<li>治疗暗疮</li>
+<li>保持女性的体态美</li>
+<li>补充维生素</li>
+</ul>
+<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
+<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
+<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
+<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>和吕</tag>
+        <tag>茶籽油</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Centos安装msql并可以远程连接</title>
     <url>/posts/10009-mysql/</url>
     <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
@@ -518,101 +616,27 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>和吕:高山茶籽油</title>
-    <url>/posts/10010-chayou/</url>
-    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
-<span id="more"></span>
-<ul>
-<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
-<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
-</ul>
-<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
-<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
-<ul>
-<li>保护皮肤</li>
-<li>减肥功效</li>
-<li>去除妊娠纹</li>
-<li>防眼角皱纹</li>
-<li>美白护肤</li>
-<li>治疗暗疮</li>
-<li>保持女性的体态美</li>
-<li>补充维生素</li>
-</ul>
-<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
-<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
-<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
-<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>和吕</tag>
-        <tag>茶籽油</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>超级实用的谷歌插件</title>
-    <url>/posts/10007-google/</url>
-    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
-<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
-<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
-<li>新浪微博图床 免费的图片服务器</li>
-<li>Proxy SwitchyOmega 一个自动代理的工具</li>
+    <title>日志体系</title>
+    <url>/posts/10012-log/</url>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
 </ol>
 <span id="more"></span>
-<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
-]]></content>
-      <tags>
-        <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>湖南茶陵可可农家:家的味道</title>
-    <url>/posts/10008-keke/</url>
-    <content><![CDATA[<p>作为标准的吃货一枚</p>
-<p>对美食那是从来都不愿错过的</p>
-<p>在咱们茶陵</p>
-<p>就有很多好吃的农家手工小吃</p>
-<p>下面就大家去看一看</p>
-<p>不知道是否有你也爱吃的</p>
-<span id="more"></span>
 
-<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
-<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
-<p>正题来了,我觉得好吃的都列在下面了。</p>
-<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
-<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
-<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
-<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
-<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
-<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
-<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
-<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
-<p>看了后是不是一直在吞口水，哈哈~</p>
-<p>以上全都是手工制作</p>
-<p>来看看制作的花絮吧</p>
-<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
-<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
-</li>
-<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
-</li>
-<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
-</li>
-<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
-</li>
-</ul>
-<p>想吃的话，赶紧找我或者下面这个人吧</p>
-<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
+<p>未完待续！</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>可可农家</tag>
+        <tag>java</tag>
+        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -649,30 +673,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>java</tag>
         <tag>jvm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日志体系</title>
-    <url>/posts/10012-log/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
-</ol>
-<span id="more"></span>
-
-<p>未完待续！</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -887,6 +887,22 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>购买二手房注意事项</title>
+    <url>/posts/10018-ershoufang/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
+<span id="more"></span>
+
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>二手房</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring Boot中的缓存支持</title>
     <url>/posts/10019-springbootcache/</url>
     <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
@@ -920,22 +936,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>springboot</tag>
         <tag>cache</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/10018-ershoufang/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>二手房</tag>
       </tags>
   </entry>
   <entry>
@@ -973,6 +973,128 @@ rm -rf /var/lib/mysql
       </categories>
       <tags>
         <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu Linux 安装完整教程</title>
+    <url>/posts/10021-ubuntu-installation/</url>
+    <content><![CDATA[<h1 id="Ubuntu-Linux-安装完整教程"><a href="#Ubuntu-Linux-安装完整教程" class="headerlink" title="Ubuntu Linux 安装完整教程"></a>Ubuntu Linux 安装完整教程</h1><p>Ubuntu 是目前最流行的 Linux 发行版之一，以其友好的用户界面、强大的社区支持和稳定的系统性能而闻名。本教程将详细介绍 Ubuntu 的安装过程，无论是作为主系统、双系统还是在虚拟机中运行。</p>
+<h2 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h2><p>在开始安装之前，请确保你的计算机满足以下最低要求：</p>
+<ul>
+<li><strong>处理器</strong>：2 GHz 双核处理器或更高</li>
+<li><strong>内存</strong>：4 GB RAM（推荐 8 GB 或以上）</li>
+<li><strong>硬盘空间</strong>：25 GB 可用空间（推荐 50 GB 或以上）</li>
+<li><strong>显示器</strong>：1024×768 分辨率</li>
+<li><strong>启动介质</strong>：U盘（至少 4 GB）或 DVD</li>
+</ul>
+<span id="more"></span>where
+
+<h2 id="第一步：下载-Ubuntu-镜像"><a href="#第一步：下载-Ubuntu-镜像" class="headerlink" title="第一步：下载 Ubuntu 镜像"></a>第一步：下载 Ubuntu 镜像</h2><ol>
+<li>访问 <a href="https://ubuntu.com/download">Ubuntu 官网</a></li>
+<li>选择适合的版本：<ul>
+<li><strong>LTS 版本</strong>（长期支持版）：适合生产环境和普通用户，支持周期长达 5 年</li>
+<li><strong>最新版本</strong>：包含最新的特性和软件，支持周期较短</li>
+</ul>
+</li>
+<li>点击下载按钮，获取 ISO 镜像文件（约 2-4 GB）</li>
+</ol>
+<h2 id="第二步：制作启动-U-盘"><a href="#第二步：制作启动-U-盘" class="headerlink" title="第二步：制作启动 U 盘"></a>第二步：制作启动 U 盘</h2><h3 id="Windows-用户使用-Rufus"><a href="#Windows-用户使用-Rufus" class="headerlink" title="Windows 用户使用 Rufus"></a>Windows 用户使用 Rufus</h3><ol>
+<li>下载并安装 <a href="https://rufus.ie/">Rufus</a></li>
+<li>插入 U 盘（注意：制作过程会格式化 U 盘，请备份重要数据）</li>
+<li>打开 Rufus，选择：<ul>
+<li>设备：你的 U 盘</li>
+<li>引导类型选择：选择下载的 Ubuntu ISO 文件</li>
+<li>分区类型：根据你的计算机选择 MBR（传统 BIOS）或 GPT（UEFI）</li>
+</ul>
+</li>
+<li>点击“开始”，等待制作完成</li>
+</ol>
+<h3 id="macOS-用户使用-Etcher"><a href="#macOS-用户使用-Etcher" class="headerlink" title="macOS 用户使用 Etcher"></a>macOS 用户使用 Etcher</h3><ol>
+<li>下载并安装 <a href="https://www.balena.io/etcher/">Etcher</a></li>
+<li>插入 U 盘</li>
+<li>打开 Etcher，选择 ISO 文件，选择 U 盘，点击“Flash!”</li>
+<li>等待制作完成</li>
+</ol>
+<h2 id="第三步：启动安装程序"><a href="#第三步：启动安装程序" class="headerlink" title="第三步：启动安装程序"></a>第三步：启动安装程序</h2><ol>
+<li>重启计算机，进入 BIOS&#x2F;UEFI 设置（通常是按 F2、F10、F12 或 Delete 键）</li>
+<li>设置 U 盘为第一启动项</li>
+<li>保存设置并重启</li>
+</ol>
+<h2 id="第四步：安装-Ubuntu"><a href="#第四步：安装-Ubuntu" class="headerlink" title="第四步：安装 Ubuntu"></a>第四步：安装 Ubuntu</h2><h3 id="1-选择安装语言"><a href="#1-选择安装语言" class="headerlink" title="1. 选择安装语言"></a>1. 选择安装语言</h3><p>启动后选择“Try Ubuntu”测试或“Install Ubuntu”直接安装</p>
+<h3 id="2-选择键盘布局"><a href="#2-选择键盘布局" class="headerlink" title="2. 选择键盘布局"></a>2. 选择键盘布局</h3><p>默认选择“Chinese”即可</p>
+<h3 id="3-连接网络（可选）"><a href="#3-连接网络（可选）" class="headerlink" title="3. 连接网络（可选）"></a>3. 连接网络（可选）</h3><p>建议连接网络以下载更新和第三方软件</p>
+<h3 id="4-选择安装类型"><a href="#4-选择安装类型" class="headerlink" title="4. 选择安装类型"></a>4. 选择安装类型</h3><ul>
+<li><strong>正常安装</strong>：包含办公软件、媒体播放器等常用软件</li>
+<li><strong>最小安装</strong>：仅包含基本系统，适合自定义安装</li>
+<li><strong>其他选项</strong>：<ul>
+<li><strong>安装第三方软件</strong>：显卡驱动、媒体编码器等</li>
+<li><strong>下载更新</strong>：在安装过程中下载最新更新</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-分区设置（重要！）"><a href="#5-分区设置（重要！）" class="headerlink" title="5. 分区设置（重要！）"></a>5. 分区设置（重要！）</h3><h4 id="方案一：清除整个磁盘安装（单系统）"><a href="#方案一：清除整个磁盘安装（单系统）" class="headerlink" title="方案一：清除整个磁盘安装（单系统）"></a>方案一：清除整个磁盘安装（单系统）</h4><ul>
+<li>选择“清除整个磁盘并安装 Ubuntu”</li>
+<li>系统会自动创建所需分区</li>
+</ul>
+<h4 id="方案二：双系统安装"><a href="#方案二：双系统安装" class="headerlink" title="方案二：双系统安装"></a>方案二：双系统安装</h4><ul>
+<li>选择“其他选项”手动分区</li>
+<li>推荐分区方案：<ul>
+<li><strong>&#x2F;（根分区）</strong>：30-50 GB，EXT4 格式</li>
+<li><strong>swap（交换分区）</strong>：内存大小的 1-2 倍（如果内存 ≥ 8 GB 可不设）</li>
+<li><strong>&#x2F;home（家目录）</strong>：剩余空间，EXT4 格式（存储个人文件）</li>
+</ul>
+</li>
+</ul>
+<h4 id="分区示例："><a href="#分区示例：" class="headerlink" title="分区示例："></a>分区示例：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/dev/sda1  EFI系统分区  512 MB  FAT32</span><br><span class="line">/dev/sda2  /（根分区）  40 GB   EXT4</span><br><span class="line">/dev/sda3  /home       剩余空间 EXT4</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-设置时区"><a href="#6-设置时区" class="headerlink" title="6. 设置时区"></a>6. 设置时区</h3><p>在地图上点击上海或选择“Asia&#x2F;Shanghai”</p>
+<h3 id="7-创建用户账户"><a href="#7-创建用户账户" class="headerlink" title="7. 创建用户账户"></a>7. 创建用户账户</h3><ul>
+<li>输入你的姓名</li>
+<li>计算机名（会自动生成）</li>
+<li>用户名（用于登录）</li>
+<li>设置密码（建议设置强密码）</li>
+</ul>
+<h3 id="8-开始安装"><a href="#8-开始安装" class="headerlink" title="8. 开始安装"></a>8. 开始安装</h3><p>点击“安装”，等待安装完成（通常需要 20-40 分钟）</p>
+<h2 id="第五步：安装后配置"><a href="#第五步：安装后配置" class="headerlink" title="第五步：安装后配置"></a>第五步：安装后配置</h2><h3 id="1-更新系统"><a href="#1-更新系统" class="headerlink" title="1. 更新系统"></a>1. 更新系统</h3><p>安装完成后，首先更新系统：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-安装中文输入法"><a href="#2-安装中文输入法" class="headerlink" title="2. 安装中文输入法"></a>2. 安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ibus-pinyin</span><br><span class="line"><span class="comment"># 或安装搜狗输入法</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-安装常用软件"><a href="#3-安装常用软件" class="headerlink" title="3. 安装常用软件"></a>3. 安装常用软件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 浏览器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install firefox chromium-browser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 办公软件</span></span><br><span class="line"><span class="built_in">sudo</span> apt install libreoffice</span><br><span class="line"></span><br><span class="line"><span class="comment"># 媒体播放器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install vlc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开发工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install git vim build-essential</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-安装显卡驱动（如有需要）"><a href="#4-安装显卡驱动（如有需要）" class="headerlink" title="4. 安装显卡驱动（如有需要）"></a>4. 安装显卡驱动（如有需要）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查可用驱动</span></span><br><span class="line">ubuntu-drivers devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装推荐驱动</span></span><br><span class="line"><span class="built_in">sudo</span> ubuntu-drivers autoinstall</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-美化桌面（可选）"><a href="#5-美化桌面（可选）" class="headerlink" title="5. 美化桌面（可选）"></a>5. 美化桌面（可选）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 GNOME 优化工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install gnome-tweaks</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装扩展管理器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install chrome-gnome-shell</span><br></pre></td></tr></table></figure>
+
+<h2 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h2><h3 id="Q-安装过程中卡住怎么办？"><a href="#Q-安装过程中卡住怎么办？" class="headerlink" title="Q: 安装过程中卡住怎么办？"></a>Q: 安装过程中卡住怎么办？</h3><p>A: 尝试以下方法：</p>
+<ol>
+<li>断开网络连接安装</li>
+<li>选择“安全图形模式”</li>
+<li>检查 ISO 文件完整性</li>
+</ol>
+<h3 id="Q-如何修复启动引导？"><a href="#Q-如何修复启动引导？" class="headerlink" title="Q: 如何修复启动引导？"></a>Q: 如何修复启动引导？</h3><p>A: 使用 Ubuntu 安装 U 盘启动，选择“试用 Ubuntu”，然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:yannubuntu/boot-repair</span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install boot-repair</span><br><span class="line">boot-repair</span><br></pre></td></tr></table></figure>
+
+<h3 id="Q-双系统时间错误怎么办？"><a href="#Q-双系统时间错误怎么办？" class="headerlink" title="Q: 双系统时间错误怎么办？"></a>Q: 双系统时间错误怎么办？</h3><p>A: 在 Ubuntu 中执行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Ubuntu 安装过程相对简单，但分区步骤需要谨慎操作。建议新手选择“清除整个磁盘安装”，而有经验的用户可以选择手动分区以更好地管理磁盘空间。</p>
+<p>安装完成后，Ubuntu 提供了一个稳定、安全且免费的操作系统环境，无论是日常使用还是开发工作都能胜任。</p>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a href="https://help.ubuntu.com/">Ubuntu 官方文档</a></li>
+<li><a href="https://forum.ubuntu.org.cn/">Ubuntu 中文论坛</a></li>
+<li><a href="https://linux.cn/">Linux 中国开源社区</a></li>
+</ul>
+<p>希望本教程能帮助你顺利安装 Ubuntu！如果在安装过程中遇到问题，欢迎在评论区留言讨论。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Ubuntu</tag>
+        <tag>安装教程</tag>
+        <tag>操作系统</tag>
       </tags>
   </entry>
   <entry>
@@ -1087,11 +1209,11 @@ rm -rf /var/lib/mysql
         <category>运维</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>Nginx</tag>
         <tag>HTTPS</tag>
         <tag>Certbot</tag>
         <tag>反向代理</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1225,6 +1347,298 @@ rm -rf /var/lib/mysql
         <tag>图床</tag>
         <tag>博客</tag>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Claude Code 完全指南：从安装到实战的 14 步教程</title>
+    <url>/posts/10024-claude-code-complete-guide/</url>
+    <content><![CDATA[<h1 id="Claude-Code-完全指南：从安装到实战的-14-步教程"><a href="#Claude-Code-完全指南：从安装到实战的-14-步教程" class="headerlink" title="Claude Code 完全指南：从安装到实战的 14 步教程"></a>Claude Code 完全指南：从安装到实战的 14 步教程</h1><p>Claude Code 是一款强大的 AI 编程助手工具，能够显著提升开发效率。本文将为你提供从零开始到实战应用的全方位指南，涵盖安装配置、模式切换、基础使用、高级功能等 14 个关键步骤。<br><img src="https://cdn.jsdelivr.net/gh/ChadDongDongChen/blog-img@main/20260326225228522.png"></p>
+<h2 id="1-安装与登录（从-0-开始）"><a href="#1-安装与登录（从-0-开始）" class="headerlink" title="1. 安装与登录（从 0 开始）"></a>1. 安装与登录（从 0 开始）</h2><h3 id="1-1-安装-Claude-Code"><a href="#1-1-安装-Claude-Code" class="headerlink" title="1.1 安装 Claude Code"></a>1.1 安装 Claude Code</h3><p>打开 Claude Code 官方页面（视频描述里有链接）。</p>
+<p>复制页面上的安装命令（有一个复制按钮）。</p>
+<p>回到终端粘贴并回车执行。完成后终端可以识别 <code>claude</code> 命令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 例子（具体命令以官网为准）</span></span><br><span class="line">claude</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-创建项目并进入"><a href="#1-2-创建项目并进入" class="headerlink" title="1.2 创建项目并进入"></a>1.2 创建项目并进入</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-todo      <span class="comment"># 创建项目文件夹</span></span><br><span class="line"><span class="built_in">cd</span> my-todo         <span class="comment"># 进入项目</span></span><br><span class="line">claude             <span class="comment"># 启动 Claude Code</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-登录-Claude-账号"><a href="#1-3-登录-Claude-账号" class="headerlink" title="1.3 登录 Claude 账号"></a>1.3 登录 Claude 账号</h3><p>进入后如果没自动弹登录提示，输入：<code>/login</code>。</p>
+<p>有两种方式：</p>
+<ul>
+<li><strong>订阅登录</strong>：你有 Claude Pro&#x2F;Max 会员，直接选这一项。</li>
+<li><strong>API Key</strong>：用官方 API key，按 Token 用量计费。</li>
+</ul>
+<p>完成网页授权后回到终端敲回车，登录成功。</p>
+<p><strong>没法用官方模型？</strong></p>
+<p>你可以用国产模型（如 GLM、MiniMax）来驱动 Claude Code，本质上它是&quot;通用编程 Agent&quot;，不绑死 Claude 模型，只要配置几个环境变量即可（网上搜索即可）。</p>
+<h2 id="2-三种模式：默认-自动-规划"><a href="#2-三种模式：默认-自动-规划" class="headerlink" title="2. 三种模式：默认 &#x2F; 自动 &#x2F; 规划"></a>2. 三种模式：默认 &#x2F; 自动 &#x2F; 规划</h2><p>Claude Code 有 3 个核心模式，用 <code>Shift + Tab</code> 在三者间循环切换。</p>
+<h3 id="2-1-默认模式（最稳）"><a href="#2-1-默认模式（最稳）" class="headerlink" title="2.1 默认模式（最稳）"></a>2.1 默认模式（最稳）</h3><p><strong>特征</strong>：输入框下方只显示一行灰字 <code>? for shortcuts</code>。</p>
+<ul>
+<li>每次创建或修改文件前都会询问你。</li>
+<li>适合刚上手、怕误操作时使用。</li>
+<li>安全但略啰嗦。</li>
+</ul>
+<h3 id="2-2-自动模式（最省心）"><a href="#2-2-自动模式（最省心）" class="headerlink" title="2.2 自动模式（最省心）"></a>2.2 自动模式（最省心）</h3><p><strong>特征</strong>：输入框下方显示 <code>accept edits on</code>。</p>
+<ul>
+<li>Claude Code 可以自动创建、修改文件，不再一遍遍问你同意。</li>
+<li>适合你对它比较信任、想提高速度时使用。</li>
+</ul>
+<p><strong>进入方式</strong>：当它问你&quot;是否创建&#x2F;修改文件&quot;时，选：<br><code>Yes, allow all edits during this session</code>。</p>
+<h3 id="2-3-规划模式-Plan-Mode（只聊不动手）"><a href="#2-3-规划模式-Plan-Mode（只聊不动手）" class="headerlink" title="2.3 规划模式 Plan Mode（只聊不动手）"></a>2.3 规划模式 Plan Mode（只聊不动手）</h3><p><strong>特征</strong>：底部显示 <code>Plan Mode</code>。</p>
+<ul>
+<li>只讨论方案，不直接改文件。</li>
+<li>适合&quot;改架构、改大工程&quot;时先把方案规划好。</li>
+</ul>
+<p><strong>进入方式</strong>： <code>Shift + Tab</code> 切到 Plan Mode，再输入你的需求。<br>换行要用 <code>Shift + 回车</code>（普通回车是直接发送）。</p>
+<h2 id="3-基础使用：做一个待办（Todo）小网页"><a href="#3-基础使用：做一个待办（Todo）小网页" class="headerlink" title="3. 基础使用：做一个待办（Todo）小网页"></a>3. 基础使用：做一个待办（Todo）小网页</h2><h3 id="3-1-提需求，让它写代码"><a href="#3-1-提需求，让它写代码" class="headerlink" title="3.1 提需求，让它写代码"></a>3.1 提需求，让它写代码</h3><p>在 Claude Code 里输入（任意自然语言即可）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">给我做一个待办软件，用 HTML 实现。</span><br></pre></td></tr></table></figure>
+
+<p>它会提出创建 <code>index.html</code> 并询问你是否同意：</p>
+<ul>
+<li><strong>单次 Yes</strong>：只同意这一次文件操作。</li>
+<li><strong>Yes, allow all edits during this session</strong>：本会话内所有文件操作自动同意（自动模式）。</li>
+</ul>
+<p><strong>推荐</strong>：学习时先选自动模式，方便观察效果。</p>
+<h3 id="3-2-在-Claude-Code-里跑终端命令"><a href="#3-2-在-Claude-Code-里跑终端命令" class="headerlink" title="3.2 在 Claude Code 里跑终端命令"></a>3.2 在 Claude Code 里跑终端命令</h3><p>在输入框前加一个感叹号 <code>!</code> 就可以执行终端命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">!open index.html</span><br></pre></td></tr></table></figure>
+
+<p>这会在浏览器里打开页面，你就能看到 Todo 应用效果了。</p>
+<p>这个 <code>!</code> 代表进入 bash 模式，后面跟的就是普通终端命令。</p>
+<h2 id="4-终端权限与-危险模式"><a href="#4-终端权限与-危险模式" class="headerlink" title="4. 终端权限与 &quot;危险模式&quot;"></a>4. 终端权限与 &quot;危险模式&quot;</h2><h3 id="4-1-为什么执行命令还要问？"><a href="#4-1-为什么执行命令还要问？" class="headerlink" title="4.1 为什么执行命令还要问？"></a>4.1 为什么执行命令还要问？</h3><p>即使你已经开了自动编辑模式，Claude Code执行终端命令（例如 <code>mkdir</code>、<code>npm install</code>、删除文件等）时仍会问你：</p>
+<ul>
+<li>因为执行命令更危险，可能改动很多东西。</li>
+<li>它会问你允许当前命令、或者允许访问某个目录（如 <code>src/</code>）等。</li>
+</ul>
+<h3 id="4-2-一键跳过所有权限提示（高风险）"><a href="#4-2-一键跳过所有权限提示（高风险）" class="headerlink" title="4.2 一键跳过所有权限提示（高风险）"></a>4.2 一键跳过所有权限提示（高风险）</h3><p>可以在启动 Claude Code 时加参数跳过权限检查：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">claude --dangerously-skip-permissions</span><br></pre></td></tr></table></figure>
+
+<p>启动后模式会显示为 <code>bypass permissions on</code>。</p>
+<p>从此它执行任何终端命令（安装依赖、删文件等）都不再询问。</p>
+<p>官方在参数名里带上 <code>dangerously</code>，说明这很危险，等于给了它和你一样的终端权限。</p>
+<p><strong>建议</strong>：新手不要开；熟练后在 <strong>虚拟机 &#x2F; demo 环境</strong> 下可以考虑用来提升效率。</p>
+<h2 id="5-后台任务与-tasks"><a href="#5-后台任务与-tasks" class="headerlink" title="5. 后台任务与 &#x2F;tasks"></a>5. 后台任务与 &#x2F;tasks</h2><p>很多命令会启动&quot;长时间运行的服务&quot;，比如：<code>npm run dev</code>。</p>
+<h3 id="5-1-阻塞问题"><a href="#5-1-阻塞问题" class="headerlink" title="5.1 阻塞问题"></a>5.1 阻塞问题</h3><p>如果服务器在前台运行，你再输入 <code>Hi</code> 等新请求，Claude Code不会回应，因为它在等那个命令结束。</p>
+<h3 id="5-2-放到后台"><a href="#5-2-放到后台" class="headerlink" title="5.2 放到后台"></a>5.2 放到后台</h3><p>按 <code>Ctrl + b</code>：把当前任务放到后台，让 Claude Code 继续接收新指令。</p>
+<p>然后你可以：</p>
+<ul>
+<li>输入 <code>/tasks</code> 查看当前后台任务列表。</li>
+<li>按 <code>k</code> 停止某个任务（例如关掉 <code>npm run dev</code>）。</li>
+<li>按 <code>Esc</code> 返回主界面。</li>
+</ul>
+<h2 id="6-回滚-rewind：后悔了怎么办"><a href="#6-回滚-rewind：后悔了怎么办" class="headerlink" title="6. 回滚 &#x2F;rewind：后悔了怎么办"></a>6. 回滚 &#x2F;rewind：后悔了怎么办</h2><p>Claude Code 会自动记录&quot;回滚点&quot;，你可以随时退回到某一次操作之前。</p>
+<h3 id="6-1-快速打开回滚界面"><a href="#6-1-快速打开回滚界面" class="headerlink" title="6.1 快速打开回滚界面"></a>6.1 快速打开回滚界面</h3><p>按两次 <code>Esc</code>，进入回滚界面。</p>
+<p>每一次你给它新的请求，它都会创建一个回滚点。</p>
+<p>你可以选择&quot;某个时间点&quot;回去。</p>
+<h3 id="6-2-回滚选项"><a href="#6-2-回滚选项" class="headerlink" title="6.2 回滚选项"></a>6.2 回滚选项</h3><p>选中一个回滚点回车后，会有 4 个选项：</p>
+<ol>
+<li><strong>回滚代码和会话</strong>（源码 + 聊天记录一起还原）。</li>
+<li><strong>只回滚会话</strong>（只改对话，不改文件）。</li>
+<li><strong>只回滚代码</strong>。</li>
+<li><strong>放弃回滚</strong>。</li>
+</ol>
+<p>选择【代码和会话都回滚】，最常用。</p>
+<h3 id="6-3-回滚的局限：终端生成文件回不去"><a href="#6-3-回滚的局限：终端生成文件回不去" class="headerlink" title="6.3 回滚的局限：终端生成文件回不去"></a>6.3 回滚的局限：终端生成文件回不去</h3><p>Claude Code 只能回滚它自己写入的文件内容。</p>
+<p>比如通过 <code>mkdir</code>、<code>npm install</code> 等命令生成的文件，它不能自动清理。</p>
+<p><strong>常见做法</strong>：</p>
+<ol>
+<li>用 <code>ls</code> 查看当前目录文件（按 <code>Ctrl + o</code> 显示完整列表）。</li>
+<li>手动删除多余文件，只留下需要的（例如只保留 <code>index.html</code>）。</li>
+<li>打开网页确认效果确实回到了老版本。</li>
+</ol>
+<p><strong>严肃项目建议</strong>：用 git 管理版本，用 <code>git commit</code> &#x2F; <code>git reset</code> 做真正的版本回退。</p>
+<h2 id="7-图片-MCP：高精度还原-Figma-设计稿"><a href="#7-图片-MCP：高精度还原-Figma-设计稿" class="headerlink" title="7. 图片 + MCP：高精度还原 Figma 设计稿"></a>7. 图片 + MCP：高精度还原 Figma 设计稿</h2><h3 id="7-1-简单方式：直接给-Claude-图片"><a href="#7-1-简单方式：直接给-Claude-图片" class="headerlink" title="7.1 简单方式：直接给 Claude 图片"></a>7.1 简单方式：直接给 Claude 图片</h3><p>在 Figma 里选中 Frame，点 export 导出 PNG。</p>
+<p>把图片拖到 Claude Code 窗口里，或在文件管理器里复制后用 <code>Ctrl + V</code> 粘贴到 Claude Code（注意是 <code>Ctrl</code>，不是 <code>Command</code>）。</p>
+<p>输入请求：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">根据这张图把当前页面改成一样的布局和样式。</span><br></pre></td></tr></table></figure>
+
+<p><strong>优点</strong>：简单；<br><strong>缺点</strong>：还原程度有限，字体、间距等细节凭图片很难做到完全一致。</p>
+<h3 id="7-2-专业方式：安装-Figma-MCP-Server"><a href="#7-2-专业方式：安装-Figma-MCP-Server" class="headerlink" title="7.2 专业方式：安装 Figma MCP Server"></a>7.2 专业方式：安装 Figma MCP Server</h3><p>MCP &#x3D; 大模型与外界沟通的通道，Figma 提供了一个 MCP Server。</p>
+<p><strong>大致步骤</strong>：</p>
+<ol>
+<li>按 Figma 官方文档，在终端执行一行安装命令（视频中复制的那一行）。</li>
+<li>重新打开 Claude Code，输入 <code>/mcp</code> 查看已安装的 MCP 服务，确认有 <code>figma</code>。</li>
+<li>选 <code>figma</code> → <code>Authenticate</code>，在弹出的网页中授权。</li>
+<li>再次 <code>/mcp</code> 选择 <code>figma</code> → <code>View tools</code> 可以看到内部的工具列表（截图、获取设计信息等）。</li>
+</ol>
+<h3 id="7-3-用-Figma-链接驱动改版"><a href="#7-3-用-Figma-链接驱动改版" class="headerlink" title="7.3 用 Figma 链接驱动改版"></a>7.3 用 Figma 链接驱动改版</h3><p>在 Figma 中复制当前选中设计的链接（copy link to selection）。</p>
+<p>回到 Claude Code：<br>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">修改当前页面，使它与 Figma 稿件保持一致。</span><br></pre></td></tr></table></figure>
+
+<p>然后粘贴刚才复制的 Figma 链接，回车。</p>
+<p>Claude Code 会自动：</p>
+<ol>
+<li>发现 figma MCP 可用；</li>
+<li>调用 <code>get design context</code> 获取组件间距、字体样式等详细信息；</li>
+<li>再调用 <code>get screenshot</code> 等工具；</li>
+<li>最后按这些精确信息改你的代码。</li>
+</ol>
+<p><strong>实测</strong>：页面与设计稿的还原度非常高，只需要手工调整少量细节（如某些 NaN 显示问题）。</p>
+<h2 id="8-上下文管理：-compact-和-clear"><a href="#8-上下文管理：-compact-和-clear" class="headerlink" title="8. 上下文管理：&#x2F;compact 和 &#x2F;clear"></a>8. 上下文管理：&#x2F;compact 和 &#x2F;clear</h2><p>Claude Code 执行久了，上下文里会堆积大量内容：代码、工具调用结果、日志等。</p>
+<h3 id="8-1-compact：压缩上下文"><a href="#8-1-compact：压缩上下文" class="headerlink" title="8.1 &#x2F;compact：压缩上下文"></a>8.1 &#x2F;compact：压缩上下文</h3><p>输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/compact</span><br></pre></td></tr></table></figure>
+
+<p>它会把历史内容进行总结和提炼，只留下关键信息。</p>
+<p>这样可以减少 Token 消耗，提高后续对话的性能。</p>
+<p>压缩完可按 <code>Ctrl + o</code> 查看压缩后的上下文摘要。</p>
+<p>也可以写成：<code>/compact 重点保留我之前提过的需求，给一点策略提示。</code></p>
+<h3 id="8-2-clear：直接清空上下文"><a href="#8-2-clear：直接清空上下文" class="headerlink" title="8.2 &#x2F;clear：直接清空上下文"></a>8.2 &#x2F;clear：直接清空上下文</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/clear</span><br></pre></td></tr></table></figure>
+
+<p>会把当前会话的上下文全部清空。</p>
+<p><strong>适用场景</strong>：接下来要做的事情和之前完全无关。<br><strong>注意</strong>：视频里作者没有演示，因为要用之前的上下文继续讲解。</p>
+<h2 id="9-CLAUDE-md：让它-记住你-的项目说明书"><a href="#9-CLAUDE-md：让它-记住你-的项目说明书" class="headerlink" title="9. CLAUDE.md：让它&quot;记住你&quot;的项目说明书"></a>9. CLAUDE.md：让它&quot;记住你&quot;的项目说明书</h2><p>Claude Code 支持在项目目录里放一个 <code>CLAUDE.md</code>，作为它每次启动时自动阅读的&quot;说明书&quot;。</p>
+<h3 id="9-1-创建-CLAUDE-md"><a href="#9-1-创建-CLAUDE-md" class="headerlink" title="9.1 创建 CLAUDE.md"></a>9.1 创建 CLAUDE.md</h3><p>在项目内输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/init</span><br></pre></td></tr></table></figure>
+
+<p>它会自动生成一份 <code>CLAUDE.md</code>，通常是英文模板。</p>
+<p>你可以打开这个文件（用 VS Code 或者 <code>/memory</code>）并把内容改为中文，写上项目背景、目标、技术栈、注意事项等。</p>
+<p>例如可以添加一条注意事项：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">每次回答的最后必须追加一句 &quot;Happy Coding&quot;。</span><br></pre></td></tr></table></figure>
+
+<p>保存后，重启 Claude Code 再随便说一句 <code>Hi</code>，你就会看到它自动加上&quot;Happy Coding&quot;。说明 <code>CLAUDE.md</code> 生效了。</p>
+<h3 id="9-2-项目级-用户级-CLAUDE-md"><a href="#9-2-项目级-用户级-CLAUDE-md" class="headerlink" title="9.2 项目级 &#x2F; 用户级 CLAUDE.md"></a>9.2 项目级 &#x2F; 用户级 CLAUDE.md</h3><p>输入 <code>/memory</code> 可以看到两种级别：</p>
+<ul>
+<li><strong>项目级</strong>（当前目录生效）：文件在项目目录里，只对这个项目有效。</li>
+<li><strong>用户级</strong>（整个用户生效）：放在用户目录，对你所有项目都有效。</li>
+</ul>
+<p>你可以选择要编辑哪一个，然后直接在编辑器里修改内容。删掉&quot;Happy Coding&quot;后，重启 Claude Code，就不会再自动加那句话。</p>
+<h2 id="10-Hook：自动执行脚本（如自动格式化）"><a href="#10-Hook：自动执行脚本（如自动格式化）" class="headerlink" title="10. Hook：自动执行脚本（如自动格式化）"></a>10. Hook：自动执行脚本（如自动格式化）</h2><p>Hook 允许你在特定节点插入自定义逻辑，比如&quot;工具使用后自动执行 prettier 格式化代码&quot;。</p>
+<h3 id="10-1-进入-Hook-配置"><a href="#10-1-进入-Hook-配置" class="headerlink" title="10.1 进入 Hook 配置"></a>10.1 进入 Hook 配置</h3><p>输入 <code>/hooks</code> 进入 Hook 管理界面。</p>
+<ol>
+<li>选择执行时机，比如 <code>PostToolUse</code>（某个工具使用之后）。</li>
+<li>选择 <code>Add new matcher</code> 指定哪些工具触发 Hook，例如 <code>write</code> 和 <code>edit</code>（即写文件或改文件时）。</li>
+<li>再选 <code>Add new hook</code> 写入具体命令。</li>
+</ol>
+<h3 id="10-2-例子：用-prettier-自动格式化"><a href="#10-2-例子：用-prettier-自动格式化" class="headerlink" title="10.2 例子：用 prettier 自动格式化"></a>10.2 例子：用 prettier 自动格式化</h3><p>视频里示例命令逻辑是：</p>
+<ol>
+<li>接收一段 JSON 输入，其中包含 <code>file_path</code>（刚被编辑的文件路径）。</li>
+<li>用 <code>jq</code> 解析 JSON 拿到这个路径。</li>
+<li>用 <code>xargs</code> 把路径传给 <code>prettier</code>，对该文件执行格式化。</li>
+</ol>
+<p><strong>核心思路</strong>：<br>&quot;写完文件 → Hook 被触发 → prettier 格式化这个文件&quot;。</p>
+<h3 id="10-3-Hook-保存级别"><a href="#10-3-Hook-保存级别" class="headerlink" title="10.3 Hook 保存级别"></a>10.3 Hook 保存级别</h3><p>创建完 Hook 后，Claude Code 会问你保存到哪一级：</p>
+<ul>
+<li><strong>本地项目级</strong>：配置写入项目目录下 <code>settings.local.json</code>，自动加入 <code>.gitignore</code>，不会被提交给别人。</li>
+<li><strong>项目级</strong>：配置写入 <code>settings.json</code>，会随着 git 分发给所有使用这个项目的人。</li>
+<li><strong>用户级</strong>：保存在用户目录，对你所有项目生效，不和项目绑定。</li>
+</ul>
+<p>视频中选择了项目级，这样团队成员都能享受自动格式化。</p>
+<p><strong>测试方式</strong>：让 Claude 创建一个 <code>test.html</code>，要求全部写在一行；写完后 Hook 会自动把文件格式化成漂亮的多行 HTML。</p>
+<h2 id="11-Agent-Skill：给模型看的-说明书模块"><a href="#11-Agent-Skill：给模型看的-说明书模块" class="headerlink" title="11. Agent Skill：给模型看的&quot;说明书模块&quot;"></a>11. Agent Skill：给模型看的&quot;说明书模块&quot;</h2><p>Agent Skill 可以理解为：给大模型看的&quot;文档+规则&quot;，在需要的时候动态加载，相当于专用 Prompt 模块。</p>
+<h3 id="11-1-示例：自动写每日开发总结"><a href="#11-1-示例：自动写每日开发总结" class="headerlink" title="11.1 示例：自动写每日开发总结"></a>11.1 示例：自动写每日开发总结</h3><p><strong>需求</strong>：每天写一份日报，必须包含固定格式，比如日期、开发摘要、开发详情等。</p>
+<p>如果你每天都把这段格式说明粘进输入框，很麻烦，于是可以：</p>
+<p>在用户目录下创建技能目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p ~/claude/skills/daily-report</span><br></pre></td></tr></table></figure>
+
+<p>在该目录下创建 <code>SKILL.md</code>：内容包含：</p>
+<ul>
+<li><code>name</code>：比如 <code>daily-report</code>。</li>
+<li><code>description</code>：描述这个 Skill 是干什么的。</li>
+<li><strong>正文</strong>：详细说明日报格式、字段含义等要求。</li>
+</ul>
+<p>保存后重启 Claude Code，输入 <code>/skills</code> 可以看到 <code>daily-report</code> Skill 已被识别。</p>
+<h3 id="11-2-两种调用方式"><a href="#11-2-两种调用方式" class="headerlink" title="11.2 两种调用方式"></a>11.2 两种调用方式</h3><p><strong>被动调用</strong>：<br>在输入框里说：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">写一份今日开发总结。</span><br></pre></td></tr></table></figure>
+
+<p>Claude Code 检测到你的请求和 <code>daily-report</code> 相关，会自动请求使用该 Skill，你点同意后，它按 Skill 格式输出日报。</p>
+<p><strong>主动调用</strong>：<br>直接输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/daily-report 今天主要做了……</span><br></pre></td></tr></table></figure>
+
+<p>这样是你直接指定用这个 Skill，更加可控，省掉意图识别。</p>
+<h2 id="12-SubAgent：有独立上下文的-专职小助手"><a href="#12-SubAgent：有独立上下文的-专职小助手" class="headerlink" title="12. SubAgent：有独立上下文的&quot;专职小助手&quot;"></a>12. SubAgent：有独立上下文的&quot;专职小助手&quot;</h2><p>SubAgent 是一个有自己上下文、工具和 Skill 的独立 Agent，用来专门负责某类任务（例如代码审查）。</p>
+<h3 id="12-1-创建代码审核-SubAgent"><a href="#12-1-创建代码审核-SubAgent" class="headerlink" title="12.1 创建代码审核 SubAgent"></a>12.1 创建代码审核 SubAgent</h3><p>输入 <code>/agent</code>，选择 <code>Create new agent</code>。</p>
+<p>选择类型：</p>
+<ul>
+<li><strong>项目级</strong>：所有使用此项目的人都能用。</li>
+<li><strong>用户级</strong>：只对当前用户生效。</li>
+</ul>
+<p>视频中选择项目级。</p>
+<p>创建方式：选&quot;用 Claude 初始化&quot;（推荐）。</p>
+<p>描述这个 Agent 要干什么，比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">这是一个用于代码审核的 SubAgent，在用户要求代码审核时调用它。</span><br></pre></td></tr></table></figure>
+
+<p>选择可用工具：选择 <code>Read-only tools</code>，代表它只能读文件不能修改。</p>
+<p>选模型（如 Sonnet）和颜色（比如绿色）。颜色会用于界面中区分 SubAgent 的回复。</p>
+<p>按 <code>E</code> 编辑 SubAgent 描述，把里面的说明替换成你期望的结构，例如：</p>
+<ul>
+<li>元数据：名字、描述、模型、颜色。</li>
+<li>审查规则：JS 审查要点、CSS 审查要点。</li>
+<li>输出格式要求。</li>
+</ul>
+<p>保存后重启 Claude Code。</p>
+<h3 id="12-2-使用-SubAgent"><a href="#12-2-使用-SubAgent" class="headerlink" title="12.2 使用 SubAgent"></a>12.2 使用 SubAgent</h3><p>直接在主对话里说：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">给我做一下代码审核。</span><br></pre></td></tr></table></figure>
+
+<p>Claude Code 会：</p>
+<ol>
+<li>调用你刚定义好的 SubAgent；</li>
+<li>在界面上用绿色等特殊颜色显示它的内部对话；</li>
+<li>最终给出一份符合你规则的代码审查报告。</li>
+</ol>
+<h3 id="12-3-Agent-Skill-vs-SubAgent-的核心区别"><a href="#12-3-Agent-Skill-vs-SubAgent-的核心区别" class="headerlink" title="12.3 Agent Skill vs SubAgent 的核心区别"></a>12.3 Agent Skill vs SubAgent 的核心区别</h3><p><strong>Agent Skill</strong>：</p>
+<ul>
+<li>共享主对话上下文。</li>
+<li>它的中间过程也会写入主上下文，容易把上下文挤爆。</li>
+<li>适合&quot;跟当前对话关联大、但不会产生大量中间垃圾信息&quot;的任务，比如写日报。</li>
+</ul>
+<p><strong>SubAgent</strong>：</p>
+<ul>
+<li>有自己独立的上下文。</li>
+<li>它看的所有代码、思考过程都不会写进主对话，只把最终结果告诉你。</li>
+<li>适合&quot;过程很长、会产生大量中间分析&quot;的任务，比如审核一个几万行的代码仓库。</li>
+</ul>
+<p><strong>一句话记</strong>：</p>
+<ul>
+<li>想要&quot;轻量规则、贴着主对话&quot;的，用 <strong>Agent Skill</strong>。</li>
+<li>想要&quot;独立开房间、干完再回来汇报&quot;的，用 <strong>SubAgent</strong>。</li>
+</ul>
+<h2 id="13-Plugin-插件：一键装好一整套能力"><a href="#13-Plugin-插件：一键装好一整套能力" class="headerlink" title="13. Plugin 插件：一键装好一整套能力"></a>13. Plugin 插件：一键装好一整套能力</h2><p>Plugin 可以看成&quot;全家桶安装包&quot;：把多个 Skill、SubAgent、Hook、MCP 打包在一起，一键安装。</p>
+<h3 id="13-1-安装-frontend-design-插件"><a href="#13-1-安装-frontend-design-插件" class="headerlink" title="13.1 安装 frontend-design 插件"></a>13.1 安装 frontend-design 插件</h3><p>输入 <code>/plugin</code> 打开插件管理。</p>
+<ol>
+<li>选 <code>Discover</code>，搜索并安装 <code>frontend-design</code> 插件。</li>
+<li>选择安装范围：<ul>
+<li>当前用户</li>
+<li>当前项目</li>
+<li>当前用户 + 当前项目<br>保持默认即可。</li>
+</ul>
+</li>
+</ol>
+<p>安装完成非常快。</p>
+<h3 id="13-2-查看插件内容并验证"><a href="#13-2-查看插件内容并验证" class="headerlink" title="13.2 查看插件内容并验证"></a>13.2 查看插件内容并验证</h3><p>再次 <code>/plugin</code>，选择 <code>Installed</code>，可以看到 <code>frontend-design</code> 已安装。</p>
+<p>回车查看详情，会发现插件内部主要就是一个名为 <code>frontend-design</code> 的 Agent Skill。</p>
+<p><code>/skills</code> 列表中也会出现这个 Skill。</p>
+<h3 id="13-3-实测：用插件做-Todo-页面"><a href="#13-3-实测：用插件做-Todo-页面" class="headerlink" title="13.3 实测：用插件做 Todo 页面"></a>13.3 实测：用插件做 Todo 页面</h3><p>新建目录并进入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-todo-2</span><br><span class="line"><span class="built_in">cd</span> my-todo-2</span><br><span class="line">claude</span><br></pre></td></tr></table></figure>
+
+<p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">按照 frontend-design 的要求，做一个代办软件，用 HTML 实现。</span><br></pre></td></tr></table></figure>
+
+<p>Claude Code 会先请求使用 <code>frontend-design</code> Skill，然后根据官方沉淀的 UI 设计&quot;直觉&quot;写出界面。</p>
+<p>用 <code>ls</code> 确认生成了 <code>index.html</code>，再用 <code>!open index.html</code> 打开。</p>
+<p><strong>效果</strong>：相比最开始的 Demo，UI 风格更现代、排版更高级、色彩更协调，交互体验更好。</p>
+<p>目前插件市场还在快速增长，除了 UI 设计，还有针对编程语言的 LSP 插件等，你也可以把自己的 Skill、SubAgent、MCP 打包成 Plugin 分享给团队或社区。</p>
+<h2 id="14-给小白的实战路线（建议你这样练）"><a href="#14-给小白的实战路线（建议你这样练）" class="headerlink" title="14. 给小白的实战路线（建议你这样练）"></a>14. 给小白的实战路线（建议你这样练）</h2><p>你可以按下面顺序自己动手练一遍：</p>
+<ol>
+<li><strong>安装 &amp; 登录</strong> Claude Code，并开一个 <code>my-todo</code> 目录。</li>
+<li>用自然语言做一个最简单的 HTML Todo 应用，学会三种模式切换和 <code>!</code> 终端命令。</li>
+<li>学会 <code>/tasks</code> 管理后台任务，知道 <code>Ctrl + b</code>、<code>k</code>、<code>Esc</code> 的用法。</li>
+<li>故意做几次修改，然后用 <code>Esc Esc</code> + <code>/rewind</code> 回滚，感受回滚的能力和局限。</li>
+<li>在 Figma 随便画一个界面，用图片方式让它仿制，再试试按视频步骤配置 Figma MCP，提高还原度。</li>
+<li>在项目里用 <code>/init</code> 生成 <code>CLAUDE.md</code>，写上项目说明和注意事项，看它是否真的按你写的规则回答。</li>
+<li>把 prettier Hook 配起来，体验&quot;写完自动格式化&quot;的爽感。</li>
+<li>写一个简单的日报 Agent Skill，然后再做一个专职&quot;代码审查&quot; SubAgent，对比两者使用体验。</li>
+<li>最后安装 <code>frontend-design</code> 插件，用它重做一次 Todo app，对比 UI 差异。</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Claude Code 是一款功能强大的 AI 编程助手，通过本文的 14 步指南，你可以从零开始掌握其核心功能。从基础安装到高级功能如 MCP 集成、Hook 自动化、Agent Skill 和 SubAgent 使用，再到插件系统扩展，Claude Code 能够显著提升开发效率和代码质量。</p>
+<p>无论你是前端开发者、后端工程师还是全栈开发者，熟练掌握 Claude Code 都将成为你编程工具箱中的重要利器。随着 AI 编程工具的不断发展，掌握这类工具的使用方法将成为开发者的核心竞争力之一。</p>
+<p><strong>Happy Coding!</strong></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Claude Code</tag>
+        <tag>AI编程</tag>
+        <tag>开发工具</tag>
+        <tag>人工智能</tag>
       </tags>
   </entry>
   <entry>
@@ -1442,128 +1856,6 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
       <tags>
         <tag>highlight</tag>
         <tag>Bar</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu Linux 安装完整教程</title>
-    <url>/posts/10021-ubuntu-installation/</url>
-    <content><![CDATA[<h1 id="Ubuntu-Linux-安装完整教程"><a href="#Ubuntu-Linux-安装完整教程" class="headerlink" title="Ubuntu Linux 安装完整教程"></a>Ubuntu Linux 安装完整教程</h1><p>Ubuntu 是目前最流行的 Linux 发行版之一，以其友好的用户界面、强大的社区支持和稳定的系统性能而闻名。本教程将详细介绍 Ubuntu 的安装过程，无论是作为主系统、双系统还是在虚拟机中运行。</p>
-<h2 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h2><p>在开始安装之前，请确保你的计算机满足以下最低要求：</p>
-<ul>
-<li><strong>处理器</strong>：2 GHz 双核处理器或更高</li>
-<li><strong>内存</strong>：4 GB RAM（推荐 8 GB 或以上）</li>
-<li><strong>硬盘空间</strong>：25 GB 可用空间（推荐 50 GB 或以上）</li>
-<li><strong>显示器</strong>：1024×768 分辨率</li>
-<li><strong>启动介质</strong>：U盘（至少 4 GB）或 DVD</li>
-</ul>
-<span id="more"></span>where
-
-<h2 id="第一步：下载-Ubuntu-镜像"><a href="#第一步：下载-Ubuntu-镜像" class="headerlink" title="第一步：下载 Ubuntu 镜像"></a>第一步：下载 Ubuntu 镜像</h2><ol>
-<li>访问 <a href="https://ubuntu.com/download">Ubuntu 官网</a></li>
-<li>选择适合的版本：<ul>
-<li><strong>LTS 版本</strong>（长期支持版）：适合生产环境和普通用户，支持周期长达 5 年</li>
-<li><strong>最新版本</strong>：包含最新的特性和软件，支持周期较短</li>
-</ul>
-</li>
-<li>点击下载按钮，获取 ISO 镜像文件（约 2-4 GB）</li>
-</ol>
-<h2 id="第二步：制作启动-U-盘"><a href="#第二步：制作启动-U-盘" class="headerlink" title="第二步：制作启动 U 盘"></a>第二步：制作启动 U 盘</h2><h3 id="Windows-用户使用-Rufus"><a href="#Windows-用户使用-Rufus" class="headerlink" title="Windows 用户使用 Rufus"></a>Windows 用户使用 Rufus</h3><ol>
-<li>下载并安装 <a href="https://rufus.ie/">Rufus</a></li>
-<li>插入 U 盘（注意：制作过程会格式化 U 盘，请备份重要数据）</li>
-<li>打开 Rufus，选择：<ul>
-<li>设备：你的 U 盘</li>
-<li>引导类型选择：选择下载的 Ubuntu ISO 文件</li>
-<li>分区类型：根据你的计算机选择 MBR（传统 BIOS）或 GPT（UEFI）</li>
-</ul>
-</li>
-<li>点击“开始”，等待制作完成</li>
-</ol>
-<h3 id="macOS-用户使用-Etcher"><a href="#macOS-用户使用-Etcher" class="headerlink" title="macOS 用户使用 Etcher"></a>macOS 用户使用 Etcher</h3><ol>
-<li>下载并安装 <a href="https://www.balena.io/etcher/">Etcher</a></li>
-<li>插入 U 盘</li>
-<li>打开 Etcher，选择 ISO 文件，选择 U 盘，点击“Flash!”</li>
-<li>等待制作完成</li>
-</ol>
-<h2 id="第三步：启动安装程序"><a href="#第三步：启动安装程序" class="headerlink" title="第三步：启动安装程序"></a>第三步：启动安装程序</h2><ol>
-<li>重启计算机，进入 BIOS&#x2F;UEFI 设置（通常是按 F2、F10、F12 或 Delete 键）</li>
-<li>设置 U 盘为第一启动项</li>
-<li>保存设置并重启</li>
-</ol>
-<h2 id="第四步：安装-Ubuntu"><a href="#第四步：安装-Ubuntu" class="headerlink" title="第四步：安装 Ubuntu"></a>第四步：安装 Ubuntu</h2><h3 id="1-选择安装语言"><a href="#1-选择安装语言" class="headerlink" title="1. 选择安装语言"></a>1. 选择安装语言</h3><p>启动后选择“Try Ubuntu”测试或“Install Ubuntu”直接安装</p>
-<h3 id="2-选择键盘布局"><a href="#2-选择键盘布局" class="headerlink" title="2. 选择键盘布局"></a>2. 选择键盘布局</h3><p>默认选择“Chinese”即可</p>
-<h3 id="3-连接网络（可选）"><a href="#3-连接网络（可选）" class="headerlink" title="3. 连接网络（可选）"></a>3. 连接网络（可选）</h3><p>建议连接网络以下载更新和第三方软件</p>
-<h3 id="4-选择安装类型"><a href="#4-选择安装类型" class="headerlink" title="4. 选择安装类型"></a>4. 选择安装类型</h3><ul>
-<li><strong>正常安装</strong>：包含办公软件、媒体播放器等常用软件</li>
-<li><strong>最小安装</strong>：仅包含基本系统，适合自定义安装</li>
-<li><strong>其他选项</strong>：<ul>
-<li><strong>安装第三方软件</strong>：显卡驱动、媒体编码器等</li>
-<li><strong>下载更新</strong>：在安装过程中下载最新更新</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-分区设置（重要！）"><a href="#5-分区设置（重要！）" class="headerlink" title="5. 分区设置（重要！）"></a>5. 分区设置（重要！）</h3><h4 id="方案一：清除整个磁盘安装（单系统）"><a href="#方案一：清除整个磁盘安装（单系统）" class="headerlink" title="方案一：清除整个磁盘安装（单系统）"></a>方案一：清除整个磁盘安装（单系统）</h4><ul>
-<li>选择“清除整个磁盘并安装 Ubuntu”</li>
-<li>系统会自动创建所需分区</li>
-</ul>
-<h4 id="方案二：双系统安装"><a href="#方案二：双系统安装" class="headerlink" title="方案二：双系统安装"></a>方案二：双系统安装</h4><ul>
-<li>选择“其他选项”手动分区</li>
-<li>推荐分区方案：<ul>
-<li><strong>&#x2F;（根分区）</strong>：30-50 GB，EXT4 格式</li>
-<li><strong>swap（交换分区）</strong>：内存大小的 1-2 倍（如果内存 ≥ 8 GB 可不设）</li>
-<li><strong>&#x2F;home（家目录）</strong>：剩余空间，EXT4 格式（存储个人文件）</li>
-</ul>
-</li>
-</ul>
-<h4 id="分区示例："><a href="#分区示例：" class="headerlink" title="分区示例："></a>分区示例：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/dev/sda1  EFI系统分区  512 MB  FAT32</span><br><span class="line">/dev/sda2  /（根分区）  40 GB   EXT4</span><br><span class="line">/dev/sda3  /home       剩余空间 EXT4</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-设置时区"><a href="#6-设置时区" class="headerlink" title="6. 设置时区"></a>6. 设置时区</h3><p>在地图上点击上海或选择“Asia&#x2F;Shanghai”</p>
-<h3 id="7-创建用户账户"><a href="#7-创建用户账户" class="headerlink" title="7. 创建用户账户"></a>7. 创建用户账户</h3><ul>
-<li>输入你的姓名</li>
-<li>计算机名（会自动生成）</li>
-<li>用户名（用于登录）</li>
-<li>设置密码（建议设置强密码）</li>
-</ul>
-<h3 id="8-开始安装"><a href="#8-开始安装" class="headerlink" title="8. 开始安装"></a>8. 开始安装</h3><p>点击“安装”，等待安装完成（通常需要 20-40 分钟）</p>
-<h2 id="第五步：安装后配置"><a href="#第五步：安装后配置" class="headerlink" title="第五步：安装后配置"></a>第五步：安装后配置</h2><h3 id="1-更新系统"><a href="#1-更新系统" class="headerlink" title="1. 更新系统"></a>1. 更新系统</h3><p>安装完成后，首先更新系统：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-安装中文输入法"><a href="#2-安装中文输入法" class="headerlink" title="2. 安装中文输入法"></a>2. 安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ibus-pinyin</span><br><span class="line"><span class="comment"># 或安装搜狗输入法</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-安装常用软件"><a href="#3-安装常用软件" class="headerlink" title="3. 安装常用软件"></a>3. 安装常用软件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 浏览器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install firefox chromium-browser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 办公软件</span></span><br><span class="line"><span class="built_in">sudo</span> apt install libreoffice</span><br><span class="line"></span><br><span class="line"><span class="comment"># 媒体播放器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install vlc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开发工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install git vim build-essential</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-安装显卡驱动（如有需要）"><a href="#4-安装显卡驱动（如有需要）" class="headerlink" title="4. 安装显卡驱动（如有需要）"></a>4. 安装显卡驱动（如有需要）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查可用驱动</span></span><br><span class="line">ubuntu-drivers devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装推荐驱动</span></span><br><span class="line"><span class="built_in">sudo</span> ubuntu-drivers autoinstall</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-美化桌面（可选）"><a href="#5-美化桌面（可选）" class="headerlink" title="5. 美化桌面（可选）"></a>5. 美化桌面（可选）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 GNOME 优化工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install gnome-tweaks</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装扩展管理器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install chrome-gnome-shell</span><br></pre></td></tr></table></figure>
-
-<h2 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h2><h3 id="Q-安装过程中卡住怎么办？"><a href="#Q-安装过程中卡住怎么办？" class="headerlink" title="Q: 安装过程中卡住怎么办？"></a>Q: 安装过程中卡住怎么办？</h3><p>A: 尝试以下方法：</p>
-<ol>
-<li>断开网络连接安装</li>
-<li>选择“安全图形模式”</li>
-<li>检查 ISO 文件完整性</li>
-</ol>
-<h3 id="Q-如何修复启动引导？"><a href="#Q-如何修复启动引导？" class="headerlink" title="Q: 如何修复启动引导？"></a>Q: 如何修复启动引导？</h3><p>A: 使用 Ubuntu 安装 U 盘启动，选择“试用 Ubuntu”，然后：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:yannubuntu/boot-repair</span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install boot-repair</span><br><span class="line">boot-repair</span><br></pre></td></tr></table></figure>
-
-<h3 id="Q-双系统时间错误怎么办？"><a href="#Q-双系统时间错误怎么办？" class="headerlink" title="Q: 双系统时间错误怎么办？"></a>Q: 双系统时间错误怎么办？</h3><p>A: 在 Ubuntu 中执行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Ubuntu 安装过程相对简单，但分区步骤需要谨慎操作。建议新手选择“清除整个磁盘安装”，而有经验的用户可以选择手动分区以更好地管理磁盘空间。</p>
-<p>安装完成后，Ubuntu 提供了一个稳定、安全且免费的操作系统环境，无论是日常使用还是开发工作都能胜任。</p>
-<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
-<li><a href="https://help.ubuntu.com/">Ubuntu 官方文档</a></li>
-<li><a href="https://forum.ubuntu.org.cn/">Ubuntu 中文论坛</a></li>
-<li><a href="https://linux.cn/">Linux 中国开源社区</a></li>
-</ul>
-<p>希望本教程能帮助你顺利安装 Ubuntu！如果在安装过程中遇到问题，欢迎在评论区留言讨论。</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Ubuntu</tag>
-        <tag>安装教程</tag>
-        <tag>操作系统</tag>
       </tags>
   </entry>
 </search>
