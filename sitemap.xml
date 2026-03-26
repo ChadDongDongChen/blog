@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cdd9527.cn/posts/10021-ubuntu-installation/</loc>
+    
+    <lastmod>2026-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/posts/10022-nginx-https-certbot/</loc>
+    
+    <lastmod>2026-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cdd9527.cn/link/</loc>
     
     <lastmod>2025-05-10</lastmod>
@@ -227,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/Gallery/ohmygirl/</loc>
+    <loc>https://cdd9527.cn/Gallery/marvel/</loc>
     
     <lastmod>2025-05-10</lastmod>
     
@@ -245,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/Gallery/marvel/</loc>
+    <loc>https://cdd9527.cn/Gallery/ohmygirl/</loc>
     
     <lastmod>2025-05-10</lastmod>
     
@@ -270,20 +288,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://cdd9527.cn/tags/md/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cdd9527.cn/tags/Markdown/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://cdd9527.cn/tags/%E6%95%99%E7%A8%8B/</loc>
@@ -335,6 +339,34 @@
   </url>
   
   <url>
+    <loc>https://cdd9527.cn/tags/mongodb/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/springboot/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/md/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Markdown/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cdd9527.cn/tags/centeros/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,20 +395,6 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/linux/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cdd9527.cn/tags/mysql/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cdd9527.cn/tags/%E5%92%8C%E5%90%95/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -391,14 +409,14 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/mongodb/</loc>
+    <loc>https://cdd9527.cn/tags/linux/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/springboot/</loc>
+    <loc>https://cdd9527.cn/tags/mysql/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -412,20 +430,6 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/jvm/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cdd9527.cn/tags/spring/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cdd9527.cn/tags/%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -433,14 +437,7 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/java8/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cdd9527.cn/tags/Joiner/</loc>
+    <loc>https://cdd9527.cn/tags/jvm/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -461,6 +458,27 @@
   </url>
   
   <url>
+    <loc>https://cdd9527.cn/tags/spring/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/java8/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Joiner/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cdd9527.cn/tags/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -468,14 +486,14 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/%E4%BA%8C%E6%89%8B%E6%88%BF/</loc>
+    <loc>https://cdd9527.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://cdd9527.cn/tags/%E4%BA%8C%E6%89%8B%E6%88%BF/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -490,6 +508,62 @@
   
   <url>
     <loc>https://cdd9527.cn/tags/idea/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Nginx/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/HTTPS/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Certbot/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Linux/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/Ubuntu/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -519,6 +593,13 @@
   </url>
   
   <url>
+    <loc>https://cdd9527.cn/categories/mongodb/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cdd9527.cn/categories/git/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -540,13 +621,6 @@
   </url>
   
   <url>
-    <loc>https://cdd9527.cn/categories/mongodb/</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cdd9527.cn/categories/java/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -555,6 +629,20 @@
   
   <url>
     <loc>https://cdd9527.cn/categories/mac/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/categories/%E8%BF%90%E7%BB%B4/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cdd9527.cn/categories/Linux/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown 编辑器语法指南</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
-<span id="more"></span>
-
-<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
-<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
-<pre><code>def g(x):
-    yield from range(x, 0, -1)
-yield from range(x)
-</code></pre>
-<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
-<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
-<pre><code>标题1
-======
-
-标题2
------
-## 大标题 ##
-### 小标题 ###
-</code></pre>
-<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
-**粗体文本**    __粗体文本__
-***粗斜体文本***    ___粗斜体文本___
-</code></pre>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
-<pre><code>文字链接 [链接名称](http://链接网址)
-网址链接 &lt;http://链接网址&gt;
-</code></pre>
-<p>高级链接技巧</p>
-<pre><code>这个链接用 1 作为网址变量 [Google][1].
-这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
-然后在文档的结尾为变量赋值（网址）
-[1]: http://www.google.com/
-[yahoo]: http://www.yahoo.com/
-</code></pre>
-<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
-]]></content>
-      <tags>
-        <tag>.md</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>建站第一篇文章</title>
     <url>/posts/10001-hello-world/</url>
     <content><![CDATA[<h1 id="建站的准备"><a href="#建站的准备" class="headerlink" title="建站的准备"></a>建站的准备</h1><h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2><h3 id="安装Git-Bash"><a href="#安装Git-Bash" class="headerlink" title="安装Git Bash"></a>安装Git Bash</h3><span id="more"></span>
@@ -163,6 +115,110 @@ hexo s //server的缩写
       <tags>
         <tag>emoji</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用mongodb</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
+<li>添加maven依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<ul>
+<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>现在可以美滋滋的使用MongoTemplate了</li>
+</ul>
+<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
+<ul>
+<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
+<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
+<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
+<li>-p,--password：代表连接数据库的账号对应的密码；</li>
+<li>-d,--db：代表连接的数据库；</li>
+<li>-c,--collection：代表连接数据库中的集合；</li>
+<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
+<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
+<li>-o, --out：代表导出的文件名；</li>
+<li>-q, --query：代表查询条件；</li>
+<li>--skip：跳过指定数量的数据；</li>
+<li>--limit：读取指定数量的数据记录；</li>
+<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
+</ul>
+<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
+<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
+<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
+<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
+<p>4 启动服务 net start mongodb</p>
+<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
+<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
+<p>表示成功 </p>
+<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
+<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
+<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mongodb</category>
+      </categories>
+      <tags>
+        <tag>mongodb</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 编辑器语法指南</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
+<span id="more"></span>
+
+<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
+<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
+<pre><code>def g(x):
+    yield from range(x, 0, -1)
+yield from range(x)
+</code></pre>
+<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
+<pre><code>标题1
+======
+
+标题2
+-----
+## 大标题 ##
+### 小标题 ###
+</code></pre>
+<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
+**粗体文本**    __粗体文本__
+***粗斜体文本***    ___粗斜体文本___
+</code></pre>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
+<pre><code>文字链接 [链接名称](http://链接网址)
+网址链接 &lt;http://链接网址&gt;
+</code></pre>
+<p>高级链接技巧</p>
+<pre><code>这个链接用 1 作为网址变量 [Google][1].
+这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
+然后在文档的结尾为变量赋值（网址）
+[1]: http://www.google.com/
+[yahoo]: http://www.yahoo.com/
+</code></pre>
+<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
+]]></content>
+      <tags>
+        <tag>.md</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -440,6 +496,40 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
+    <title>和吕:高山茶籽油</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
+<span id="more"></span>
+<ul>
+<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
+<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
+</ul>
+<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
+<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
+<ul>
+<li>保护皮肤</li>
+<li>减肥功效</li>
+<li>去除妊娠纹</li>
+<li>防眼角皱纹</li>
+<li>美白护肤</li>
+<li>治疗暗疮</li>
+<li>保持女性的体态美</li>
+<li>补充维生素</li>
+</ul>
+<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
+<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
+<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
+<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>和吕</tag>
+        <tag>茶籽油</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Centos安装msql并可以远程连接</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
@@ -526,93 +616,27 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>和吕:高山茶籽油</title>
+    <title>日志体系</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
+</ol>
 <span id="more"></span>
-<ul>
-<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
-<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
-</ul>
-<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
-<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
-<ul>
-<li>保护皮肤</li>
-<li>减肥功效</li>
-<li>去除妊娠纹</li>
-<li>防眼角皱纹</li>
-<li>美白护肤</li>
-<li>治疗暗疮</li>
-<li>保持女性的体态美</li>
-<li>补充维生素</li>
-</ul>
-<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
-<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
-<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
-<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
+
+<p>未完待续！</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>和吕</tag>
-        <tag>茶籽油</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用mongodb</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
-<li>添加maven依赖</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<ul>
-<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
-</ul>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>现在可以美滋滋的使用MongoTemplate了</li>
-</ul>
-<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
-<ul>
-<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
-<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
-<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
-<li>-p,--password：代表连接数据库的账号对应的密码；</li>
-<li>-d,--db：代表连接的数据库；</li>
-<li>-c,--collection：代表连接数据库中的集合；</li>
-<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
-<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
-<li>-o, --out：代表导出的文件名；</li>
-<li>-q, --query：代表查询条件；</li>
-<li>--skip：跳过指定数量的数据；</li>
-<li>--limit：读取指定数量的数据记录；</li>
-<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
-</ul>
-<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
-<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
-<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
-<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
-<p>4 启动服务 net start mongodb</p>
-<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
-<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
-<p>表示成功 </p>
-<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
-<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
-<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
-
-<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mongodb</category>
-      </categories>
-      <tags>
-        <tag>mongodb</tag>
-        <tag>springboot</tag>
+        <tag>java</tag>
+        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -652,6 +676,28 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>mac破解百度云盘限速</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
+<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
+<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
+<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
+<span id="more"></span>
+<p>二、开源软件: Aria2GUI</p>
+<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
+<p>解压后直接拖到应用里面运行即可</p>
+<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>百度云破解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>spring笔记</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
@@ -686,30 +732,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>日志体系</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
-</ol>
-<span id="more"></span>
-
-<p>未完待续！</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>日志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Guava——Joiner</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
@@ -735,28 +757,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>java8</tag>
         <tag>Joiner</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac破解百度云盘限速</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
-<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
-<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
-<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
-<span id="more"></span>
-<p>二、开源软件: Aria2GUI</p>
-<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
-<p>解压后直接拖到应用里面运行即可</p>
-<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>mac</category>
-      </categories>
-      <tags>
-        <tag>mac</tag>
-        <tag>百度云破解</tag>
       </tags>
   </entry>
   <entry>
@@ -786,22 +786,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>hexo</tag>
         <tag>博客主动推送</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>二手房</tag>
       </tags>
   </entry>
   <entry>
@@ -903,6 +887,22 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>购买二手房注意事项</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
+<span id="more"></span>
+
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>二手房</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring Boot中的缓存支持</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
@@ -973,6 +973,247 @@ rm -rf /var/lib/mysql
       </categories>
       <tags>
         <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</title>
+    <url>/posts/10022-nginx-https-certbot/</url>
+    <content><![CDATA[<hr>
+<h1 id="Nginx-Certbot-自动HTTPS证书与反向代理完整教程"><a href="#Nginx-Certbot-自动HTTPS证书与反向代理完整教程" class="headerlink" title="Nginx + Certbot 自动HTTPS证书与反向代理完整教程"></a>Nginx + Certbot 自动HTTPS证书与反向代理完整教程</h1><p>本文将手把手教你如何为域名（如 <code>artalk.cdd9527.cn</code>）配置 HTTPS，并通过 Nginx 实现反向代理，同时支持证书自动续期。</p>
+<hr>
+<h2 id="一、准备条件"><a href="#一、准备条件" class="headerlink" title="一、准备条件"></a>一、准备条件</h2><p>在开始之前，请确保满足以下条件：</p>
+<ul>
+<li><p>已拥有域名（如 <code>artalk.cdd9527.cn</code>）</p>
+</li>
+<li><p>域名已解析到服务器 IP</p>
+</li>
+<li><p>服务器已安装 Nginx</p>
+</li>
+<li><p>已开放端口：</p>
+<ul>
+<li>80（HTTP）</li>
+<li>443（HTTPS）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="二、安装-Certbot"><a href="#二、安装-Certbot" class="headerlink" title="二、安装 Certbot"></a>二、安装 Certbot</h2><h3 id="Ubuntu-Debian"><a href="#Ubuntu-Debian" class="headerlink" title="Ubuntu &#x2F; Debian"></a>Ubuntu &#x2F; Debian</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install certbot python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、申请-HTTPS-证书"><a href="#三、申请-HTTPS-证书" class="headerlink" title="三、申请 HTTPS 证书"></a>三、申请 HTTPS 证书</h2><p>执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot --nginx -d artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<h3 id="过程中会提示："><a href="#过程中会提示：" class="headerlink" title="过程中会提示："></a>过程中会提示：</h3><h4 id="1-输入邮箱"><a href="#1-输入邮箱" class="headerlink" title="1. 输入邮箱"></a>1. 输入邮箱</h4><p>用于证书续期提醒</p>
+<h4 id="2-是否同意协议"><a href="#2-是否同意协议" class="headerlink" title="2. 是否同意协议"></a>2. 是否同意协议</h4><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Y</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-是否接收邮件"><a href="#3-是否接收邮件" class="headerlink" title="3. 是否接收邮件"></a>3. 是否接收邮件</h4><p>建议：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">N</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="四、成功标志"><a href="#四、成功标志" class="headerlink" title="四、成功标志"></a>四、成功标志</h2><p>如果看到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Congratulations! Your certificate and chain have been saved</span><br></pre></td></tr></table></figure>
+
+<p>说明证书申请成功 ✅</p>
+<hr>
+<h2 id="五、Nginx-标准配置（推荐）"><a href="#五、Nginx-标准配置（推荐）" class="headerlink" title="五、Nginx 标准配置（推荐）"></a>五、Nginx 标准配置（推荐）</h2><h3 id="1️⃣-HTTP-自动跳转-HTTPS"><a href="#1️⃣-HTTP-自动跳转-HTTPS" class="headerlink" title="1️⃣ HTTP 自动跳转 HTTPS"></a>1️⃣ HTTP 自动跳转 HTTPS</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> <span class="number">301</span> https://<span class="variable">$host</span><span class="variable">$request_uri</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2️⃣-HTTPS-反向代理"><a href="#2️⃣-HTTPS-反向代理" class="headerlink" title="2️⃣ HTTPS + 反向代理"></a>2️⃣ HTTPS + 反向代理</h3><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">443</span> ssl;</span><br><span class="line">    <span class="attribute">server_name</span> artalk.cdd9527.cn;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_certificate</span> /etc/letsencrypt/live/artalk.cdd9527.cn/fullchain.pem;</span><br><span class="line">    <span class="attribute">ssl_certificate_key</span> /etc/letsencrypt/live/artalk.cdd9527.cn/privkey.pem;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">ssl_protocols</span> TLSv1.<span class="number">2</span> TLSv1.<span class="number">3</span>;</span><br><span class="line">    <span class="attribute">ssl_ciphers</span> HIGH:!aNULL:!MD5;</span><br><span class="line"></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:5006;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="六、访问效果"><a href="#六、访问效果" class="headerlink" title="六、访问效果"></a>六、访问效果</h2><p>现在访问：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<p>实际访问路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户 → Nginx(443) → 本地服务(5006)</span><br></pre></td></tr></table></figure>
+
+<p>👉 不再暴露端口，更安全</p>
+<hr>
+<h2 id="七、自动续期"><a href="#七、自动续期" class="headerlink" title="七、自动续期"></a>七、自动续期</h2><p>Certbot 会自动添加定时任务</p>
+<h3 id="手动测试："><a href="#手动测试：" class="headerlink" title="手动测试："></a>手动测试：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certbot renew --dry-run</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="八、常见问题"><a href="#八、常见问题" class="headerlink" title="八、常见问题"></a>八、常见问题</h2><h3 id="1️⃣-提示-nginx-插件不存在"><a href="#1️⃣-提示-nginx-插件不存在" class="headerlink" title="1️⃣ 提示 nginx 插件不存在"></a>1️⃣ 提示 nginx 插件不存在</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The requested nginx plugin does not appear to be installed</span><br></pre></td></tr></table></figure>
+
+<p>解决：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt install python3-certbot-nginx -y</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2️⃣-验证失败（80端口问题）"><a href="#2️⃣-验证失败（80端口问题）" class="headerlink" title="2️⃣ 验证失败（80端口问题）"></a>2️⃣ 验证失败（80端口问题）</h3><p>原因：</p>
+<ul>
+<li>80端口未开放</li>
+<li>被防火墙拦截</li>
+</ul>
+<p>解决：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ufw allow 80</span><br><span class="line">ufw allow 443</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3️⃣-域名解析错误"><a href="#3️⃣-域名解析错误" class="headerlink" title="3️⃣ 域名解析错误"></a>3️⃣ 域名解析错误</h3><p>检查：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping artalk.cdd9527.cn</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4️⃣-Nginx-配置错误"><a href="#4️⃣-Nginx-配置错误" class="headerlink" title="4️⃣ Nginx 配置错误"></a>4️⃣ Nginx 配置错误</h3><p>检查：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="九、进阶建议"><a href="#九、进阶建议" class="headerlink" title="九、进阶建议"></a>九、进阶建议</h2><h3 id="推荐优化："><a href="#推荐优化：" class="headerlink" title="推荐优化："></a>推荐优化：</h3><ul>
+<li>不暴露业务端口（如 5006）</li>
+<li>所有服务统一走 Nginx</li>
+<li>多域名统一管理</li>
+</ul>
+<hr>
+<h2 id="十、总结"><a href="#十、总结" class="headerlink" title="十、总结"></a>十、总结</h2><p>完整流程如下：</p>
+<ol>
+<li>安装 Certbot</li>
+<li>申请证书</li>
+<li>配置 Nginx</li>
+<li>开启 HTTPS</li>
+<li>自动续期</li>
+</ol>
+<p>👉 核心原则：</p>
+<ul>
+<li>80端口：用于跳转 + 验证</li>
+<li>443端口：用于正式服务</li>
+</ul>
+<hr>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+<li><a href="https://nginx.org/">https://nginx.org/</a></li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+        <tag>HTTPS</tag>
+        <tag>Certbot</tag>
+        <tag>反向代理</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu Linux 安装完整教程</title>
+    <url>/posts/10021-ubuntu-installation/</url>
+    <content><![CDATA[<h1 id="Ubuntu-Linux-安装完整教程"><a href="#Ubuntu-Linux-安装完整教程" class="headerlink" title="Ubuntu Linux 安装完整教程"></a>Ubuntu Linux 安装完整教程</h1><p>Ubuntu 是目前最流行的 Linux 发行版之一，以其友好的用户界面、强大的社区支持和稳定的系统性能而闻名。本教程将详细介绍 Ubuntu 的安装过程，无论是作为主系统、双系统还是在虚拟机中运行。</p>
+<h2 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h2><p>在开始安装之前，请确保你的计算机满足以下最低要求：</p>
+<ul>
+<li><strong>处理器</strong>：2 GHz 双核处理器或更高</li>
+<li><strong>内存</strong>：4 GB RAM（推荐 8 GB 或以上）</li>
+<li><strong>硬盘空间</strong>：25 GB 可用空间（推荐 50 GB 或以上）</li>
+<li><strong>显示器</strong>：1024×768 分辨率</li>
+<li><strong>启动介质</strong>：U盘（至少 4 GB）或 DVD</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="第一步：下载-Ubuntu-镜像"><a href="#第一步：下载-Ubuntu-镜像" class="headerlink" title="第一步：下载 Ubuntu 镜像"></a>第一步：下载 Ubuntu 镜像</h2><ol>
+<li>访问 <a href="https://ubuntu.com/download">Ubuntu 官网</a></li>
+<li>选择适合的版本：<ul>
+<li><strong>LTS 版本</strong>（长期支持版）：适合生产环境和普通用户，支持周期长达 5 年</li>
+<li><strong>最新版本</strong>：包含最新的特性和软件，支持周期较短</li>
+</ul>
+</li>
+<li>点击下载按钮，获取 ISO 镜像文件（约 2-4 GB）</li>
+</ol>
+<h2 id="第二步：制作启动-U-盘"><a href="#第二步：制作启动-U-盘" class="headerlink" title="第二步：制作启动 U 盘"></a>第二步：制作启动 U 盘</h2><h3 id="Windows-用户使用-Rufus"><a href="#Windows-用户使用-Rufus" class="headerlink" title="Windows 用户使用 Rufus"></a>Windows 用户使用 Rufus</h3><ol>
+<li>下载并安装 <a href="https://rufus.ie/">Rufus</a></li>
+<li>插入 U 盘（注意：制作过程会格式化 U 盘，请备份重要数据）</li>
+<li>打开 Rufus，选择：<ul>
+<li>设备：你的 U 盘</li>
+<li>引导类型选择：选择下载的 Ubuntu ISO 文件</li>
+<li>分区类型：根据你的计算机选择 MBR（传统 BIOS）或 GPT（UEFI）</li>
+</ul>
+</li>
+<li>点击“开始”，等待制作完成</li>
+</ol>
+<h3 id="macOS-用户使用-Etcher"><a href="#macOS-用户使用-Etcher" class="headerlink" title="macOS 用户使用 Etcher"></a>macOS 用户使用 Etcher</h3><ol>
+<li>下载并安装 <a href="https://www.balena.io/etcher/">Etcher</a></li>
+<li>插入 U 盘</li>
+<li>打开 Etcher，选择 ISO 文件，选择 U 盘，点击“Flash!”</li>
+<li>等待制作完成</li>
+</ol>
+<h2 id="第三步：启动安装程序"><a href="#第三步：启动安装程序" class="headerlink" title="第三步：启动安装程序"></a>第三步：启动安装程序</h2><ol>
+<li>重启计算机，进入 BIOS&#x2F;UEFI 设置（通常是按 F2、F10、F12 或 Delete 键）</li>
+<li>设置 U 盘为第一启动项</li>
+<li>保存设置并重启</li>
+</ol>
+<h2 id="第四步：安装-Ubuntu"><a href="#第四步：安装-Ubuntu" class="headerlink" title="第四步：安装 Ubuntu"></a>第四步：安装 Ubuntu</h2><h3 id="1-选择安装语言"><a href="#1-选择安装语言" class="headerlink" title="1. 选择安装语言"></a>1. 选择安装语言</h3><p>启动后选择“Try Ubuntu”测试或“Install Ubuntu”直接安装</p>
+<h3 id="2-选择键盘布局"><a href="#2-选择键盘布局" class="headerlink" title="2. 选择键盘布局"></a>2. 选择键盘布局</h3><p>默认选择“Chinese”即可</p>
+<h3 id="3-连接网络（可选）"><a href="#3-连接网络（可选）" class="headerlink" title="3. 连接网络（可选）"></a>3. 连接网络（可选）</h3><p>建议连接网络以下载更新和第三方软件</p>
+<h3 id="4-选择安装类型"><a href="#4-选择安装类型" class="headerlink" title="4. 选择安装类型"></a>4. 选择安装类型</h3><ul>
+<li><strong>正常安装</strong>：包含办公软件、媒体播放器等常用软件</li>
+<li><strong>最小安装</strong>：仅包含基本系统，适合自定义安装</li>
+<li><strong>其他选项</strong>：<ul>
+<li><strong>安装第三方软件</strong>：显卡驱动、媒体编码器等</li>
+<li><strong>下载更新</strong>：在安装过程中下载最新更新</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-分区设置（重要！）"><a href="#5-分区设置（重要！）" class="headerlink" title="5. 分区设置（重要！）"></a>5. 分区设置（重要！）</h3><h4 id="方案一：清除整个磁盘安装（单系统）"><a href="#方案一：清除整个磁盘安装（单系统）" class="headerlink" title="方案一：清除整个磁盘安装（单系统）"></a>方案一：清除整个磁盘安装（单系统）</h4><ul>
+<li>选择“清除整个磁盘并安装 Ubuntu”</li>
+<li>系统会自动创建所需分区</li>
+</ul>
+<h4 id="方案二：双系统安装"><a href="#方案二：双系统安装" class="headerlink" title="方案二：双系统安装"></a>方案二：双系统安装</h4><ul>
+<li>选择“其他选项”手动分区</li>
+<li>推荐分区方案：<ul>
+<li><strong>&#x2F;（根分区）</strong>：30-50 GB，EXT4 格式</li>
+<li><strong>swap（交换分区）</strong>：内存大小的 1-2 倍（如果内存 ≥ 8 GB 可不设）</li>
+<li><strong>&#x2F;home（家目录）</strong>：剩余空间，EXT4 格式（存储个人文件）</li>
+</ul>
+</li>
+</ul>
+<h4 id="分区示例："><a href="#分区示例：" class="headerlink" title="分区示例："></a>分区示例：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/dev/sda1  EFI系统分区  512 MB  FAT32</span><br><span class="line">/dev/sda2  /（根分区）  40 GB   EXT4</span><br><span class="line">/dev/sda3  /home       剩余空间 EXT4</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-设置时区"><a href="#6-设置时区" class="headerlink" title="6. 设置时区"></a>6. 设置时区</h3><p>在地图上点击上海或选择“Asia&#x2F;Shanghai”</p>
+<h3 id="7-创建用户账户"><a href="#7-创建用户账户" class="headerlink" title="7. 创建用户账户"></a>7. 创建用户账户</h3><ul>
+<li>输入你的姓名</li>
+<li>计算机名（会自动生成）</li>
+<li>用户名（用于登录）</li>
+<li>设置密码（建议设置强密码）</li>
+</ul>
+<h3 id="8-开始安装"><a href="#8-开始安装" class="headerlink" title="8. 开始安装"></a>8. 开始安装</h3><p>点击“安装”，等待安装完成（通常需要 20-40 分钟）</p>
+<h2 id="第五步：安装后配置"><a href="#第五步：安装后配置" class="headerlink" title="第五步：安装后配置"></a>第五步：安装后配置</h2><h3 id="1-更新系统"><a href="#1-更新系统" class="headerlink" title="1. 更新系统"></a>1. 更新系统</h3><p>安装完成后，首先更新系统：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-安装中文输入法"><a href="#2-安装中文输入法" class="headerlink" title="2. 安装中文输入法"></a>2. 安装中文输入法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ibus-pinyin</span><br><span class="line"><span class="comment"># 或安装搜狗输入法</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-安装常用软件"><a href="#3-安装常用软件" class="headerlink" title="3. 安装常用软件"></a>3. 安装常用软件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 浏览器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install firefox chromium-browser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 办公软件</span></span><br><span class="line"><span class="built_in">sudo</span> apt install libreoffice</span><br><span class="line"></span><br><span class="line"><span class="comment"># 媒体播放器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install vlc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开发工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install git vim build-essential</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-安装显卡驱动（如有需要）"><a href="#4-安装显卡驱动（如有需要）" class="headerlink" title="4. 安装显卡驱动（如有需要）"></a>4. 安装显卡驱动（如有需要）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查可用驱动</span></span><br><span class="line">ubuntu-drivers devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装推荐驱动</span></span><br><span class="line"><span class="built_in">sudo</span> ubuntu-drivers autoinstall</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-美化桌面（可选）"><a href="#5-美化桌面（可选）" class="headerlink" title="5. 美化桌面（可选）"></a>5. 美化桌面（可选）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 GNOME 优化工具</span></span><br><span class="line"><span class="built_in">sudo</span> apt install gnome-tweaks</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装扩展管理器</span></span><br><span class="line"><span class="built_in">sudo</span> apt install chrome-gnome-shell</span><br></pre></td></tr></table></figure>
+
+<h2 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h2><h3 id="Q-安装过程中卡住怎么办？"><a href="#Q-安装过程中卡住怎么办？" class="headerlink" title="Q: 安装过程中卡住怎么办？"></a>Q: 安装过程中卡住怎么办？</h3><p>A: 尝试以下方法：</p>
+<ol>
+<li>断开网络连接安装</li>
+<li>选择“安全图形模式”</li>
+<li>检查 ISO 文件完整性</li>
+</ol>
+<h3 id="Q-如何修复启动引导？"><a href="#Q-如何修复启动引导？" class="headerlink" title="Q: 如何修复启动引导？"></a>Q: 如何修复启动引导？</h3><p>A: 使用 Ubuntu 安装 U 盘启动，选择“试用 Ubuntu”，然后：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:yannubuntu/boot-repair</span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install boot-repair</span><br><span class="line">boot-repair</span><br></pre></td></tr></table></figure>
+
+<h3 id="Q-双系统时间错误怎么办？"><a href="#Q-双系统时间错误怎么办？" class="headerlink" title="Q: 双系统时间错误怎么办？"></a>Q: 双系统时间错误怎么办？</h3><p>A: 在 Ubuntu 中执行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Ubuntu 安装过程相对简单，但分区步骤需要谨慎操作。建议新手选择“清除整个磁盘安装”，而有经验的用户可以选择手动分区以更好地管理磁盘空间。</p>
+<p>安装完成后，Ubuntu 提供了一个稳定、安全且免费的操作系统环境，无论是日常使用还是开发工作都能胜任。</p>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a href="https://help.ubuntu.com/">Ubuntu 官方文档</a></li>
+<li><a href="https://forum.ubuntu.org.cn/">Ubuntu 中文论坛</a></li>
+<li><a href="https://linux.cn/">Linux 中国开源社区</a></li>
+</ul>
+<p>希望本教程能帮助你顺利安装 Ubuntu！如果在安装过程中遇到问题，欢迎在评论区留言讨论。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Ubuntu</tag>
+        <tag>安装教程</tag>
+        <tag>操作系统</tag>
       </tags>
   </entry>
 </search>
