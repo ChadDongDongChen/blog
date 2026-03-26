@@ -33,6 +33,8 @@
     <category term="运维" scheme="https://cdd9527.cn/categories/%E8%BF%90%E7%BB%B4/"/>
     
     
+    <category term="Linux" scheme="https://cdd9527.cn/tags/Linux/"/>
+    
     <category term="Nginx" scheme="https://cdd9527.cn/tags/Nginx/"/>
     
     <category term="HTTPS" scheme="https://cdd9527.cn/tags/HTTPS/"/>
@@ -40,8 +42,6 @@
     <category term="Certbot" scheme="https://cdd9527.cn/tags/Certbot/"/>
     
     <category term="反向代理" scheme="https://cdd9527.cn/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="Linux" scheme="https://cdd9527.cn/tags/Linux/"/>
     
   </entry>
   
@@ -275,32 +275,6 @@
   </entry>
   
   <entry>
-    <title>JVM学习</title>
-    <link href="https://cdd9527.cn/posts/undefined/"/>
-    <id>https://cdd9527.cn/posts/undefined/</id>
-    <published>2018-11-08T08:36:44.000Z</published>
-    <updated>2025-05-10T01:18:56.828Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://image.cdd9527.cn/20190415155529762441100.png" alt="20190415155529762441100.png"><br>#JVM简介<br>我们都知道 Java 源文件，通过编译器，能够生产相应的.Class 文件，也就是字节码文件， 而字节码文件又通过 Java 虚拟机中的解释器，编译成特定机器上的机器码 。</p><p>大概顺序是: Java 源文件—-&gt;编译器—-&gt;字节码文件—-&gt;JVM—-&gt;机器码</p><p>每一种平台的解释器是不同的，但是实现的虚拟机是相同的，这也就是 Java 为什么能够 跨平台的原因了 ，当一个程序从开始运行，这时虚拟机就开始实例化了，多个程序启动就会 存在多个虚拟机实例。程序退出或者关闭，则虚拟机实例消亡，<strong>多个虚拟机实例之间数据不能共享</strong>。<br><img src="http://image.cdd9527.cn/20190415155529814332449.png" alt="20190415155529814332449.png"></p><p>Hotspot JVM 后台运行的系统线程主要有下面几个:</p><ul><li>虚拟机线程 (VM thread)<BR><br>这个线程等待 JVM 到达安全点操作出现。这些操作必须要在独立的线程里执行，因为当 堆修改无法进行时，线程都需要 JVM 位于安全点。这些操作的类型有:stop-the- world 垃圾回收、线程栈 dump、线程暂停、线程偏向锁(biased locking)解除。</li><li>周期性任务线程<BR><br>这线程负责定时器事件(也就是中断)，用来调度周期性操作的执行。</li><li>GC 线程<BR><br>这些线程支持 JVM 中不同的垃圾回收活动。</li><li>编译器线程<BR><br>这些线程在运行时将字节码动态编译成本地平台相关的机器码。</li><li>信号分发线程<BR><br>这个线程接收发送到 JVM 的信号并调用适当的 JVM 方法处理。</li></ul><h1 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h1><p>这里所说的线程指程序执行过程中的一个线程实体。JVM 允许一个应用并发执行多个线程。<br>Hotspot JVM 中的 Java 线程与原生操作系统线程有直接的映射关系。<code>当线程本地存储、缓 冲区分配、同步对象、栈、程序计数器等准备好以后，就会创建一个操作系统原生线程。 Java 线程结束，原生线程随之被回收。操作系统负责调度所有线程，并把它们分配到任何可 用的 CPU 上。当原生线程初始化完毕，就会调用 Java 线程的 run() 方法。当线程结束时，会释放原生线程和 Java 线程的所有资源。</code></p><blockquote><p>所谓虚拟机，就足一台虚拟的机器。它是一款软件，用来执行一系列虚拟计算机指令，大体上虚拟机可以分为系统虚拟机和程序虚拟机，大名鼎鼎的Visual Box、VMare就A4于系统虚拟机，他们完全是对物理计算机的仿真，提供个可运行完整操作系统的软件f台•程序虚拟机典犁代表就是Java虚拟机，它专f〗为执行单个U•算机程序iW设汁，在java虚拟机中执行的指令我们成为java字节码指令•无论是系统虚拟机还是程序虚拟机，在上面运行的软件都被限制子虚拟机提供的资源中.Java发展至今，出现过很多虚拟机,最初Sun使用的一款叫Classic的Java虚拟机，到现在引用最广泛的是HotSpot虚拟机，除了Sun意外，还有BEA的JRockit, 目前JRockit和<br>  Hotspot都被Oracle收入旗下，大有整合的趋势.</p></blockquote><h2 id="类加载子系统"><a href="#类加载子系统" class="headerlink" title="类加载子系统"></a>类加载子系统</h2><p>负责从文件系统或者网络中加载Class信息，加载的信息存放在一块称之为方法区的内存空间。</p><h2 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h2><p>就是存放类信息、常量信息、常量池信息、包括字符串字面量和数字常量等。</p><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>在java虚拟机启动的时候建立java堆，它是java程序最主要的内存工作区域，几乎所有的对象实例都存放到java堆中，堆空间是所有线程共享的。</p><h2 id="直接内存"><a href="#直接内存" class="headerlink" title="直接内存"></a>直接内存</h2><p>java的NIO库允许java程序使用直接内存，从而提高性能，通常直接内存速度会优于java堆。读写频繁的场合可能会考虑使用。</p><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><p>每个虚拟机线程都有一个私有的栈，一个线程的java栈在线程创建的时候被创建，java栈中保存着局部变量、方法参数、同时java的方法调用、返回值等。</p><h2 id="本地方法栈"><a href="#本地方法栈" class="headerlink" title="本地方法栈"></a>本地方法栈</h2><p>本地方法栈和java栈非常类似，最大不同为本地方法栈用于本地方法调用。java虚拟机允许java直接调用本地方法（通常使用C编写）</p><h2 id="垃圾收集系统"><a href="#垃圾收集系统" class="headerlink" title="垃圾收集系统"></a>垃圾收集系统</h2><p>垃圾收集系统是java的核心，也是必不可少的，java有一套自己进行垃圾清理的机制，开发人员无需手动清理。</p><h2 id="PC寄存器"><a href="#PC寄存器" class="headerlink" title="PC寄存器"></a>PC寄存器</h2><p>PC(Program Counter)寄存器也是每个线程私有的空间，java虚拟机会为每个线程创建PC寄存器，在任意时刻，一个java线程总是在执行一个方法，这个方法被称为当前方法，如果当前方法不是本地方法，PC寄存器就会执行当前正在被执行的指令，如果是本地方法，则PC寄存器值为undefined，寄存器存放入当前执行环节指针、程序计数器、操作栈指针、计算的变量指针等信息。</p><h2 id="执行引擎组件"><a href="#执行引擎组件" class="headerlink" title="执行引擎组件"></a>执行引擎组件</h2><p>虚拟机最核心的组件就是执行引擎了，它负责执行虚拟机的字节码。一般会先进行编译成机器码后执行</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://image.cdd9527.cn/20190415155529762441100.png&quot; alt=&quot;20190415155529762441100.png&quot;&gt;&lt;br&gt;#JVM简介&lt;br&gt;我们都知道 Java 源文件，通过编译器，能够生产相</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://cdd9527.cn/categories/java/"/>
-    
-    
-    <category term="java" scheme="https://cdd9527.cn/tags/java/"/>
-    
-    <category term="jvm" scheme="https://cdd9527.cn/tags/jvm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>日志体系</title>
     <link href="https://cdd9527.cn/posts/undefined/"/>
     <id>https://cdd9527.cn/posts/undefined/</id>
@@ -328,6 +302,32 @@
     <category term="java" scheme="https://cdd9527.cn/tags/java/"/>
     
     <category term="日志" scheme="https://cdd9527.cn/tags/%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JVM学习</title>
+    <link href="https://cdd9527.cn/posts/undefined/"/>
+    <id>https://cdd9527.cn/posts/undefined/</id>
+    <published>2018-11-08T08:36:44.000Z</published>
+    <updated>2025-05-10T01:18:56.828Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://image.cdd9527.cn/20190415155529762441100.png" alt="20190415155529762441100.png"><br>#JVM简介<br>我们都知道 Java 源文件，通过编译器，能够生产相应的.Class 文件，也就是字节码文件， 而字节码文件又通过 Java 虚拟机中的解释器，编译成特定机器上的机器码 。</p><p>大概顺序是: Java 源文件—-&gt;编译器—-&gt;字节码文件—-&gt;JVM—-&gt;机器码</p><p>每一种平台的解释器是不同的，但是实现的虚拟机是相同的，这也就是 Java 为什么能够 跨平台的原因了 ，当一个程序从开始运行，这时虚拟机就开始实例化了，多个程序启动就会 存在多个虚拟机实例。程序退出或者关闭，则虚拟机实例消亡，<strong>多个虚拟机实例之间数据不能共享</strong>。<br><img src="http://image.cdd9527.cn/20190415155529814332449.png" alt="20190415155529814332449.png"></p><p>Hotspot JVM 后台运行的系统线程主要有下面几个:</p><ul><li>虚拟机线程 (VM thread)<BR><br>这个线程等待 JVM 到达安全点操作出现。这些操作必须要在独立的线程里执行，因为当 堆修改无法进行时，线程都需要 JVM 位于安全点。这些操作的类型有:stop-the- world 垃圾回收、线程栈 dump、线程暂停、线程偏向锁(biased locking)解除。</li><li>周期性任务线程<BR><br>这线程负责定时器事件(也就是中断)，用来调度周期性操作的执行。</li><li>GC 线程<BR><br>这些线程支持 JVM 中不同的垃圾回收活动。</li><li>编译器线程<BR><br>这些线程在运行时将字节码动态编译成本地平台相关的机器码。</li><li>信号分发线程<BR><br>这个线程接收发送到 JVM 的信号并调用适当的 JVM 方法处理。</li></ul><h1 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h1><p>这里所说的线程指程序执行过程中的一个线程实体。JVM 允许一个应用并发执行多个线程。<br>Hotspot JVM 中的 Java 线程与原生操作系统线程有直接的映射关系。<code>当线程本地存储、缓 冲区分配、同步对象、栈、程序计数器等准备好以后，就会创建一个操作系统原生线程。 Java 线程结束，原生线程随之被回收。操作系统负责调度所有线程，并把它们分配到任何可 用的 CPU 上。当原生线程初始化完毕，就会调用 Java 线程的 run() 方法。当线程结束时，会释放原生线程和 Java 线程的所有资源。</code></p><blockquote><p>所谓虚拟机，就足一台虚拟的机器。它是一款软件，用来执行一系列虚拟计算机指令，大体上虚拟机可以分为系统虚拟机和程序虚拟机，大名鼎鼎的Visual Box、VMare就A4于系统虚拟机，他们完全是对物理计算机的仿真，提供个可运行完整操作系统的软件f台•程序虚拟机典犁代表就是Java虚拟机，它专f〗为执行单个U•算机程序iW设汁，在java虚拟机中执行的指令我们成为java字节码指令•无论是系统虚拟机还是程序虚拟机，在上面运行的软件都被限制子虚拟机提供的资源中.Java发展至今，出现过很多虚拟机,最初Sun使用的一款叫Classic的Java虚拟机，到现在引用最广泛的是HotSpot虚拟机，除了Sun意外，还有BEA的JRockit, 目前JRockit和<br>  Hotspot都被Oracle收入旗下，大有整合的趋势.</p></blockquote><h2 id="类加载子系统"><a href="#类加载子系统" class="headerlink" title="类加载子系统"></a>类加载子系统</h2><p>负责从文件系统或者网络中加载Class信息，加载的信息存放在一块称之为方法区的内存空间。</p><h2 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h2><p>就是存放类信息、常量信息、常量池信息、包括字符串字面量和数字常量等。</p><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>在java虚拟机启动的时候建立java堆，它是java程序最主要的内存工作区域，几乎所有的对象实例都存放到java堆中，堆空间是所有线程共享的。</p><h2 id="直接内存"><a href="#直接内存" class="headerlink" title="直接内存"></a>直接内存</h2><p>java的NIO库允许java程序使用直接内存，从而提高性能，通常直接内存速度会优于java堆。读写频繁的场合可能会考虑使用。</p><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><p>每个虚拟机线程都有一个私有的栈，一个线程的java栈在线程创建的时候被创建，java栈中保存着局部变量、方法参数、同时java的方法调用、返回值等。</p><h2 id="本地方法栈"><a href="#本地方法栈" class="headerlink" title="本地方法栈"></a>本地方法栈</h2><p>本地方法栈和java栈非常类似，最大不同为本地方法栈用于本地方法调用。java虚拟机允许java直接调用本地方法（通常使用C编写）</p><h2 id="垃圾收集系统"><a href="#垃圾收集系统" class="headerlink" title="垃圾收集系统"></a>垃圾收集系统</h2><p>垃圾收集系统是java的核心，也是必不可少的，java有一套自己进行垃圾清理的机制，开发人员无需手动清理。</p><h2 id="PC寄存器"><a href="#PC寄存器" class="headerlink" title="PC寄存器"></a>PC寄存器</h2><p>PC(Program Counter)寄存器也是每个线程私有的空间，java虚拟机会为每个线程创建PC寄存器，在任意时刻，一个java线程总是在执行一个方法，这个方法被称为当前方法，如果当前方法不是本地方法，PC寄存器就会执行当前正在被执行的指令，如果是本地方法，则PC寄存器值为undefined，寄存器存放入当前执行环节指针、程序计数器、操作栈指针、计算的变量指针等信息。</p><h2 id="执行引擎组件"><a href="#执行引擎组件" class="headerlink" title="执行引擎组件"></a>执行引擎组件</h2><p>虚拟机最核心的组件就是执行引擎了，它负责执行虚拟机的字节码。一般会先进行编译成机器码后执行</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://image.cdd9527.cn/20190415155529762441100.png&quot; alt=&quot;20190415155529762441100.png&quot;&gt;&lt;br&gt;#JVM简介&lt;br&gt;我们都知道 Java 源文件，通过编译器，能够生产相</summary>
+      
+    
+    
+    
+    <category term="java" scheme="https://cdd9527.cn/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://cdd9527.cn/tags/java/"/>
+    
+    <category term="jvm" scheme="https://cdd9527.cn/tags/jvm/"/>
     
   </entry>
   
