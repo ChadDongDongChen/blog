@@ -45,54 +45,6 @@ hexo s //server的缩写
       </tags>
   </entry>
   <entry>
-    <title>Markdown 编辑器语法指南</title>
-    <url>/posts/10002-Markdown/</url>
-    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
-<span id="more"></span>
-
-<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
-<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
-<pre><code>def g(x):
-    yield from range(x, 0, -1)
-yield from range(x)
-</code></pre>
-<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
-<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
-<pre><code>标题1
-======
-
-标题2
------
-## 大标题 ##
-### 小标题 ###
-</code></pre>
-<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
-**粗体文本**    __粗体文本__
-***粗斜体文本***    ___粗斜体文本___
-</code></pre>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
-<pre><code>文字链接 [链接名称](http://链接网址)
-网址链接 &lt;http://链接网址&gt;
-</code></pre>
-<p>高级链接技巧</p>
-<pre><code>这个链接用 1 作为网址变量 [Google][1].
-这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
-然后在文档的结尾为变量赋值（网址）
-[1]: http://www.google.com/
-[yahoo]: http://www.yahoo.com/
-</code></pre>
-<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
-]]></content>
-      <tags>
-        <tag>.md</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo整合emoji</title>
     <url>/posts/10004-emoji/</url>
     <content><![CDATA[<p>想不想让你的博客支持这样的表情？</p>
@@ -166,6 +118,54 @@ yield from range(x)
       </tags>
   </entry>
   <entry>
+    <title>Markdown 编辑器语法指南</title>
+    <url>/posts/10002-Markdown/</url>
+    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
+<span id="more"></span>
+
+<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
+<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
+<pre><code>def g(x):
+    yield from range(x, 0, -1)
+yield from range(x)
+</code></pre>
+<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
+<pre><code>标题1
+======
+
+标题2
+-----
+## 大标题 ##
+### 小标题 ###
+</code></pre>
+<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
+**粗体文本**    __粗体文本__
+***粗斜体文本***    ___粗斜体文本___
+</code></pre>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
+<pre><code>文字链接 [链接名称](http://链接网址)
+网址链接 &lt;http://链接网址&gt;
+</code></pre>
+<p>高级链接技巧</p>
+<pre><code>这个链接用 1 作为网址变量 [Google][1].
+这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
+然后在文档的结尾为变量赋值（网址）
+[1]: http://www.google.com/
+[yahoo]: http://www.yahoo.com/
+</code></pre>
+<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
+]]></content>
+      <tags>
+        <tag>.md</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用mongodb</title>
     <url>/posts/10005-mongodb/</url>
     <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
@@ -219,6 +219,180 @@ yield from range(x)
       <tags>
         <tag>mongodb</tag>
         <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>湖南茶陵可可农家:家的味道</title>
+    <url>/posts/10008-keke/</url>
+    <content><![CDATA[<p>作为标准的吃货一枚</p>
+<p>对美食那是从来都不愿错过的</p>
+<p>在咱们茶陵</p>
+<p>就有很多好吃的农家手工小吃</p>
+<p>下面就大家去看一看</p>
+<p>不知道是否有你也爱吃的</p>
+<span id="more"></span>
+
+<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
+<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
+<p>正题来了,我觉得好吃的都列在下面了。</p>
+<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
+<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
+<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
+<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
+<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
+<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
+<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
+<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
+<p>看了后是不是一直在吞口水，哈哈~</p>
+<p>以上全都是手工制作</p>
+<p>来看看制作的花絮吧</p>
+<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
+<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
+</li>
+<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
+</li>
+<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
+</li>
+<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
+</li>
+</ul>
+<p>想吃的话，赶紧找我或者下面这个人吧</p>
+<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>可可农家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超级实用的谷歌插件</title>
+    <url>/posts/10007-google/</url>
+    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
+<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
+<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
+<li>新浪微博图床 免费的图片服务器</li>
+<li>Proxy SwitchyOmega 一个自动代理的工具</li>
+</ol>
+<span id="more"></span>
+<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
+]]></content>
+      <tags>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Centos安装msql并可以远程连接</title>
+    <url>/posts/10009-mysql/</url>
+    <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
+<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p>（由于yum源上没有mysql-server。所以必须去官网下载，这里 我们用wget命令，直接获取）</p>
+<pre><code>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+</code></pre>
+<span id="more"></span>
+
+<h1 id="安装mysql的依赖包"><a href="#安装mysql的依赖包" class="headerlink" title="安装mysql的依赖包"></a>安装mysql的依赖包</h1><pre><code>yum -y install mysql57-community-release-el7-10.noarch.rpm
+</code></pre>
+<h1 id="安装mysql数据库"><a href="#安装mysql数据库" class="headerlink" title="安装mysql数据库"></a>安装mysql数据库</h1><pre><code>yum -y install mysql-community-server
+</code></pre>
+<h1 id="完成安装，重启mysql"><a href="#完成安装，重启mysql" class="headerlink" title="完成安装，重启mysql"></a>完成安装，重启mysql</h1><pre><code>systemctl restart mysqld 
+</code></pre>
+<p>此时MySQL已经开始正常运行，不过要想进入MySQL还得先找出此时root用户的密码，通过如下命令可以在日志文件中找出密码：</p>
+<pre><code>grep &quot;password&quot; /var/log/mysqld.log
+</code></pre>
+<h1 id="复制粘贴上边的密码进入数据库"><a href="#复制粘贴上边的密码进入数据库" class="headerlink" title="复制粘贴上边的密码进入数据库"></a>复制粘贴上边的密码进入数据库</h1><pre><code>mysql -uroot -p
+</code></pre>
+<p>输入初始密码，此时不能做任何事情，因为MySQL默认必须修改密码之后才能操作数据库修改密码命令：<br>    ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123&#39;;</p>
+<h1 id="解决报错"><a href="#解决报错" class="headerlink" title="解决报错"></a>解决报错</h1><p>以上报错是说新设置的密码过于简单，解决方式：<br>&#x2F;&#x2F;首先按照默认密码格式复杂度更改 </p>
+<h1 id="查看MySQL完整的初始密码规则"><a href="#查看MySQL完整的初始密码规则" class="headerlink" title="查看MySQL完整的初始密码规则"></a>查看MySQL完整的初始密码规则</h1><p>查看MySQL完整的初始密码规则，查看的前提是必须先用ALTER USER命令更改过密码</p>
+<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
+</code></pre>
+<h1 id="修改MySQL默认策略和密码长度"><a href="#修改MySQL默认策略和密码长度" class="headerlink" title="修改MySQL默认策略和密码长度"></a>修改MySQL默认策略和密码长度</h1><p>因为当前的密码太复杂不方便后期做实验，所以使用命令修改密码策略两种方式：</p>
+<pre><code>set global validate_password_policy=0;
+set global validate_password_policy=LOW;
+</code></pre>
+<p>注：密码策略分四种<br>1、OFF（关闭） 2、LOW（低） 3、MEDIUM（中） 4、STRONG（强）</p>
+<p>修改密码长度</p>
+<p>上边改完策略之后我们在改长度<br>    SET GLOBAL validate_password_length&#x3D;4;</p>
+<h1 id="查看密码规则"><a href="#查看密码规则" class="headerlink" title="查看密码规则"></a>查看密码规则</h1><p>都改完之后查看密码规则</p>
+<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
+</code></pre>
+<p>接下来就可以将刚才的复杂密码改为简单的四位的密码了；</p>
+<h1 id="卸载安装源自动更新"><a href="#卸载安装源自动更新" class="headerlink" title="卸载安装源自动更新"></a>卸载安装源自动更新</h1><p>此时还有一个问题，就是因为安装了Yum Repository，以后每次yum操作都会自动更新，因为当前数据库已安装完成，所以把这个卸载掉：</p>
+<pre><code>yum remove mysql57-community-release.noarch
+</code></pre>
+<h1 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h1><pre><code>mysql_secure_installation
+</code></pre>
+<p>注：执行完初始化命令后需要输入数据库root用户密码，然后默认如上截图一路回车即可。（以上截图问题也可根据自己实际情况进行选择）</p>
+<h1 id="开启MySQL远程访问权限-允许远程连接"><a href="#开启MySQL远程访问权限-允许远程连接" class="headerlink" title="开启MySQL远程访问权限 允许远程连接"></a>开启MySQL远程访问权限 允许远程连接</h1><h2 id="登陆mysql数据库"><a href="#登陆mysql数据库" class="headerlink" title="登陆mysql数据库"></a>登陆mysql数据库</h2><pre><code>mysql -u root -p
+</code></pre>
+<h2 id="查看user表"><a href="#查看user表" class="headerlink" title="查看user表"></a>查看user表</h2><pre><code>use mysql
+select host,user,password from user;
+</code></pre>
+<p>可以看到在user表中已创建的root用户。host字段表示登录的主机，其值可以用IP，也可用主机名，有时想用本地IP登录，那么可以将以上的Host值改为自己的Ip即可。</p>
+<h2 id="实现远程连接-授权法"><a href="#实现远程连接-授权法" class="headerlink" title="实现远程连接(授权法)"></a>实现远程连接(授权法)</h2><p>将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器，建议在开发时设为%。将权限改为ALL PRIVILEGES</p>
+<pre><code>grant all privileges  on *.* to root@&#39;%&#39; identified by &quot;你的密码&quot;;
+flush privileges;
+select host,user,password from user;
+</code></pre>
+<h2 id="实现远程连接（改表法）"><a href="#实现远程连接（改表法）" class="headerlink" title="实现远程连接（改表法）"></a>实现远程连接（改表法）</h2><pre><code>update user set host = ’%’ where user = ’root’;
+</code></pre>
+<h1 id="Linux下彻底卸载mysql详解"><a href="#Linux下彻底卸载mysql详解" class="headerlink" title="Linux下彻底卸载mysql详解"></a>Linux下彻底卸载mysql详解</h1><p>使用以下命令查看当前安装mysql情况，查找以前是否装有mysql</p>
+<pre><code>rpm -qa|grep -i mysql 
+</code></pre>
+<h2 id="停止mysql"><a href="#停止mysql" class="headerlink" title="停止mysql"></a>停止mysql</h2><pre><code>systemctl stop mysqld 
+</code></pre>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 
+</code></pre>
+<p>如果提示依赖包错误，则使用以下命令尝试</p>
+<pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 --nodeps 
+</code></pre>
+<p>如果提示错误：error: %preun(xxxxxx) scriptlet failed, exit status 1</p>
+<pre><code>rpm -e --noscripts MySQL-client-5.5.25a-1.rhel5 
+</code></pre>
+<h2 id="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"><a href="#查找之前老版本mysql的目录、并且删除老版本mysql的文件和库" class="headerlink" title="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"></a>查找之前老版本mysql的目录、并且删除老版本mysql的文件和库</h2><pre><code>find / -name mysql
+rm -rf /var/lib/mysql
+</code></pre>
+<p>注意：卸载后&#x2F;etc&#x2F;my.cnf不会删除，需要进行手工删除</p>
+<pre><code>rm -rf /etc/my.cnf 
+</code></pre>
+<h2 id="再次查找机器是否安装mysql"><a href="#再次查找机器是否安装mysql" class="headerlink" title="再次查找机器是否安装mysql"></a>再次查找机器是否安装mysql</h2><pre><code>rpm -qa|grep -i mysql 
+</code></pre>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日志体系</title>
+    <url>/posts/10012-log/</url>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
+</ol>
+<span id="more"></span>
+
+<p>未完待续！</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -432,211 +606,37 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
-    <title>超级实用的谷歌插件</title>
-    <url>/posts/10007-google/</url>
-    <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
-<li>AdBlock 当之无愧的NO.1能拦截所有的广告，包括播放器的广告</li>
-<li>Tampermonkey 捣蛋的猴子？？我一般用来破解百度云盘下载限速用的，里面有各种各样的脚本。</li>
-<li>新浪微博图床 免费的图片服务器</li>
-<li>Proxy SwitchyOmega 一个自动代理的工具</li>
+    <title>spring笔记</title>
+    <url>/posts/10013-spring/</url>
+    <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
+<p>Spring可以让您从“plain old Java objects”（POJO）中构建应用程序和通过非侵入性的POJO实现企业应用服务。此功能适用于Java SE的编程模型，全部的或部分的适应Java EE模型。</p>
+<p>中文文档API:<a href="https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html">https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html</a></p>
+<span id="more"></span>
+
+<h1 id="spring特点"><a href="#spring特点" class="headerlink" title="spring特点"></a>spring特点</h1><ol>
+<li>轻量级</li>
+<li>控制反转<ul>
+<li><p>依赖注入和控制反转</p>
+<p>Spring框架控制反转（IOC）组件通过提供一系列的标准化的方法把完全不同的组件组合成一个能够使用的应用程序来解决这个问题。Spring框架把形式化的设计模式编写为优秀的对象，你可以容易的集成到自己的应用程序中。许多组织和机构使用Spring框架，以这种方式(使用Spring的模式对象)来设计健壮的，可维护的应用程序。</p>
+<p>通俗易懂的一个回答:<a href="https://www.zhihu.com/question/32108444">https://www.zhihu.com/question/32108444</a>.</p>
+</li>
+</ul>
+</li>
+<li>面向切面</li>
+<li>容器</li>
+<li>框架集合<br><img src="http://image.cdd9527.cn/20190505155703276180877.png" alt="20190505155703276180877.png"></li>
 </ol>
-<span id="more"></span>
-<p>目前用的最多的就这四个，以后还有好东西再更新。:smile:</p>
-]]></content>
-      <tags>
-        <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>湖南茶陵可可农家:家的味道</title>
-    <url>/posts/10008-keke/</url>
-    <content><![CDATA[<p>作为标准的吃货一枚</p>
-<p>对美食那是从来都不愿错过的</p>
-<p>在咱们茶陵</p>
-<p>就有很多好吃的农家手工小吃</p>
-<p>下面就大家去看一看</p>
-<p>不知道是否有你也爱吃的</p>
-<span id="more"></span>
-
-<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
-<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
-<p>正题来了,我觉得好吃的都列在下面了。</p>
-<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
-<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
-<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
-<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
-<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
-<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
-<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
-<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
-<p>看了后是不是一直在吞口水，哈哈~</p>
-<p>以上全都是手工制作</p>
-<p>来看看制作的花絮吧</p>
-<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
-<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
-</li>
-<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
-</li>
-<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
-</li>
-<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
-</li>
-</ul>
-<p>想吃的话，赶紧找我或者下面这个人吧</p>
-<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>可可农家</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>和吕:高山茶籽油</title>
-    <url>/posts/10010-chayou/</url>
-    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
-<span id="more"></span>
-<ul>
-<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
-<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
-</ul>
-<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
-<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
-<ul>
-<li>保护皮肤</li>
-<li>减肥功效</li>
-<li>去除妊娠纹</li>
-<li>防眼角皱纹</li>
-<li>美白护肤</li>
-<li>治疗暗疮</li>
-<li>保持女性的体态美</li>
-<li>补充维生素</li>
-</ul>
-<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
-<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
-<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
-<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>和吕</tag>
-        <tag>茶籽油</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Centos安装msql并可以远程连接</title>
-    <url>/posts/10009-mysql/</url>
-    <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
-<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p>（由于yum源上没有mysql-server。所以必须去官网下载，这里 我们用wget命令，直接获取）</p>
-<pre><code>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
-</code></pre>
-<span id="more"></span>
-
-<h1 id="安装mysql的依赖包"><a href="#安装mysql的依赖包" class="headerlink" title="安装mysql的依赖包"></a>安装mysql的依赖包</h1><pre><code>yum -y install mysql57-community-release-el7-10.noarch.rpm
-</code></pre>
-<h1 id="安装mysql数据库"><a href="#安装mysql数据库" class="headerlink" title="安装mysql数据库"></a>安装mysql数据库</h1><pre><code>yum -y install mysql-community-server
-</code></pre>
-<h1 id="完成安装，重启mysql"><a href="#完成安装，重启mysql" class="headerlink" title="完成安装，重启mysql"></a>完成安装，重启mysql</h1><pre><code>systemctl restart mysqld 
-</code></pre>
-<p>此时MySQL已经开始正常运行，不过要想进入MySQL还得先找出此时root用户的密码，通过如下命令可以在日志文件中找出密码：</p>
-<pre><code>grep &quot;password&quot; /var/log/mysqld.log
-</code></pre>
-<h1 id="复制粘贴上边的密码进入数据库"><a href="#复制粘贴上边的密码进入数据库" class="headerlink" title="复制粘贴上边的密码进入数据库"></a>复制粘贴上边的密码进入数据库</h1><pre><code>mysql -uroot -p
-</code></pre>
-<p>输入初始密码，此时不能做任何事情，因为MySQL默认必须修改密码之后才能操作数据库修改密码命令：<br>    ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123&#39;;</p>
-<h1 id="解决报错"><a href="#解决报错" class="headerlink" title="解决报错"></a>解决报错</h1><p>以上报错是说新设置的密码过于简单，解决方式：<br>&#x2F;&#x2F;首先按照默认密码格式复杂度更改 </p>
-<h1 id="查看MySQL完整的初始密码规则"><a href="#查看MySQL完整的初始密码规则" class="headerlink" title="查看MySQL完整的初始密码规则"></a>查看MySQL完整的初始密码规则</h1><p>查看MySQL完整的初始密码规则，查看的前提是必须先用ALTER USER命令更改过密码</p>
-<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
-</code></pre>
-<h1 id="修改MySQL默认策略和密码长度"><a href="#修改MySQL默认策略和密码长度" class="headerlink" title="修改MySQL默认策略和密码长度"></a>修改MySQL默认策略和密码长度</h1><p>因为当前的密码太复杂不方便后期做实验，所以使用命令修改密码策略两种方式：</p>
-<pre><code>set global validate_password_policy=0;
-set global validate_password_policy=LOW;
-</code></pre>
-<p>注：密码策略分四种<br>1、OFF（关闭） 2、LOW（低） 3、MEDIUM（中） 4、STRONG（强）</p>
-<p>修改密码长度</p>
-<p>上边改完策略之后我们在改长度<br>    SET GLOBAL validate_password_length&#x3D;4;</p>
-<h1 id="查看密码规则"><a href="#查看密码规则" class="headerlink" title="查看密码规则"></a>查看密码规则</h1><p>都改完之后查看密码规则</p>
-<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
-</code></pre>
-<p>接下来就可以将刚才的复杂密码改为简单的四位的密码了；</p>
-<h1 id="卸载安装源自动更新"><a href="#卸载安装源自动更新" class="headerlink" title="卸载安装源自动更新"></a>卸载安装源自动更新</h1><p>此时还有一个问题，就是因为安装了Yum Repository，以后每次yum操作都会自动更新，因为当前数据库已安装完成，所以把这个卸载掉：</p>
-<pre><code>yum remove mysql57-community-release.noarch
-</code></pre>
-<h1 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h1><pre><code>mysql_secure_installation
-</code></pre>
-<p>注：执行完初始化命令后需要输入数据库root用户密码，然后默认如上截图一路回车即可。（以上截图问题也可根据自己实际情况进行选择）</p>
-<h1 id="开启MySQL远程访问权限-允许远程连接"><a href="#开启MySQL远程访问权限-允许远程连接" class="headerlink" title="开启MySQL远程访问权限 允许远程连接"></a>开启MySQL远程访问权限 允许远程连接</h1><h2 id="登陆mysql数据库"><a href="#登陆mysql数据库" class="headerlink" title="登陆mysql数据库"></a>登陆mysql数据库</h2><pre><code>mysql -u root -p
-</code></pre>
-<h2 id="查看user表"><a href="#查看user表" class="headerlink" title="查看user表"></a>查看user表</h2><pre><code>use mysql
-select host,user,password from user;
-</code></pre>
-<p>可以看到在user表中已创建的root用户。host字段表示登录的主机，其值可以用IP，也可用主机名，有时想用本地IP登录，那么可以将以上的Host值改为自己的Ip即可。</p>
-<h2 id="实现远程连接-授权法"><a href="#实现远程连接-授权法" class="headerlink" title="实现远程连接(授权法)"></a>实现远程连接(授权法)</h2><p>将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器，建议在开发时设为%。将权限改为ALL PRIVILEGES</p>
-<pre><code>grant all privileges  on *.* to root@&#39;%&#39; identified by &quot;你的密码&quot;;
-flush privileges;
-select host,user,password from user;
-</code></pre>
-<h2 id="实现远程连接（改表法）"><a href="#实现远程连接（改表法）" class="headerlink" title="实现远程连接（改表法）"></a>实现远程连接（改表法）</h2><pre><code>update user set host = ’%’ where user = ’root’;
-</code></pre>
-<h1 id="Linux下彻底卸载mysql详解"><a href="#Linux下彻底卸载mysql详解" class="headerlink" title="Linux下彻底卸载mysql详解"></a>Linux下彻底卸载mysql详解</h1><p>使用以下命令查看当前安装mysql情况，查找以前是否装有mysql</p>
-<pre><code>rpm -qa|grep -i mysql 
-</code></pre>
-<h2 id="停止mysql"><a href="#停止mysql" class="headerlink" title="停止mysql"></a>停止mysql</h2><pre><code>systemctl stop mysqld 
-</code></pre>
-<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 
-</code></pre>
-<p>如果提示依赖包错误，则使用以下命令尝试</p>
-<pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 --nodeps 
-</code></pre>
-<p>如果提示错误：error: %preun(xxxxxx) scriptlet failed, exit status 1</p>
-<pre><code>rpm -e --noscripts MySQL-client-5.5.25a-1.rhel5 
-</code></pre>
-<h2 id="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"><a href="#查找之前老版本mysql的目录、并且删除老版本mysql的文件和库" class="headerlink" title="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"></a>查找之前老版本mysql的目录、并且删除老版本mysql的文件和库</h2><pre><code>find / -name mysql
-rm -rf /var/lib/mysql
-</code></pre>
-<p>注意：卸载后&#x2F;etc&#x2F;my.cnf不会删除，需要进行手工删除</p>
-<pre><code>rm -rf /etc/my.cnf 
-</code></pre>
-<h2 id="再次查找机器是否安装mysql"><a href="#再次查找机器是否安装mysql" class="headerlink" title="再次查找机器是否安装mysql"></a>再次查找机器是否安装mysql</h2><pre><code>rpm -qa|grep -i mysql 
-</code></pre>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>mysql</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日志体系</title>
-    <url>/posts/10012-log/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
-</ol>
-<span id="more"></span>
-
-<p>未完待续！</p>
+<h1 id="spring核心组件"><a href="#spring核心组件" class="headerlink" title="spring核心组件"></a>spring核心组件</h1><p><img src="http://image.cdd9527.cn/20190505155703278433827.png" alt="20190505155703278433827.png"></p>
+<h1 id="spring常用模块"><a href="#spring常用模块" class="headerlink" title="spring常用模块"></a>spring常用模块</h1><p><img src="http://image.cdd9527.cn/20190505155703280559469.png" alt="20190505155703280559469.png"></p>
+<h1 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h1><p><img src="http://image.cdd9527.cn/20190505155703283036262.png" alt="20190505155703283036262.png"></p>
+<p>未完待续。。:smile:</p>
 ]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
-        <tag>日志</tag>
+        <tag>spring</tag>
       </tags>
   </entry>
   <entry>
@@ -676,40 +676,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>spring笔记</title>
-    <url>/posts/10013-spring/</url>
-    <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
-<p>Spring可以让您从“plain old Java objects”（POJO）中构建应用程序和通过非侵入性的POJO实现企业应用服务。此功能适用于Java SE的编程模型，全部的或部分的适应Java EE模型。</p>
-<p>中文文档API:<a href="https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html">https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/2/2-2.html</a></p>
-<span id="more"></span>
-
-<h1 id="spring特点"><a href="#spring特点" class="headerlink" title="spring特点"></a>spring特点</h1><ol>
-<li>轻量级</li>
-<li>控制反转<ul>
-<li><p>依赖注入和控制反转</p>
-<p>Spring框架控制反转（IOC）组件通过提供一系列的标准化的方法把完全不同的组件组合成一个能够使用的应用程序来解决这个问题。Spring框架把形式化的设计模式编写为优秀的对象，你可以容易的集成到自己的应用程序中。许多组织和机构使用Spring框架，以这种方式(使用Spring的模式对象)来设计健壮的，可维护的应用程序。</p>
-<p>通俗易懂的一个回答:<a href="https://www.zhihu.com/question/32108444">https://www.zhihu.com/question/32108444</a>.</p>
-</li>
-</ul>
-</li>
-<li>面向切面</li>
-<li>容器</li>
-<li>框架集合<br><img src="http://image.cdd9527.cn/20190505155703276180877.png" alt="20190505155703276180877.png"></li>
-</ol>
-<h1 id="spring核心组件"><a href="#spring核心组件" class="headerlink" title="spring核心组件"></a>spring核心组件</h1><p><img src="http://image.cdd9527.cn/20190505155703278433827.png" alt="20190505155703278433827.png"></p>
-<h1 id="spring常用模块"><a href="#spring常用模块" class="headerlink" title="spring常用模块"></a>spring常用模块</h1><p><img src="http://image.cdd9527.cn/20190505155703280559469.png" alt="20190505155703280559469.png"></p>
-<h1 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h1><p><img src="http://image.cdd9527.cn/20190505155703283036262.png" alt="20190505155703283036262.png"></p>
-<p>未完待续。。:smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>spring</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mac破解百度云盘限速</title>
     <url>/posts/10014-baiducloud/</url>
     <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
@@ -729,6 +695,40 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>mac</tag>
         <tag>百度云破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和吕:高山茶籽油</title>
+    <url>/posts/10010-chayou/</url>
+    <content><![CDATA[<h1 id="和吕村介绍"><a href="#和吕村介绍" class="headerlink" title="和吕村介绍"></a>和吕村介绍</h1><p>和吕村地处罗霄山脉中段地带，崇山俊岭，与井岗山山脉相连，最高山峰海拔1344米,略高于1300米的南岳衡山。属茶陵县与井岗山市交接处，从山顶向四周眺望，众山尽收眼底，云山雾绕，风景秀丽，不亚于南岳衡山；</p>
+<span id="more"></span>
+<ul>
+<li>石峰仙<br><img src="http://image.cdd9527.cn/20190505155703233727149.png" alt="20190505155703233727149.png"></li>
+<li>云海<br><img src="http://image.cdd9527.cn/20190505155703236912957.png" alt="20190505155703236912957.png"></li>
+</ul>
+<p><img src="http://image.cdd9527.cn/20190505155703247283145.png" alt="20190505155703247283145.png"></p>
+<h1 id="茶油功效"><a href="#茶油功效" class="headerlink" title="茶油功效"></a>茶油功效</h1><p>野山茶油又名油茶籽油、山茶油，是纯天然高级木本食用油。油茶树生长在亚热带南岭湿润气候区，整个生长过程无需化肥、农药等辅助手段。山茶果生长期从开花到成熟，历经秋、冬、春、夏、四季之雨露，尽吸天然养份、日月精华，营养价值极高。是《中国食物结构改革与发展规划纲要》中大力提倡推广的食用植物油，也是国际粮农组织首推的卫生保健植物食用油。</p>
+<ul>
+<li>保护皮肤</li>
+<li>减肥功效</li>
+<li>去除妊娠纹</li>
+<li>防眼角皱纹</li>
+<li>美白护肤</li>
+<li>治疗暗疮</li>
+<li>保持女性的体态美</li>
+<li>补充维生素</li>
+</ul>
+<p>详情可以看百度介绍<a href="https://baike.baidu.com/item/%E6%B2%B9%E8%8C%B6%E7%B1%BD%E6%B2%B9/3328212">油茶籽油</a></p>
+<h1 id="茶油种植地实拍图"><a href="#茶油种植地实拍图" class="headerlink" title="茶油种植地实拍图"></a>茶油种植地实拍图</h1><p><img src="http://image.cdd9527.cn/20190505155703250793561.png" alt="20190505155703250793561.png"><br><img src="http://image.cdd9527.cn/20190505155703255818370.png" alt="20190505155703255818370.png"><br><img src="http://image.cdd9527.cn/20190505155703258516630.png" alt="20190505155703258516630.png"><br><img src="http://image.cdd9527.cn/20190505155703260710936.png" alt="20190505155703260710936.png"><br><img src="http://image.cdd9527.cn/20190505155703266998458.png" alt="20190505155703266998458.png"></p>
+<p>感谢观看！产地直销，没有中间商赚差价，需要的可以留下联系方式或者长按二维码联系。:smile::smile::smile:</p>
+<p><img src="http://image.cdd9527.cn/20190505155703270389935.png" alt="20190505155703270389935.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>和吕</tag>
+        <tag>茶籽油</tag>
       </tags>
   </entry>
   <entry>
@@ -757,35 +757,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>java8</tag>
         <tag>Joiner</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客主动推送到搜索引擎</title>
-    <url>/posts/10016-blogpush/</url>
-    <content><![CDATA[<h1 id="百度主动推送"><a href="#百度主动推送" class="headerlink" title="百度主动推送"></a>百度主动推送</h1><ol>
-<li><p>安装hexo-baidu-url-submit插件</p>
- <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install hexo<span class="literal">-baidu-url-submit</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure></li>
-<li><p>站点配置文件中添加baidu-url-submit的配置项</p>
- <span id="more"></span>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#设置百度主动推送</span></span><br><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">200</span>  <span class="comment">#比如200，代表提交最新的200个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">www.cdd9527.cn</span> <span class="comment"># 在百度站长平台中注册的域名，这个改为你自己的域名</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">MrXfdwxcxem6qABX</span> <span class="comment"># 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> <span class="comment"># 文本文档的地址， 新链接会保存在此文本文档里，这个默认</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>百度token获取地址：<br> <a href="http://www.sousuoyinqingtijiao.com/baidu/tijiao/">http://www.sousuoyinqingtijiao.com/baidu/tijiao/</a></li>
-</ul>
-</li>
-<li><p>在站点配置文件中加入新的deploy配置项</p>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://gitee.com/dong0719/blog.git</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span></span><br></pre></td></tr></table></figure></li>
-<li><p>卸载</p>
- <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo<span class="literal">-baidu-url-submit</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>其他都有教程<br><a href="http://www.sousuoyinqingtijiao.com/">http://www.sousuoyinqingtijiao.com/</a></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客主动推送</tag>
       </tags>
   </entry>
   <entry>
@@ -887,19 +858,32 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/10018-ershoufang/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
+    <title>博客主动推送到搜索引擎</title>
+    <url>/posts/10016-blogpush/</url>
+    <content><![CDATA[<h1 id="百度主动推送"><a href="#百度主动推送" class="headerlink" title="百度主动推送"></a>百度主动推送</h1><ol>
+<li><p>安装hexo-baidu-url-submit插件</p>
+ <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install hexo<span class="literal">-baidu-url-submit</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure></li>
+<li><p>站点配置文件中添加baidu-url-submit的配置项</p>
+ <span id="more"></span>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#设置百度主动推送</span></span><br><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">200</span>  <span class="comment">#比如200，代表提交最新的200个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">www.cdd9527.cn</span> <span class="comment"># 在百度站长平台中注册的域名，这个改为你自己的域名</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">MrXfdwxcxem6qABX</span> <span class="comment"># 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> <span class="comment"># 文本文档的地址， 新链接会保存在此文本文档里，这个默认</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>百度token获取地址：<br> <a href="http://www.sousuoyinqingtijiao.com/baidu/tijiao/">http://www.sousuoyinqingtijiao.com/baidu/tijiao/</a></li>
+</ul>
+</li>
+<li><p>在站点配置文件中加入新的deploy配置项</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://gitee.com/dong0719/blog.git</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span></span><br></pre></td></tr></table></figure></li>
+<li><p>卸载</p>
+ <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo<span class="literal">-baidu-url-submit</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>其他都有教程<br><a href="http://www.sousuoyinqingtijiao.com/">http://www.sousuoyinqingtijiao.com/</a></p>
 <p>end :smile:</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>二手房</tag>
+        <tag>hexo</tag>
+        <tag>博客主动推送</tag>
       </tags>
   </entry>
   <entry>
@@ -939,40 +923,19 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
-    <url>/posts/10020-idea/</url>
-    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
-<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
+    <title>购买二手房注意事项</title>
+    <url>/posts/10018-ershoufang/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
 <span id="more"></span>
 
-<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
-</li>
-<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
-</li>
-<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
-</li>
-<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启IDE;</p>
-</li>
-<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
-</li>
-<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
-</li>
-<li><p>点击激活按钮，激活成功;</p>
-</li>
-</ul>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
 <p>end :smile:</p>
 ]]></content>
       <categories>
-        <category>java</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>idea</tag>
+        <tag>二手房</tag>
       </tags>
   </entry>
   <entry>
@@ -1350,6 +1313,260 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>Jetbrains系列产品2019.2最新激活方法(包含IDEA)</title>
+    <url>/posts/10020-idea/</url>
+    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20191022157170869176142.png" alt="20191022157170869176142.png"></p>
+<p>9月份突然所有以前激活的都失效了，哥来分享最新的破解方法,该攻略可以激活Jetbrains系列所有产品。最新进展，只能激活2019.3以下版本</p>
+<span id="more"></span>
+
+<h2 id="所需下载文件"><a href="#所需下载文件" class="headerlink" title="所需下载文件"></a>所需下载文件</h2><p>链接: <a href="https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&shfl=shareset">https://pan.baidu.com/s/1CFb3A5_17ntThXfodqhesg&amp;shfl=shareset</a><br>提取码: gsc1</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li><p>下载jar以后随意放到一个文件夹中，复制该文件的绝对路径；</p>
+</li>
+<li><p>启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。第一次安装，没有项目的话，新建一个空项目。</p>
+</li>
+<li><p>点击你要注册的IDE菜单：”Configure” 或 “Help” -&gt; “Edit Custom VM Options …”，如果提示是否要创建文件，请点”Yes”。</p>
+</li>
+<li><p>末行添加：-javaagent:&#x2F;Users&#x2F;chendong&#x2F;jetbrains-agent.jar（注意：不要用中文路径）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#mac</span></span><br><span class="line">-javaagent:/Users/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#linux</span></span><br><span class="line">-javaagent:/home/chendong/jetbrains-agent.jar</span><br><span class="line"><span class="comment">#windows</span></span><br><span class="line">-javaagent:C:\Users\chendong\jetbrains-agent.jar</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启IDE;</p>
+</li>
+<li><p>点击IDE菜单 “Help” -&gt; “Register…” 或 “Configure” -&gt; “Manage License…”;</p>
+</li>
+<li><p>选择License server方式，地址填入：<a href="http://jetbrains-license-server/">http://jetbrains-license-server</a> （应该会自动填上）;<br>或者点击按钮：”Discover Server”来自动填充地址;</p>
+</li>
+<li><p>点击激活按钮，激活成功;</p>
+</li>
+</ul>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本攻略只做学习研究之用，不得用于商业用途！</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown Style test</title>
+    <url>/posts/89757140/</url>
+    <content><![CDATA[<p>This post is originated from <a href="https://gist.github.com/apackeer/4159268">here</a> and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"><span class="section">#### H4</span></span><br><span class="line"><span class="section">##### H5</span></span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"></span><br><span class="line">Alternatively, for H1 and H2, an underline-ish style:</span><br><span class="line"></span><br><span class="line"><span class="section">Alt-H1</span></span><br><span class="line"><span class="section">======</span></span><br><span class="line"></span><br><span class="line"><span class="section">Alt-H2</span></span><br><span class="line"><span class="section">------</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Emphasis, aka italics, with <span class="emphasis">*asterisks*</span> or <span class="emphasis">_underscores_</span>.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with <span class="strong">**asterisks**</span> or <span class="strong">__underscores__</span>.</span><br><span class="line"></span><br><span class="line">Combined emphasis with <span class="strong">**asterisks and <span class="emphasis">_underscores_</span>**</span>.</span><br><span class="line"></span><br><span class="line">Strikethrough uses two tildes. ~~Scratch this.~~</span><br></pre></td></tr></table></figure>
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> First ordered list item</span><br><span class="line"><span class="bullet">2.</span> Another item</span><br><span class="line"><span class="bullet">  *</span> Unordered sub-list.</span><br><span class="line"><span class="bullet">1.</span> Actual numbers don&#x27;t matter, just that it&#x27;s a number</span><br><span class="line"><span class="bullet">  1.</span> Ordered sub-list</span><br><span class="line"><span class="bullet">4.</span> And another item.</span><br><span class="line"></span><br><span class="line">   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#x27;ll use three here to also align the raw Markdown).</span><br><span class="line"></span><br><span class="line">   To have a line break without a paragraph, you will need to use two trailing spaces.  </span><br><span class="line">   Note that this line is separate, but within the same paragraph.  </span><br><span class="line">   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</span><br><span class="line"></span><br><span class="line"><span class="bullet">*</span> Unordered list can use asterisks</span><br><span class="line"><span class="bullet">-</span> Or minuses</span><br><span class="line"><span class="bullet">+</span> Or pluses</span><br><span class="line"><span class="bullet">-</span> Paragraph In unordered list</span><br><span class="line"></span><br><span class="line">  For example like this.</span><br><span class="line"></span><br><span class="line">Common Paragraph with some text.</span><br><span class="line">And more text.</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li><p>Actual numbers don&#39;t matter, just that it&#39;s a number</p>
+</li>
+<li><p>Ordered sub-list</p>
+</li>
+<li><p>And another item.</p>
+<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).</p>
+<p>To have a line break without a paragraph, you will need to use two trailing spaces.<br>Note that this line is separate, but within the same paragraph.<br>(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<ul>
+<li><p>Paragraph In unordered list</p>
+<p>For example like this.</p>
+</li>
+</ul>
+<p>Common Paragraph with some text.<br>And more text.</p>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>To reboot your computer, press <span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>ctrl<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>alt<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>del<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>.<span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
+
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;dt&gt;Definition list&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    &lt;dt&gt;Markdown in HTML&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</span></span><br><span class="line"><span class="code">&lt;/dl&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<dl>
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+<pre><code>&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+</code></pre>
+</dl>
+
+
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">I&#x27;m an inline-style link</span>](<span class="link">https://www.google.com</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m an inline-style link with title</span>](<span class="link">https://www.google.com &quot;Google&#x27;s Homepage&quot;</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m a reference-style link</span>][<span class="symbol">Arbitrary case-insensitive reference text</span>]</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m a relative reference to a repository file</span>](<span class="link">../blob/master/LICENSE</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">You can use numbers for reference-style link definitions</span>][<span class="symbol">1</span>]</span><br><span class="line"></span><br><span class="line">Or leave it empty and use the [link text itself]</span><br><span class="line"></span><br><span class="line">Some text to show that the reference links can follow later.</span><br><span class="line"></span><br><span class="line">[<span class="symbol">arbitrary case-insensitive reference text</span>]: <span class="link">https://hexo.io</span></span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">https://hexo.io/docs/</span></span><br><span class="line">[<span class="symbol">link text itself</span>]: <span class="link">https://hexo.io/api/</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.google.com/">I&#39;m an inline-style link</a></p>
+<p><a href="https://www.google.com/" title="Google&#39;s Homepage">I&#39;m an inline-style link with title</a></p>
+<p><a href="https://hexo.io/">I&#39;m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I&#39;m a relative reference to a repository file</a></p>
+<p><a href="https://hexo.io/docs/">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="https://hexo.io/api/">link text itself</a></p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">hover to see the title text:</span><br><span class="line"></span><br><span class="line">Inline-style:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">Reference-style:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>hover to see the title text:</p>
+<p>Inline-style:</p>
+<p><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:<br><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2"></p>
+<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting.</span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">|                |ASCII                          |HTML                         |</span><br><span class="line">|----------------|-------------------------------|-----------------------------|</span><br><span class="line">|Single backticks|<span class="code">`&#x27;Isn&#x27;t this fun?&#x27;`</span>            |&#x27;Isn&#x27;t this fun?&#x27;            |</span><br><span class="line">|Quotes          |<span class="code">`&quot;Isn&#x27;t this fun?&quot;`</span>            |&quot;Isn&#x27;t this fun?&quot;            |</span><br><span class="line">|Dashes          |<span class="code">`-- is en-dash, --- is em-dash`</span>|-- is en-dash, --- is em-dash|</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single backticks</td>
+<td><code>&#39;Isn&#39;t this fun?&#39;</code></td>
+<td>&#39;Isn&#39;t this fun?&#39;</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>&quot;Isn&#39;t this fun?&quot;</code></td>
+<td>&quot;Isn&#39;t this fun?&quot;</td>
+</tr>
+<tr>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>-- is en-dash, --- is em-dash</td>
+</tr>
+</tbody></table>
+<p>Colons can be used to align columns.</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |</span><br><span class="line">| ------------- |:-------------:| -----:|</span><br><span class="line">| col 3 is      | right-aligned |  |</span><br><span class="line">| col 2 is      | centered      |    |</span><br><span class="line">| zebra stripes | are neat      |   </span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<p>The outer pipes (|) are optional, and you don&#39;t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Markdown | Less | Pretty</span><br><span class="line">--- | --- | ---</span><br><span class="line"><span class="emphasis">*Still*</span> | <span class="code">`renders`</span> | <span class="strong">**nicely**</span></span><br><span class="line">1 | 2 | 3</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
+</blockquote>
+<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><p>Three or more...</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Asterisks</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">___</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Underscores</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Here&#x27;s a line for us to start with.</span><br><span class="line"></span><br><span class="line">This line is separated from the one above by two newlines, so it will be a <span class="emphasis">*separate paragraph*</span>.</span><br><span class="line"></span><br><span class="line">This line is also a separate paragraph, but...</span><br><span class="line">This line is only separated by a single newline, so it&#x27;s a separate line in the <span class="emphasis">*same paragraph*</span>.</span><br></pre></td></tr></table></figure>
+
+
+<p>Here&#39;s a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also a separate paragraph, but...<br>This line is only separated by a single newline, so it&#39;s a separate line in the <em>same paragraph</em>.</p>
+<hr>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is a regular paragraph.</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;tr&gt;</span></span><br><span class="line"><span class="code">        &lt;td&gt;Foo&lt;/td&gt;</span></span><br><span class="line"><span class="code">    &lt;/tr&gt;</span></span><br><span class="line"><span class="code">&lt;/table&gt;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">This is another regular paragraph.</span><br></pre></td></tr></table></figure>
+
+<p>This is a regular paragraph.</p>
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+<p>This is another regular paragraph.</p>
+<h2 id="Youtube-videos"><a href="#Youtube-videos" class="headerlink" title="Youtube videos"></a>Youtube videos</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.youtube.com/watch?feature=player_embedded&amp;v=ARted4RniaU</span></span></span></span><br><span class="line"><span class="string"><span class="tag"><span class="language-xml">&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://img.youtube.com/vi/ARted4RniaU/0.jpg&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">alt</span>=<span class="string">&quot;IMAGE ALT TEXT HERE&quot;</span> <span class="attr">width</span>=<span class="string">&quot;240&quot;</span> <span class="attr">height</span>=<span class="string">&quot;180&quot;</span> <span class="attr">border</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">Pure markdown version:</span><br><span class="line"></span><br><span class="line">[<span class="string">![IMAGE ALT TEXT HERE</span>](<span class="link">https://img.youtube.com/vi/ARted4RniaU/0.jpg</span>)](<span class="link">https://www.youtube.com/watch?v=ARted4RniaU</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+" target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+<p>Pure markdown version:</p>
+<p><a href="https://www.youtube.com/watch?v=ARted4RniaU"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>highlight</tag>
+        <tag>Bar</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Claude Code 完全指南：从安装到实战的 14 步教程</title>
     <url>/posts/10024-claude-code-complete-guide/</url>
     <content><![CDATA[<h1 id="Claude-Code-完全指南：从安装到实战的-14-步教程"><a href="#Claude-Code-完全指南：从安装到实战的-14-步教程" class="headerlink" title="Claude Code 完全指南：从安装到实战的 14 步教程"></a>Claude Code 完全指南：从安装到实战的 14 步教程</h1><p>Claude Code 是一款强大的 AI 编程助手工具，能够显著提升开发效率。本文将为你提供从零开始到实战应用的全方位指南，涵盖安装配置、模式切换、基础使用、高级功能等 14 个关键步骤。<br><img src="https://cdn.jsdelivr.net/gh/ChadDongDongChen/blog-img@main/20260326225228522.png"></p>
@@ -1639,223 +1856,6 @@ rm -rf /var/lib/mysql
         <tag>AI编程</tag>
         <tag>开发工具</tag>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown Style test</title>
-    <url>/posts/89757140/</url>
-    <content><![CDATA[<p>This post is originated from <a href="https://gist.github.com/apackeer/4159268">here</a> and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.</p>
-<span id="more"></span>
-
-<hr>
-<h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"><span class="section">#### H4</span></span><br><span class="line"><span class="section">##### H5</span></span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"></span><br><span class="line">Alternatively, for H1 and H2, an underline-ish style:</span><br><span class="line"></span><br><span class="line"><span class="section">Alt-H1</span></span><br><span class="line"><span class="section">======</span></span><br><span class="line"></span><br><span class="line"><span class="section">Alt-H2</span></span><br><span class="line"><span class="section">------</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
-<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Emphasis, aka italics, with <span class="emphasis">*asterisks*</span> or <span class="emphasis">_underscores_</span>.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with <span class="strong">**asterisks**</span> or <span class="strong">__underscores__</span>.</span><br><span class="line"></span><br><span class="line">Combined emphasis with <span class="strong">**asterisks and <span class="emphasis">_underscores_</span>**</span>.</span><br><span class="line"></span><br><span class="line">Strikethrough uses two tildes. ~~Scratch this.~~</span><br></pre></td></tr></table></figure>
-
-<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
-<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> First ordered list item</span><br><span class="line"><span class="bullet">2.</span> Another item</span><br><span class="line"><span class="bullet">  *</span> Unordered sub-list.</span><br><span class="line"><span class="bullet">1.</span> Actual numbers don&#x27;t matter, just that it&#x27;s a number</span><br><span class="line"><span class="bullet">  1.</span> Ordered sub-list</span><br><span class="line"><span class="bullet">4.</span> And another item.</span><br><span class="line"></span><br><span class="line">   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#x27;ll use three here to also align the raw Markdown).</span><br><span class="line"></span><br><span class="line">   To have a line break without a paragraph, you will need to use two trailing spaces.  </span><br><span class="line">   Note that this line is separate, but within the same paragraph.  </span><br><span class="line">   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</span><br><span class="line"></span><br><span class="line"><span class="bullet">*</span> Unordered list can use asterisks</span><br><span class="line"><span class="bullet">-</span> Or minuses</span><br><span class="line"><span class="bullet">+</span> Or pluses</span><br><span class="line"><span class="bullet">-</span> Paragraph In unordered list</span><br><span class="line"></span><br><span class="line">  For example like this.</span><br><span class="line"></span><br><span class="line">Common Paragraph with some text.</span><br><span class="line">And more text.</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>First ordered list item</li>
-<li>Another item</li>
-</ol>
-<ul>
-<li>Unordered sub-list.</li>
-</ul>
-<ol>
-<li><p>Actual numbers don&#39;t matter, just that it&#39;s a number</p>
-</li>
-<li><p>Ordered sub-list</p>
-</li>
-<li><p>And another item.</p>
-<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).</p>
-<p>To have a line break without a paragraph, you will need to use two trailing spaces.<br>Note that this line is separate, but within the same paragraph.<br>(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
-</li>
-</ol>
-<ul>
-<li>Unordered list can use asterisks</li>
-</ul>
-<ul>
-<li>Or minuses</li>
-</ul>
-<ul>
-<li>Or pluses</li>
-</ul>
-<ul>
-<li><p>Paragraph In unordered list</p>
-<p>For example like this.</p>
-</li>
-</ul>
-<p>Common Paragraph with some text.<br>And more text.</p>
-<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>To reboot your computer, press <span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>ctrl<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>alt<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>del<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>.<span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
-
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;dt&gt;Definition list&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">    &lt;dt&gt;Markdown in HTML&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</span></span><br><span class="line"><span class="code">&lt;/dl&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-<dl>
-    <dt>Definition list</dt>
-    <dd>Is something people use sometimes.</dd>
-
-<pre><code>&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
-&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
-</code></pre>
-</dl>
-
-
-<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">I&#x27;m an inline-style link</span>](<span class="link">https://www.google.com</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m an inline-style link with title</span>](<span class="link">https://www.google.com &quot;Google&#x27;s Homepage&quot;</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m a reference-style link</span>][<span class="symbol">Arbitrary case-insensitive reference text</span>]</span><br><span class="line"></span><br><span class="line">[<span class="string">I&#x27;m a relative reference to a repository file</span>](<span class="link">../blob/master/LICENSE</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">You can use numbers for reference-style link definitions</span>][<span class="symbol">1</span>]</span><br><span class="line"></span><br><span class="line">Or leave it empty and use the [link text itself]</span><br><span class="line"></span><br><span class="line">Some text to show that the reference links can follow later.</span><br><span class="line"></span><br><span class="line">[<span class="symbol">arbitrary case-insensitive reference text</span>]: <span class="link">https://hexo.io</span></span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">https://hexo.io/docs/</span></span><br><span class="line">[<span class="symbol">link text itself</span>]: <span class="link">https://hexo.io/api/</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.google.com/">I&#39;m an inline-style link</a></p>
-<p><a href="https://www.google.com/" title="Google&#39;s Homepage">I&#39;m an inline-style link with title</a></p>
-<p><a href="https://hexo.io/">I&#39;m a reference-style link</a></p>
-<p><a href="../blob/master/LICENSE">I&#39;m a relative reference to a repository file</a></p>
-<p><a href="https://hexo.io/docs/">You can use numbers for reference-style link definitions</a></p>
-<p>Or leave it empty and use the <a href="https://hexo.io/api/">link text itself</a></p>
-<p>Some text to show that the reference links can follow later.</p>
-<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">hover to see the title text:</span><br><span class="line"></span><br><span class="line">Inline-style:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">Reference-style:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>hover to see the title text:</p>
-<p>Inline-style:</p>
-<p><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1"></p>
-<p>Reference-style:<br><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2"></p>
-<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;JavaScript syntax highlighting&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>(s);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&quot;Python syntax highlighting&quot;</span></span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting.</span><br><span class="line">But let&#x27;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span><br></pre></td></tr></table></figure>
-
-<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">|                |ASCII                          |HTML                         |</span><br><span class="line">|----------------|-------------------------------|-----------------------------|</span><br><span class="line">|Single backticks|<span class="code">`&#x27;Isn&#x27;t this fun?&#x27;`</span>            |&#x27;Isn&#x27;t this fun?&#x27;            |</span><br><span class="line">|Quotes          |<span class="code">`&quot;Isn&#x27;t this fun?&quot;`</span>            |&quot;Isn&#x27;t this fun?&quot;            |</span><br><span class="line">|Dashes          |<span class="code">`-- is en-dash, --- is em-dash`</span>|-- is en-dash, --- is em-dash|</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th></th>
-<th>ASCII</th>
-<th>HTML</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Single backticks</td>
-<td><code>&#39;Isn&#39;t this fun?&#39;</code></td>
-<td>&#39;Isn&#39;t this fun?&#39;</td>
-</tr>
-<tr>
-<td>Quotes</td>
-<td><code>&quot;Isn&#39;t this fun?&quot;</code></td>
-<td>&quot;Isn&#39;t this fun?&quot;</td>
-</tr>
-<tr>
-<td>Dashes</td>
-<td><code>-- is en-dash, --- is em-dash</code></td>
-<td>-- is en-dash, --- is em-dash</td>
-</tr>
-</tbody></table>
-<p>Colons can be used to align columns.</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |</span><br><span class="line">| ------------- |:-------------:| -----:|</span><br><span class="line">| col 3 is      | right-aligned |  |</span><br><span class="line">| col 2 is      | centered      |    |</span><br><span class="line">| zebra stripes | are neat      |   </span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th align="center">Are</th>
-<th align="right">Cool</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>col 3 is</td>
-<td align="center">right-aligned</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td align="center">centered</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td align="center">are neat</td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-<p>The outer pipes (|) are optional, and you don&#39;t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Markdown | Less | Pretty</span><br><span class="line">--- | --- | ---</span><br><span class="line"><span class="emphasis">*Still*</span> | <span class="code">`renders`</span> | <span class="strong">**nicely**</span></span><br><span class="line">1 | 2 | 3</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>Markdown</th>
-<th>Less</th>
-<th>Pretty</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><em>Still</em></td>
-<td><code>renders</code></td>
-<td><strong>nicely</strong></td>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
-</blockquote>
-<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
-<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
-</blockquote>
-<p>Quote break.</p>
-<blockquote>
-<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-</blockquote>
-<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><p>Three or more...</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Asterisks</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">___</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Underscores</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>Hyphens</p>
-<hr>
-<p>Asterisks</p>
-<hr>
-<p>Underscores</p>
-<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Here&#x27;s a line for us to start with.</span><br><span class="line"></span><br><span class="line">This line is separated from the one above by two newlines, so it will be a <span class="emphasis">*separate paragraph*</span>.</span><br><span class="line"></span><br><span class="line">This line is also a separate paragraph, but...</span><br><span class="line">This line is only separated by a single newline, so it&#x27;s a separate line in the <span class="emphasis">*same paragraph*</span>.</span><br></pre></td></tr></table></figure>
-
-
-<p>Here&#39;s a line for us to start with.</p>
-<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
-<p>This line is also a separate paragraph, but...<br>This line is only separated by a single newline, so it&#39;s a separate line in the <em>same paragraph</em>.</p>
-<hr>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is a regular paragraph.</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;tr&gt;</span></span><br><span class="line"><span class="code">        &lt;td&gt;Foo&lt;/td&gt;</span></span><br><span class="line"><span class="code">    &lt;/tr&gt;</span></span><br><span class="line"><span class="code">&lt;/table&gt;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line">This is another regular paragraph.</span><br></pre></td></tr></table></figure>
-
-<p>This is a regular paragraph.</p>
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
-
-<p>This is another regular paragraph.</p>
-<h2 id="Youtube-videos"><a href="#Youtube-videos" class="headerlink" title="Youtube videos"></a>Youtube videos</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.youtube.com/watch?feature=player_embedded&amp;v=ARted4RniaU</span></span></span></span><br><span class="line"><span class="string"><span class="tag"><span class="language-xml">&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://img.youtube.com/vi/ARted4RniaU/0.jpg&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">alt</span>=<span class="string">&quot;IMAGE ALT TEXT HERE&quot;</span> <span class="attr">width</span>=<span class="string">&quot;240&quot;</span> <span class="attr">height</span>=<span class="string">&quot;180&quot;</span> <span class="attr">border</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">Pure markdown version:</span><br><span class="line"></span><br><span class="line">[<span class="string">![IMAGE ALT TEXT HERE</span>](<span class="link">https://img.youtube.com/vi/ARted4RniaU/0.jpg</span>)](<span class="link">https://www.youtube.com/watch?v=ARted4RniaU</span>)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
-" target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
-<p>Pure markdown version:</p>
-<p><a href="https://www.youtube.com/watch?v=ARted4RniaU"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>highlight</tag>
-        <tag>Bar</tag>
       </tags>
   </entry>
 </search>

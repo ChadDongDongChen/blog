@@ -587,27 +587,6 @@
   </entry>
   
   <entry>
-    <title>Markdown 编辑器语法指南</title>
-    <link href="https://cdd9527.cn/posts/10002-Markdown/"/>
-    <id>https://cdd9527.cn/posts/10002-Markdown/</id>
-    <published>2018-06-28T03:45:29.000Z</published>
-    <updated>2026-03-26T12:34:31.269Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p><span id="more"></span><p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p><p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p><pre><code>def g(x):    yield from range(x, 0, -1)yield from range(x)</code></pre><p>如你不需要代码高亮，可以用下面的方法禁用：</p><pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p><pre><code>标题1======标题2-----## 大标题 ##### 小标题 ###</code></pre><h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_**粗体文本**    __粗体文本__***粗斜体文本***    ___粗斜体文本___</code></pre><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p><pre><code>文字链接 [链接名称](http://链接网址)网址链接 &lt;http://链接网址&gt;</code></pre><p>高级链接技巧</p><pre><code>这个链接用 1 作为网址变量 [Google][1].这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].然后在文档的结尾为变量赋值（网址）[1]: http://www.google.com/[yahoo]: http://www.yahoo.com/</code></pre><p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;基本技巧&quot;&gt;&lt;a href=&quot;#基本技巧&quot; class=&quot;headerlink&quot; title=&quot;基本技巧&quot;&gt;&lt;/a&gt;基本技巧&lt;/h1&gt;&lt;h3 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;p&gt;如果你只想高亮语句中的某个函数名或关键字，可以使用 &lt;code&gt;function_name()&lt;/code&gt; 实现&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term=".md" scheme="https://cdd9527.cn/tags/md/"/>
-    
-    <category term="Markdown" scheme="https://cdd9527.cn/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>hexo整合emoji</title>
     <link href="https://cdd9527.cn/posts/10004-emoji/"/>
     <id>https://cdd9527.cn/posts/10004-emoji/</id>
@@ -628,6 +607,27 @@
     <category term="emoji" scheme="https://cdd9527.cn/tags/emoji/"/>
     
     <category term="hexo" scheme="https://cdd9527.cn/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 编辑器语法指南</title>
+    <link href="https://cdd9527.cn/posts/10002-Markdown/"/>
+    <id>https://cdd9527.cn/posts/10002-Markdown/</id>
+    <published>2018-06-28T03:45:29.000Z</published>
+    <updated>2026-03-26T12:34:31.269Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p><span id="more"></span><p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p><p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p><pre><code>def g(x):    yield from range(x, 0, -1)yield from range(x)</code></pre><p>如你不需要代码高亮，可以用下面的方法禁用：</p><pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p><pre><code>标题1======标题2-----## 大标题 ##### 小标题 ###</code></pre><h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_**粗体文本**    __粗体文本__***粗斜体文本***    ___粗斜体文本___</code></pre><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p><pre><code>文字链接 [链接名称](http://链接网址)网址链接 &lt;http://链接网址&gt;</code></pre><p>高级链接技巧</p><pre><code>这个链接用 1 作为网址变量 [Google][1].这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].然后在文档的结尾为变量赋值（网址）[1]: http://www.google.com/[yahoo]: http://www.yahoo.com/</code></pre><p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;基本技巧&quot;&gt;&lt;a href=&quot;#基本技巧&quot; class=&quot;headerlink&quot; title=&quot;基本技巧&quot;&gt;&lt;/a&gt;基本技巧&lt;/h1&gt;&lt;h3 id=&quot;代码&quot;&gt;&lt;a href=&quot;#代码&quot; class=&quot;headerlink&quot; title=&quot;代码&quot;&gt;&lt;/a&gt;代码&lt;/h3&gt;&lt;p&gt;如果你只想高亮语句中的某个函数名或关键字，可以使用 &lt;code&gt;function_name()&lt;/code&gt; 实现&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term=".md" scheme="https://cdd9527.cn/tags/md/"/>
+    
+    <category term="Markdown" scheme="https://cdd9527.cn/tags/Markdown/"/>
     
   </entry>
   
