@@ -29,6 +29,54 @@ hexo s //server的缩写
       </tags>
   </entry>
   <entry>
+    <title>Markdown 编辑器语法指南</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
+<span id="more"></span>
+
+<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
+<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
+<pre><code>def g(x):
+    yield from range(x, 0, -1)
+yield from range(x)
+</code></pre>
+<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
+<pre><code>标题1
+======
+
+标题2
+-----
+## 大标题 ##
+### 小标题 ###
+</code></pre>
+<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
+**粗体文本**    __粗体文本__
+***粗斜体文本***    ___粗斜体文本___
+</code></pre>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
+<pre><code>文字链接 [链接名称](http://链接网址)
+网址链接 &lt;http://链接网址&gt;
+</code></pre>
+<p>高级链接技巧</p>
+<pre><code>这个链接用 1 作为网址变量 [Google][1].
+这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
+然后在文档的结尾为变量赋值（网址）
+[1]: http://www.google.com/
+[yahoo]: http://www.yahoo.com/
+</code></pre>
+<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
+]]></content>
+      <tags>
+        <tag>.md</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>推荐一部好看的动画片</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="开局一张图-movie-camera"><a href="#开局一张图-movie-camera" class="headerlink" title="开局一张图 :movie_camera:"></a>开局一张图 :movie_camera:</h1><span id="more"></span>
@@ -42,62 +90,6 @@ hexo s //server的缩写
       </categories>
       <tags>
         <tag>东哥推荐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用mongodb</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
-<li>添加maven依赖</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<ul>
-<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
-</ul>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>现在可以美滋滋的使用MongoTemplate了</li>
-</ul>
-<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
-<ul>
-<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
-<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
-<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
-<li>-p,--password：代表连接数据库的账号对应的密码；</li>
-<li>-d,--db：代表连接的数据库；</li>
-<li>-c,--collection：代表连接数据库中的集合；</li>
-<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
-<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
-<li>-o, --out：代表导出的文件名；</li>
-<li>-q, --query：代表查询条件；</li>
-<li>--skip：跳过指定数量的数据；</li>
-<li>--limit：读取指定数量的数据记录；</li>
-<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
-</ul>
-<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
-<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
-<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
-<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
-<p>4 启动服务 net start mongodb</p>
-<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
-<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
-<p>表示成功 </p>
-<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
-<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
-<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
-
-<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mongodb</category>
-      </categories>
-      <tags>
-        <tag>mongodb</tag>
-        <tag>springboot</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +166,62 @@ hexo s //server的缩写
       </tags>
   </entry>
   <entry>
+    <title>使用mongodb</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h2 id="SpringBoot集成mongodb"><a href="#SpringBoot集成mongodb" class="headerlink" title="SpringBoot集成mongodb"></a>SpringBoot集成mongodb</h2><ul>
+<li>添加maven依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-mongodb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<ul>
+<li>连接配置<br>下列配置包含集群与非集群，具体含义可以自行百度。</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring</span>:<span class="string"></span></span><br><span class="line">    <span class="attr">profiles</span>: <span class="string">jiaowu</span></span><br><span class="line">    <span class="attr">data</span>:<span class="string"></span></span><br><span class="line">        <span class="attr">mongodb</span>:<span class="string"></span></span><br><span class="line">            <span class="attr">uri</span>: <span class="string">mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717,dds-uf6177cc6dec7d742.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue;replicaSet=mgset-5439253</span></span><br><span class="line"><span class="comment">            #uri: mongodb://jiaoxueUser:fieXeiCh4Uqu@dds-uf6177cc6dec7d741.mongodb.rds.aliyuncs.com:3717/jiaoxue?authSource=jiaoxue</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>现在可以美滋滋的使用MongoTemplate了</li>
+</ul>
+<h2 id="mongoDb使用mongoexport导出"><a href="#mongoDb使用mongoexport导出" class="headerlink" title="mongoDb使用mongoexport导出"></a>mongoDb使用mongoexport导出</h2><p><b>mongoexport关键参数介绍</b></p>
+<ul>
+<li>-h,--host ：代表远程连接的数据库地址，默认连接本地Mongo数据库；</li>
+<li>--port：代表远程连接的数据库的端口，默认连接的远程端口27017；</li>
+<li>-u,--username：代表连接远程数据库的账号，如果设置数据库的认证，需要指定用户账号；</li>
+<li>-p,--password：代表连接数据库的账号对应的密码；</li>
+<li>-d,--db：代表连接的数据库；</li>
+<li>-c,--collection：代表连接数据库中的集合；</li>
+<li>-f, --fields：代表集合中的字段，可以根据设置选择导出的字段；</li>
+<li>--type：代表导出输出的文件类型，包括csv和json文件；</li>
+<li>-o, --out：代表导出的文件名；</li>
+<li>-q, --query：代表查询条件；</li>
+<li>--skip：跳过指定数量的数据；</li>
+<li>--limit：读取指定数量的数据记录；</li>
+<li>--sort：对数据进行排序，可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列,如sort({KEY:1})。</li>
+</ul>
+<h2 id="windows安装mongodb"><a href="#windows安装mongodb" class="headerlink" title="windows安装mongodb"></a>windows安装mongodb</h2><p>有linux的真不推荐在windows上装mongodb，因为太多坑了。linux安装我就不说了，直接上windows的安装步骤吧。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>第一坑来了，只要安装3.4以上的版本,就会一直卡住安装不了,所以还是乖乖的安装<code>mongodb3.4</code>以下的吧，点击这里<a href="http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-v3.4-latest-signed.msi?_ga=2.7045623.410933966.1512521590-461885398.1512521590">下载</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>然后配置又是问题<br>参考<a href="http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html">http://www.cnblogs.com/lsc183/archive/2012/08/16/mongodb.html</a> 才配好。</p>
+<p>1 添加安装路径到path环境变量：  C:\Program Files\MongoDB\Server\3.4\bin</p>
+<p>2 创建两个文件夹 D:\mongodb\data  D:\mongodb\data\logs</p>
+<p>3 创建服务（开机自启动） win+R cmd启动控制台<br>   cd C:\Program Files\MongoDB\Server\3.4\bin<br>   mongod.exe --dbpath&#x3D;D:\mongodb\data --logpath&#x3D;D:\mongodb\logs\mongodb.log --install</p>
+<p>4 启动服务 net start mongodb</p>
+<p>5 在浏览器 输入 <a href="http://localhost:27017/">http://localhost:27017/</a></p>
+<p>看见<br>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
+<p>表示成功 </p>
+<h2 id="MongoDb聚合"><a href="#MongoDb聚合" class="headerlink" title="MongoDb聚合"></a>MongoDb聚合</h2><p>去这个网站学习下语法:<a href="http://www.runoob.com/mongodb/mongodb-aggregate.html">http://www.runoob.com/mongodb/mongodb-aggregate.html</a></p>
+<h2 id="MongoDb实战"><a href="#MongoDb实战" class="headerlink" title="MongoDb实战"></a>MongoDb实战</h2><p>记录一些遇到坑的解决方案。</p>
+<h3 id="添加时区"><a href="#添加时区" class="headerlink" title="添加时区"></a>添加时区</h3><p>由于mongodb的问题,通过程序传进来的日期会有时区问题，所以需要在程序中处理时区问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sdf.setCalendar(new GregorianCalendar(new SimpleTimeZone(0, &quot;GMT&quot;)));</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过某些条件将B属性转换到A属性"><a href="#通过某些条件将B属性转换到A属性" class="headerlink" title="通过某些条件将B属性转换到A属性"></a>通过某些条件将B属性转换到A属性</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">db.getCollection(&#x27;questionInfo&#x27;).find(&#123;</span><br><span class="line">	&quot;$and&quot;: [&#123;</span><br><span class="line">			&quot;question.isenabled&quot;: true</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.virtual&quot;: 0</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;content.questionid&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.score&quot;: &#123;</span><br><span class="line">				&quot;$gt&quot;: 0</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;evaluations.questionId&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			&quot;question.audituser&quot;: &#123;</span><br><span class="line">				&quot;$exists&quot;: true</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;).forEach(function(u) &#123;</span><br><span class="line">    if(u.question.addLabelDate == null)&#123;</span><br><span class="line">        var date = u.question.updateDate;</span><br><span class="line">        if(date != null)&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: date&#125;&#125;)</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            db.getCollection(&#x27;questionInfo&#x27;).update(&#123;&quot;_id&quot;:u._id&#125;,&#123;$set:&#123;&quot;question.addLabelDate&quot;: u.question.createTime&#125;&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mongodb</category>
+      </categories>
+      <tags>
+        <tag>mongodb</tag>
+        <tag>springboot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>超级实用的谷歌插件</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h2 id="自己定义的排行榜"><a href="#自己定义的排行榜" class="headerlink" title="自己定义的排行榜"></a>自己定义的排行榜</h2><ol>
@@ -190,51 +238,137 @@ hexo s //server的缩写
       </tags>
   </entry>
   <entry>
-    <title>Markdown 编辑器语法指南</title>
+    <title>湖南茶陵可可农家:家的味道</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="基本技巧"><a href="#基本技巧" class="headerlink" title="基本技巧"></a>基本技巧</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>function_name()</code> 实现</p>
+    <content><![CDATA[<p>作为标准的吃货一枚</p>
+<p>对美食那是从来都不愿错过的</p>
+<p>在咱们茶陵</p>
+<p>就有很多好吃的农家手工小吃</p>
+<p>下面就大家去看一看</p>
+<p>不知道是否有你也爱吃的</p>
 <span id="more"></span>
 
-<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>支持的语言：<code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
-<p>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
-<pre><code>def g(x):
-    yield from range(x, 0, -1)
-yield from range(x)
-</code></pre>
-<p>如你不需要代码高亮，可以用下面的方法禁用：</p>
-<pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文章内容较多时，可以用标题分段：</p>
-<pre><code>标题1
-======
-
-标题2
------
-## 大标题 ##
-### 小标题 ###
-</code></pre>
-<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><pre><code>*斜体文本*    _斜体文本_
-**粗体文本**    __粗体文本__
-***粗斜体文本***    ___粗斜体文本___
-</code></pre>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>常用链接方法</p>
-<pre><code>文字链接 [链接名称](http://链接网址)
-网址链接 &lt;http://链接网址&gt;
-</code></pre>
-<p>高级链接技巧</p>
-<pre><code>这个链接用 1 作为网址变量 [Google][1].
-这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
-然后在文档的结尾为变量赋值（网址）
-[1]: http://www.google.com/
-[yahoo]: http://www.yahoo.com/
-</code></pre>
-<p><a href="https://segmentfault.com/markdown#articleHeader15">https://segmentfault.com/markdown#articleHeader15</a></p>
+<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
+<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
+<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
+<p>正题来了,我觉得好吃的都列在下面了。</p>
+<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
+<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
+<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
+<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
+<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
+<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
+<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
+<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
+<p>看了后是不是一直在吞口水，哈哈~</p>
+<p>以上全都是手工制作</p>
+<p>来看看制作的花絮吧</p>
+<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
+<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
+</li>
+<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
+</li>
+<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
+</li>
+<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
+</li>
+</ul>
+<p>想吃的话，赶紧找我或者下面这个人吧</p>
+<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
       <tags>
-        <tag>.md</tag>
-        <tag>Markdown</tag>
+        <tag>可可农家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Centos安装msql并可以远程连接</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
+<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p>（由于yum源上没有mysql-server。所以必须去官网下载，这里 我们用wget命令，直接获取）</p>
+<pre><code>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+</code></pre>
+<span id="more"></span>
+
+<h1 id="安装mysql的依赖包"><a href="#安装mysql的依赖包" class="headerlink" title="安装mysql的依赖包"></a>安装mysql的依赖包</h1><pre><code>yum -y install mysql57-community-release-el7-10.noarch.rpm
+</code></pre>
+<h1 id="安装mysql数据库"><a href="#安装mysql数据库" class="headerlink" title="安装mysql数据库"></a>安装mysql数据库</h1><pre><code>yum -y install mysql-community-server
+</code></pre>
+<h1 id="完成安装，重启mysql"><a href="#完成安装，重启mysql" class="headerlink" title="完成安装，重启mysql"></a>完成安装，重启mysql</h1><pre><code>systemctl restart mysqld 
+</code></pre>
+<p>此时MySQL已经开始正常运行，不过要想进入MySQL还得先找出此时root用户的密码，通过如下命令可以在日志文件中找出密码：</p>
+<pre><code>grep &quot;password&quot; /var/log/mysqld.log
+</code></pre>
+<h1 id="复制粘贴上边的密码进入数据库"><a href="#复制粘贴上边的密码进入数据库" class="headerlink" title="复制粘贴上边的密码进入数据库"></a>复制粘贴上边的密码进入数据库</h1><pre><code>mysql -uroot -p
+</code></pre>
+<p>输入初始密码，此时不能做任何事情，因为MySQL默认必须修改密码之后才能操作数据库修改密码命令：<br>    ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123&#39;;</p>
+<h1 id="解决报错"><a href="#解决报错" class="headerlink" title="解决报错"></a>解决报错</h1><p>以上报错是说新设置的密码过于简单，解决方式：<br>&#x2F;&#x2F;首先按照默认密码格式复杂度更改 </p>
+<h1 id="查看MySQL完整的初始密码规则"><a href="#查看MySQL完整的初始密码规则" class="headerlink" title="查看MySQL完整的初始密码规则"></a>查看MySQL完整的初始密码规则</h1><p>查看MySQL完整的初始密码规则，查看的前提是必须先用ALTER USER命令更改过密码</p>
+<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
+</code></pre>
+<h1 id="修改MySQL默认策略和密码长度"><a href="#修改MySQL默认策略和密码长度" class="headerlink" title="修改MySQL默认策略和密码长度"></a>修改MySQL默认策略和密码长度</h1><p>因为当前的密码太复杂不方便后期做实验，所以使用命令修改密码策略两种方式：</p>
+<pre><code>set global validate_password_policy=0;
+set global validate_password_policy=LOW;
+</code></pre>
+<p>注：密码策略分四种<br>1、OFF（关闭） 2、LOW（低） 3、MEDIUM（中） 4、STRONG（强）</p>
+<p>修改密码长度</p>
+<p>上边改完策略之后我们在改长度<br>    SET GLOBAL validate_password_length&#x3D;4;</p>
+<h1 id="查看密码规则"><a href="#查看密码规则" class="headerlink" title="查看密码规则"></a>查看密码规则</h1><p>都改完之后查看密码规则</p>
+<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
+</code></pre>
+<p>接下来就可以将刚才的复杂密码改为简单的四位的密码了；</p>
+<h1 id="卸载安装源自动更新"><a href="#卸载安装源自动更新" class="headerlink" title="卸载安装源自动更新"></a>卸载安装源自动更新</h1><p>此时还有一个问题，就是因为安装了Yum Repository，以后每次yum操作都会自动更新，因为当前数据库已安装完成，所以把这个卸载掉：</p>
+<pre><code>yum remove mysql57-community-release.noarch
+</code></pre>
+<h1 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h1><pre><code>mysql_secure_installation
+</code></pre>
+<p>注：执行完初始化命令后需要输入数据库root用户密码，然后默认如上截图一路回车即可。（以上截图问题也可根据自己实际情况进行选择）</p>
+<h1 id="开启MySQL远程访问权限-允许远程连接"><a href="#开启MySQL远程访问权限-允许远程连接" class="headerlink" title="开启MySQL远程访问权限 允许远程连接"></a>开启MySQL远程访问权限 允许远程连接</h1><h2 id="登陆mysql数据库"><a href="#登陆mysql数据库" class="headerlink" title="登陆mysql数据库"></a>登陆mysql数据库</h2><pre><code>mysql -u root -p
+</code></pre>
+<h2 id="查看user表"><a href="#查看user表" class="headerlink" title="查看user表"></a>查看user表</h2><pre><code>use mysql
+select host,user,password from user;
+</code></pre>
+<p>可以看到在user表中已创建的root用户。host字段表示登录的主机，其值可以用IP，也可用主机名，有时想用本地IP登录，那么可以将以上的Host值改为自己的Ip即可。</p>
+<h2 id="实现远程连接-授权法"><a href="#实现远程连接-授权法" class="headerlink" title="实现远程连接(授权法)"></a>实现远程连接(授权法)</h2><p>将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器，建议在开发时设为%。将权限改为ALL PRIVILEGES</p>
+<pre><code>grant all privileges  on *.* to root@&#39;%&#39; identified by &quot;你的密码&quot;;
+flush privileges;
+select host,user,password from user;
+</code></pre>
+<h2 id="实现远程连接（改表法）"><a href="#实现远程连接（改表法）" class="headerlink" title="实现远程连接（改表法）"></a>实现远程连接（改表法）</h2><pre><code>update user set host = ’%’ where user = ’root’;
+</code></pre>
+<h1 id="Linux下彻底卸载mysql详解"><a href="#Linux下彻底卸载mysql详解" class="headerlink" title="Linux下彻底卸载mysql详解"></a>Linux下彻底卸载mysql详解</h1><p>使用以下命令查看当前安装mysql情况，查找以前是否装有mysql</p>
+<pre><code>rpm -qa|grep -i mysql 
+</code></pre>
+<h2 id="停止mysql"><a href="#停止mysql" class="headerlink" title="停止mysql"></a>停止mysql</h2><pre><code>systemctl stop mysqld 
+</code></pre>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 
+</code></pre>
+<p>如果提示依赖包错误，则使用以下命令尝试</p>
+<pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 --nodeps 
+</code></pre>
+<p>如果提示错误：error: %preun(xxxxxx) scriptlet failed, exit status 1</p>
+<pre><code>rpm -e --noscripts MySQL-client-5.5.25a-1.rhel5 
+</code></pre>
+<h2 id="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"><a href="#查找之前老版本mysql的目录、并且删除老版本mysql的文件和库" class="headerlink" title="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"></a>查找之前老版本mysql的目录、并且删除老版本mysql的文件和库</h2><pre><code>find / -name mysql
+rm -rf /var/lib/mysql
+</code></pre>
+<p>注意：卸载后&#x2F;etc&#x2F;my.cnf不会删除，需要进行手工删除</p>
+<pre><code>rm -rf /etc/my.cnf 
+</code></pre>
+<h2 id="再次查找机器是否安装mysql"><a href="#再次查找机器是否安装mysql" class="headerlink" title="再次查找机器是否安装mysql"></a>再次查找机器是否安装mysql</h2><pre><code>rpm -qa|grep -i mysql 
+</code></pre>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -448,89 +582,27 @@ git add -A      //全部添加到缓存区
       </tags>
   </entry>
   <entry>
-    <title>Centos安装msql并可以远程连接</title>
+    <title>日志体系</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<p>在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。</p>
-<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p>（由于yum源上没有mysql-server。所以必须去官网下载，这里 我们用wget命令，直接获取）</p>
-<pre><code>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
-</code></pre>
+    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
+<li>log4j</li>
+<li>log4j2</li>
+<li>jcl(底层调用的是log4j)</li>
+<li>slf4j</li>
+<li>logback</li>
+<li>jul(jdk自带的)</li>
+<li>simplelog</li>
+</ol>
 <span id="more"></span>
 
-<h1 id="安装mysql的依赖包"><a href="#安装mysql的依赖包" class="headerlink" title="安装mysql的依赖包"></a>安装mysql的依赖包</h1><pre><code>yum -y install mysql57-community-release-el7-10.noarch.rpm
-</code></pre>
-<h1 id="安装mysql数据库"><a href="#安装mysql数据库" class="headerlink" title="安装mysql数据库"></a>安装mysql数据库</h1><pre><code>yum -y install mysql-community-server
-</code></pre>
-<h1 id="完成安装，重启mysql"><a href="#完成安装，重启mysql" class="headerlink" title="完成安装，重启mysql"></a>完成安装，重启mysql</h1><pre><code>systemctl restart mysqld 
-</code></pre>
-<p>此时MySQL已经开始正常运行，不过要想进入MySQL还得先找出此时root用户的密码，通过如下命令可以在日志文件中找出密码：</p>
-<pre><code>grep &quot;password&quot; /var/log/mysqld.log
-</code></pre>
-<h1 id="复制粘贴上边的密码进入数据库"><a href="#复制粘贴上边的密码进入数据库" class="headerlink" title="复制粘贴上边的密码进入数据库"></a>复制粘贴上边的密码进入数据库</h1><pre><code>mysql -uroot -p
-</code></pre>
-<p>输入初始密码，此时不能做任何事情，因为MySQL默认必须修改密码之后才能操作数据库修改密码命令：<br>    ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123&#39;;</p>
-<h1 id="解决报错"><a href="#解决报错" class="headerlink" title="解决报错"></a>解决报错</h1><p>以上报错是说新设置的密码过于简单，解决方式：<br>&#x2F;&#x2F;首先按照默认密码格式复杂度更改 </p>
-<h1 id="查看MySQL完整的初始密码规则"><a href="#查看MySQL完整的初始密码规则" class="headerlink" title="查看MySQL完整的初始密码规则"></a>查看MySQL完整的初始密码规则</h1><p>查看MySQL完整的初始密码规则，查看的前提是必须先用ALTER USER命令更改过密码</p>
-<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
-</code></pre>
-<h1 id="修改MySQL默认策略和密码长度"><a href="#修改MySQL默认策略和密码长度" class="headerlink" title="修改MySQL默认策略和密码长度"></a>修改MySQL默认策略和密码长度</h1><p>因为当前的密码太复杂不方便后期做实验，所以使用命令修改密码策略两种方式：</p>
-<pre><code>set global validate_password_policy=0;
-set global validate_password_policy=LOW;
-</code></pre>
-<p>注：密码策略分四种<br>1、OFF（关闭） 2、LOW（低） 3、MEDIUM（中） 4、STRONG（强）</p>
-<p>修改密码长度</p>
-<p>上边改完策略之后我们在改长度<br>    SET GLOBAL validate_password_length&#x3D;4;</p>
-<h1 id="查看密码规则"><a href="#查看密码规则" class="headerlink" title="查看密码规则"></a>查看密码规则</h1><p>都改完之后查看密码规则</p>
-<pre><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;
-</code></pre>
-<p>接下来就可以将刚才的复杂密码改为简单的四位的密码了；</p>
-<h1 id="卸载安装源自动更新"><a href="#卸载安装源自动更新" class="headerlink" title="卸载安装源自动更新"></a>卸载安装源自动更新</h1><p>此时还有一个问题，就是因为安装了Yum Repository，以后每次yum操作都会自动更新，因为当前数据库已安装完成，所以把这个卸载掉：</p>
-<pre><code>yum remove mysql57-community-release.noarch
-</code></pre>
-<h1 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h1><pre><code>mysql_secure_installation
-</code></pre>
-<p>注：执行完初始化命令后需要输入数据库root用户密码，然后默认如上截图一路回车即可。（以上截图问题也可根据自己实际情况进行选择）</p>
-<h1 id="开启MySQL远程访问权限-允许远程连接"><a href="#开启MySQL远程访问权限-允许远程连接" class="headerlink" title="开启MySQL远程访问权限 允许远程连接"></a>开启MySQL远程访问权限 允许远程连接</h1><h2 id="登陆mysql数据库"><a href="#登陆mysql数据库" class="headerlink" title="登陆mysql数据库"></a>登陆mysql数据库</h2><pre><code>mysql -u root -p
-</code></pre>
-<h2 id="查看user表"><a href="#查看user表" class="headerlink" title="查看user表"></a>查看user表</h2><pre><code>use mysql
-select host,user,password from user;
-</code></pre>
-<p>可以看到在user表中已创建的root用户。host字段表示登录的主机，其值可以用IP，也可用主机名，有时想用本地IP登录，那么可以将以上的Host值改为自己的Ip即可。</p>
-<h2 id="实现远程连接-授权法"><a href="#实现远程连接-授权法" class="headerlink" title="实现远程连接(授权法)"></a>实现远程连接(授权法)</h2><p>将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器，建议在开发时设为%。将权限改为ALL PRIVILEGES</p>
-<pre><code>grant all privileges  on *.* to root@&#39;%&#39; identified by &quot;你的密码&quot;;
-flush privileges;
-select host,user,password from user;
-</code></pre>
-<h2 id="实现远程连接（改表法）"><a href="#实现远程连接（改表法）" class="headerlink" title="实现远程连接（改表法）"></a>实现远程连接（改表法）</h2><pre><code>update user set host = ’%’ where user = ’root’;
-</code></pre>
-<h1 id="Linux下彻底卸载mysql详解"><a href="#Linux下彻底卸载mysql详解" class="headerlink" title="Linux下彻底卸载mysql详解"></a>Linux下彻底卸载mysql详解</h1><p>使用以下命令查看当前安装mysql情况，查找以前是否装有mysql</p>
-<pre><code>rpm -qa|grep -i mysql 
-</code></pre>
-<h2 id="停止mysql"><a href="#停止mysql" class="headerlink" title="停止mysql"></a>停止mysql</h2><pre><code>systemctl stop mysqld 
-</code></pre>
-<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 
-</code></pre>
-<p>如果提示依赖包错误，则使用以下命令尝试</p>
-<pre><code>rpm -ev MySQL-client-5.5.25a-1.rhel5 --nodeps 
-</code></pre>
-<p>如果提示错误：error: %preun(xxxxxx) scriptlet failed, exit status 1</p>
-<pre><code>rpm -e --noscripts MySQL-client-5.5.25a-1.rhel5 
-</code></pre>
-<h2 id="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"><a href="#查找之前老版本mysql的目录、并且删除老版本mysql的文件和库" class="headerlink" title="查找之前老版本mysql的目录、并且删除老版本mysql的文件和库"></a>查找之前老版本mysql的目录、并且删除老版本mysql的文件和库</h2><pre><code>find / -name mysql
-rm -rf /var/lib/mysql
-</code></pre>
-<p>注意：卸载后&#x2F;etc&#x2F;my.cnf不会删除，需要进行手工删除</p>
-<pre><code>rm -rf /etc/my.cnf 
-</code></pre>
-<h2 id="再次查找机器是否安装mysql"><a href="#再次查找机器是否安装mysql" class="headerlink" title="再次查找机器是否安装mysql"></a>再次查找机器是否安装mysql</h2><pre><code>rpm -qa|grep -i mysql 
-</code></pre>
-<p>end :smile:</p>
+<p>未完待续！</p>
 ]]></content>
       <categories>
-        <category>mysql</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>mysql</tag>
+        <tag>java</tag>
+        <tag>日志</tag>
       </tags>
   </entry>
   <entry>
@@ -570,54 +642,6 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
-    <title>湖南茶陵可可农家:家的味道</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>作为标准的吃货一枚</p>
-<p>对美食那是从来都不愿错过的</p>
-<p>在咱们茶陵</p>
-<p>就有很多好吃的农家手工小吃</p>
-<p>下面就大家去看一看</p>
-<p>不知道是否有你也爱吃的</p>
-<span id="more"></span>
-
-<p>先来一波家乡的美照图，所有的农产品都来自这个山清水秀的地方!</p>
-<p><img src="http://image.cdd9527.cn/20190505155703143013164.png" alt="20190505155703143013164.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703150772623.png" alt="20190505155703150772623.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703154072533.png" alt="20190505155703154072533.png"></p>
-<p><img src="http://image.cdd9527.cn/20190505155703156948342.png" alt="20190505155703156948342.png"></p>
-<p>正题来了,我觉得好吃的都列在下面了。</p>
-<h2 id="No-1-香辣河鱼"><a href="#No-1-香辣河鱼" class="headerlink" title="No.1 香辣河鱼"></a>No.1 香辣河鱼</h2><p><img src="http://image.cdd9527.cn/20190505155703159643466.png" alt="20190505155703159643466.png"><br><img src="http://image.cdd9527.cn/20190505155703162135149.png" alt="20190505155703162135149.png"></p>
-<h2 id="No-2-香辣河虾"><a href="#No-2-香辣河虾" class="headerlink" title="No.2 香辣河虾"></a>No.2 香辣河虾</h2><p><img src="http://image.cdd9527.cn/20190505155703165499639.png" alt="20190505155703165499639.png"><br><img src="http://image.cdd9527.cn/20190505155703170135150.png" alt="20190505155703170135150.png"></p>
-<h2 id="No-3-香辣泥鳅"><a href="#No-3-香辣泥鳅" class="headerlink" title="No.3 香辣泥鳅"></a>No.3 香辣泥鳅</h2><p><img src="http://image.cdd9527.cn/20190505155703173538477.png" alt="20190505155703173538477.png"><br><img src="http://image.cdd9527.cn/20190505155703176250744.png" alt="20190505155703176250744.png"></p>
-<h2 id="No-4-盐辣椒"><a href="#No-4-盐辣椒" class="headerlink" title="No.4 盐辣椒"></a>No.4 盐辣椒</h2><p><img src="http://image.cdd9527.cn/20190505155703179217263.png" alt="20190505155703179217263.png"><br><img src="http://image.cdd9527.cn/20190505155703181836525.png" alt="20190505155703181836525.png"></p>
-<h2 id="No-5-豆豉鱼块"><a href="#No-5-豆豉鱼块" class="headerlink" title="No.5 豆豉鱼块"></a>No.5 豆豉鱼块</h2><p><img src="http://image.cdd9527.cn/20190505155703185642687.png" alt="20190505155703185642687.png"><br><img src="http://image.cdd9527.cn/20190505155703188355359.png" alt="20190505155703188355359.png"></p>
-<h2 id="No-6-茶油霉豆腐"><a href="#No-6-茶油霉豆腐" class="headerlink" title="No.6 茶油霉豆腐"></a>No.6 茶油霉豆腐</h2><p><img src="http://image.cdd9527.cn/20190505155703191616853.png" alt="20190505155703191616853.png"><br><img src="http://image.cdd9527.cn/20190505155703194152357.png" alt="20190505155703194152357.png"></p>
-<h2 id="No-7-手工米粉"><a href="#No-7-手工米粉" class="headerlink" title="No.7 手工米粉"></a>No.7 手工米粉</h2><p><img src="http://image.cdd9527.cn/20190505155703198062047.png" alt="20190505155703198062047.png"><br><img src="http://image.cdd9527.cn/20190505155703200736577.png" alt="20190505155703200736577.png"></p>
-<h2 id="No-8-香辣萝卜条"><a href="#No-8-香辣萝卜条" class="headerlink" title="No.8 香辣萝卜条"></a>No.8 香辣萝卜条</h2><p><img src="http://image.cdd9527.cn/2019050515570320626213.png" alt="2019050515570320626213.png"><br><img src="http://image.cdd9527.cn/20190505155703208373528.png" alt="20190505155703208373528.png"></p>
-<p>看了后是不是一直在吞口水，哈哈~</p>
-<p>以上全都是手工制作</p>
-<p>来看看制作的花絮吧</p>
-<h2 id="制作花絮"><a href="#制作花絮" class="headerlink" title="制作花絮"></a>制作花絮</h2><ul>
-<li><p>炸泥鳅<br><img src="http://image.cdd9527.cn/20190505155703211080763.png" alt="20190505155703211080763.png"></p>
-</li>
-<li><p>刚打捞回来的小河鱼<br><img src="http://image.cdd9527.cn/20190505155703213271052.png" alt="20190505155703213271052.png"></p>
-</li>
-<li><p>做米粉<br><img src="http://image.cdd9527.cn/20190505155703217737803.png" alt="20190505155703217737803.png"></p>
-</li>
-<li><p>捞河鱼<br><img src="http://image.cdd9527.cn/20190505155703219912162.png" alt="20190505155703219912162.png"><br><img src="http://image.cdd9527.cn/20190505155703221747752.png" alt="20190505155703221747752.png"></p>
-</li>
-</ul>
-<p>想吃的话，赶紧找我或者下面这个人吧</p>
-<p><img src="http://image.cdd9527.cn/20190505155703224435376.png" alt="20190505155703224435376.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>可可农家</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>spring笔记</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="介绍spring框架"><a href="#介绍spring框架" class="headerlink" title="介绍spring框架"></a>介绍spring框架</h1><p>Spring 框架是一个Java平台，它为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此您可以专注于应用程序的开发。</p>
@@ -649,80 +673,6 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>java</tag>
         <tag>spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac破解百度云盘限速</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
-<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
-<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
-<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
-<span id="more"></span>
-<p>二、开源软件: Aria2GUI</p>
-<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
-<p>解压后直接拖到应用里面运行即可</p>
-<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>mac</category>
-      </categories>
-      <tags>
-        <tag>mac</tag>
-        <tag>百度云破解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日志体系</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="日志种类"><a href="#日志种类" class="headerlink" title="日志种类"></a>日志种类</h1><ol>
-<li>log4j</li>
-<li>log4j2</li>
-<li>jcl(底层调用的是log4j)</li>
-<li>slf4j</li>
-<li>logback</li>
-<li>jul(jdk自带的)</li>
-<li>simplelog</li>
-</ol>
-<span id="more"></span>
-
-<p>未完待续！</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Guava——Joiner</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
-<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
-<li><p>on 以空格为分隔符</p>
-</li>
-<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
-<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
-
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java8</tag>
-        <tag>Joiner</tag>
       </tags>
   </entry>
   <entry>
@@ -760,6 +710,56 @@ rm -rf /var/lib/mysql
       </tags>
   </entry>
   <entry>
+    <title>mac破解百度云盘限速</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>现在市场上网盘就百度一家独大了，为了赚钱限制下载速度，一个1G的文件下载速度几十KB每秒，如果不开会员，可能要下一天，要是着急的话简直想砸电脑，简直不能忍，此时贴心的百度会给你推荐，请付费升级到会员，畅享高速，最终只能开个会员了。对于我这种月光族的人来说，能省就省吧。进入正题！！</p>
+<h1 id="两个工具"><a href="#两个工具" class="headerlink" title="两个工具"></a>两个工具</h1><p>一、Chrome插件:网盘助手</p>
+<p><code>链接:</code> <a href="https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A">https://pan.baidu.com/s/1mreRqTlTzwjmiEd9o1m83A</a> <code>提取码:</code> pckp</p>
+<p>下载后直接将文件夹拖进去<br>最终在谷歌插件列表中出现一个这样的图标</p>
+<span id="more"></span>
+<p>二、开源软件: Aria2GUI</p>
+<p><code>链接:</code> <a href="https://github.com/yangshun1029/aria2gui">https://github.com/yangshun1029/aria2gui</a></p>
+<p>解压后直接拖到应用里面运行即可</p>
+<p>接下来你重启浏览器，进入下载页面时会多出一个“导出下载”按钮。选第一个就ok了，打完收工！</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>百度云破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Guava——Joiner</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="Joiner"><a href="#Joiner" class="headerlink" title="Joiner"></a>Joiner</h1><p>字符串拼接对象</p>
+<h1 id="on方法"><a href="#on方法" class="headerlink" title="on方法"></a>on方法</h1><ul>
+<li><p>on 以空格为分隔符</p>
+</li>
+<li><p>join内是拼接的对象:<code>迭代器对象</code>、<code>数组</code>、<code>可变参数</code>等</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>).toString();</span><br><span class="line"></span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区</span><br><span class="line"></span><br><span class="line"><span class="comment">//动态拼接</span></span><br><span class="line"><span class="type">StringBuffer</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;result: &quot;</span>);</span><br><span class="line">        Joiner.on(<span class="string">&quot; &quot;</span>).appendTo(result,<span class="number">7</span>,<span class="number">8</span>);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line"><span class="number">7</span> <span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//直接忽略Null</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).skipNulls().join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//找出Null，并用其他值代替</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).useForNull(<span class="string">&quot;未填写&quot;</span>).join(<span class="string">&quot;四川省&quot;</span>,<span class="string">&quot;成都市&quot;</span>,<span class="string">&quot;金牛区&quot;</span>,<span class="literal">null</span>).toString()</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">四川省 成都市 金牛区 </span><br><span class="line">四川省 成都市 金牛区 未填写</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h1 id="Joiner-MapJoiner"><a href="#Joiner-MapJoiner" class="headerlink" title="Joiner.MapJoiner"></a>Joiner.MapJoiner</h1><ul>
+<li>MapJoiner 是 Joiner 的内部静态类，用于帮助将 Map 对象拼接成字符串。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例子1</span></span><br><span class="line">Joiner.on(<span class="string">&quot; &quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(ImmutableMap.of(<span class="string">&quot;收件人&quot;</span>,<span class="string">&quot;Nimo&quot;</span>,<span class="string">&quot;联系方式&quot;</span>,<span class="string">&quot;123&quot;</span>,<span class="string">&quot;收件地址&quot;</span>,<span class="string">&quot;浙江省杭州市滨江区XXXX&quot;</span>));</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">收件人=Nimo 联系方式=<span class="number">123</span> 收件地址=浙江省杭州市滨江区XXXX</span><br><span class="line"></span><br><span class="line"><span class="comment">//例子2</span></span><br><span class="line">Map&lt;String, String&gt; testMap = Maps.newLinkedHashMap();</span><br><span class="line">testMap.put(<span class="string">&quot;Washington D.C&quot;</span>, <span class="string">&quot;Redskins&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;New York City&quot;</span>, <span class="string">&quot;Giants&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Philadelphia&quot;</span>, <span class="string">&quot;Eagles&quot;</span>);</span><br><span class="line">testMap.put(<span class="string">&quot;Dallas&quot;</span>, <span class="string">&quot;Cowboys&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">returnedString</span> <span class="operator">=</span> Joiner.on(<span class="string">&quot;#&quot;</span>).withKeyValueSeparator(<span class="string">&quot;=&quot;</span>).join(testMap);</span><br><span class="line">System.out.println(returnedString);</span><br><span class="line"><span class="comment">//result</span></span><br><span class="line">Washington D.C=Redskins#New York City=Giants#Philadelphia=Eagles#Dallas=Cowboys</span><br></pre></td></tr></table></figure>
+
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java8</tag>
+        <tag>Joiner</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客主动推送到搜索引擎</title>
     <url>/posts/undefined/</url>
     <content><![CDATA[<h1 id="百度主动推送"><a href="#百度主动推送" class="headerlink" title="百度主动推送"></a>百度主动推送</h1><ol>
@@ -786,6 +786,156 @@ rm -rf /var/lib/mysql
       <tags>
         <tag>hexo</tag>
         <tag>博客主动推送</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot中的缓存支持</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
+<p><a href="https://juejin.im/post/5c8481d95188257a323f52b5">Java缓存浅析</a></p>
+<p>随着时间的积累，应用的使用用户不断增加，数据规模也越来越大，往往数据库查询操作会成为影响用户使用体验的瓶颈，此时使用缓存往往是解决这一问题非常好的手段之一。Spring 3开始提供了强大的基于注解的缓存支持，可以通过注解配置方式低侵入的给原有Spring应用增加缓存功能，提高数据访问性能。</p>
+<p>在Spring Boot中对于缓存的支持，提供了一系列的自动化配置，使我们可以非常方便的使用缓存。下面我们通过一个简单的例子来展示，我们是如何给一个既有应用增加缓存功能的。</p>
+<span id="more"></span>
+<h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><p>首先，下载样例工程chapter3-2-2。本例通过spring-data-jpa实现了对User用户表的一些操作，若没有这个基础，可以先阅读《使用Spring-data-jpa简化数据访问层》一文对数据访问有所基础。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>为了更好的理解缓存，我们先对该工程做一些简单的改造。</p>
+<p>application.properties文件中新增spring.jpa.properties.hibernate.show_sql&#x3D;true，开启hibernate对sql语句的打印</p>
+<p>修改单元测试ApplicationTests，初始化插入User表一条用户名为AAA，年龄为10的数据。并通过findByName函数完成两次查询。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@RunWith(SpringJUnit4ClassRunner.class)</span></span><br><span class="line"><span class="meta">@SpringApplicationConfiguration(Application.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ApplicationTests</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> UserRepository userRepository;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Before</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">before</span><span class="params">()</span> &#123;</span><br><span class="line">		userRepository.save(<span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;AAA&quot;</span>, <span class="number">10</span>));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Test</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="type">User</span> <span class="variable">u1</span> <span class="operator">=</span> userRepository.findByName(<span class="string">&quot;AAA&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;第一次查询：&quot;</span> + u1.getAge());</span><br><span class="line"></span><br><span class="line">		<span class="type">User</span> <span class="variable">u2</span> <span class="operator">=</span> userRepository.findByName(<span class="string">&quot;AAA&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;第二次查询：&quot;</span> + u2.getAge());</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>执行单元测试，我们可以在控制台中看到下面内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hibernate: insert into user (age, name) values (?, ?)</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第一次查询：10</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第二次查询：10</span><br></pre></td></tr></table></figure>
+<p>在测试用例执行前，插入了一条User记录。然后每次findByName调用时，都执行了一句select语句来查询用户名为AAA的记录。</p>
+<h1 id="引入缓存"><a href="#引入缓存" class="headerlink" title="引入缓存"></a>引入缓存</h1><p>在pom.xml中引入cache依赖，添加如下内容：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-cache<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在Spring Boot主类中增加@EnableCaching注解开启缓存功能，如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableCaching</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		SpringApplication.run(Application.class, args);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在数据访问接口中，增加缓存配置注解，如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CacheConfig(cacheNames = &quot;users&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserRepository</span> <span class="keyword">extends</span> <span class="title class_">JpaRepository</span>&lt;User, Long&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Cacheable</span></span><br><span class="line">    User <span class="title function_">findByName</span><span class="params">(String name)</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>再来执行以下单元测试，可以在控制台中输出了下面的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hibernate: insert into user (age, name) values (?, ?)</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第一次查询：10</span><br><span class="line">第二次查询：10</span><br></pre></td></tr></table></figure>
+<p>到这里，我们可以看到，在调用第二次findByName函数时，没有再执行select语句，也就直接减少了一次数据库的读取操作。</p>
+<p><a href="http://blog.didispace.com/springbootcache1/">原文ehcache的使用</a></p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>springboot</tag>
+        <tag>cache</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构笔记</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190412155505554092398.png" alt="20190412155505554092398.png"></p>
+<blockquote>
+<p>好久没有温习数据结构了，今天来整理整理。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="堆栈（stack）"><a href="#堆栈（stack）" class="headerlink" title="堆栈（stack）"></a>堆栈（stack）</h2><p>堆栈（英语：stack）又称为栈或堆叠，是计算机科学中的一种抽象数据类型，只允许在有序的线性数据集合的一端（称为堆栈顶端，英语：top）进行加入数据（英语：push）和移除数据（英语：pop）的运算。因而按照后进先出（LIFO, Last In First Out）的原理运作。</p>
+<p>常与有序的线性数据集合队列相提并论。</p>
+<p>堆栈常用一维数组或链表来实现。</p>
+<p><img src="http://image.cdd9527.cn/20190411155497516974025.png" alt="20190411155497516974025.png"></p>
+<h3 id="软件堆栈"><a href="#软件堆栈" class="headerlink" title="软件堆栈"></a>软件堆栈</h3><p>堆栈可以用数组和链表两种方式实现，一般为一个堆栈预先分配一个大小固定且较合适的空间并非难事，所以较流行的做法是Stack结构下含一个数组。如果空间实在紧张，也可用链表实现，且去掉表头</p>
+<p>堆栈有时候也常用来指代<code>堆栈段</code>。<br>堆栈段（stack segment）通常是指采用堆栈方式工作的一段内存区域。当程序被执行时，程序可能会将其执行的状态加入栈的顶部；当程序结束时，它必须把栈顶的状态数据弹出（pop）。</p>
+<h3 id="硬件堆栈"><a href="#硬件堆栈" class="headerlink" title="硬件堆栈"></a>硬件堆栈</h3><p>架构层次上的堆栈通常被用以申请和访问内存。</p>
+<h2 id="队列（queue）"><a href="#队列（queue）" class="headerlink" title="队列（queue）"></a>队列（queue）</h2><p>队列，又称为伫列（queue），是先进先出（FIFO, First-In-First-Out）的线性表。在具体应用中通常用链表或者数组来实现。队列只允许在后端（称为rear）进行插入操作，在前端（称为front）进行删除操作。</p>
+<p>队列的操作方式和堆栈类似，唯一的区别在于队列只允许新数据在后端进行添加。<br><img src="http://image.cdd9527.cn/2019041115549770099188.png" alt="2019041115549770099188.png"></p>
+<h3 id="单链队列"><a href="#单链队列" class="headerlink" title="单链队列"></a>单链队列</h3><p>单链队列使用链表作为基本数据结构，所以不存在伪溢出的问题，队列长度也没有限制。但插入和读取的时间代价较高</p>
+<h3 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h3><p>循环队列可以更简单防止伪溢出的发生，但队列大小是固定的。</p>
+<h2 id="链表（link）"><a href="#链表（link）" class="headerlink" title="链表（link）"></a>链表（link）</h2><p>链表是一种数据结构，和数组同级。比如，Java 中我们使用的 ArrayList，其实现原理是数组。而<br>LinkedList 的实现原理就是链表了。链表在进行循环遍历时效率不高，但是插入和删除时优势明显。</p>
+<p><img src="http://image.cdd9527.cn/20190412155505588166695.png" alt="20190412155505588166695.png"></p>
+<h3 id="单向链表"><a href="#单向链表" class="headerlink" title="单向链表"></a>单向链表</h3><p>链表中最简单的一种是单向链表，它包含两个域，一个信息域和一个指针域。这个链接指向列表中的下一个节点，而最后一个节点则指向一个空值。<br><img src="http://image.cdd9527.cn/20190412155505656985771.png" alt="20190412155505656985771.png"><br>一个单向链表的节点被分成两个部分。第一个部分保存或者显示关于节点的信息，第二个部分存储下一个节点的地址。单向链表只可向一个方向遍历。</p>
+<p>链表最基本的结构是在每个节点保存数据和到下一个节点的地址，在最后一个节点保存一个特殊的结束标记，另外在一个固定的位置保存指向第一个节点的指针，有的时候也会同时储存指向最后一个节点的指针。一般查找一个节点的时候需要从第一个节点开始每次访问下一个节点，一直访问到需要的位置。但是也可以提前把一个节点的位置另外保存起来，然后直接访问。当然如果只是访问数据就没必要了，不如在链表上储存指向实际数据的指针。这样一般是为了访问链表中的下一个或者前一个（需要储存反向的指针，见下面的双向链表）节点。</p>
+<h3 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h3><p>每个节点有两个连接：一个指向前一个节点，（当此“连接”为第一个“连接”时，指向空值或者空列表）；而另一个指向下一个节点，（当此“连接”为最后一个“连接”时，指向空值或者空列表）<br><img src="http://image.cdd9527.cn/20190412155505679974905.png" alt="20190412155505679974905.png"><br><strong>双向链表</strong>也叫<strong>双链表</strong>。双向链表中不仅有指向后一个节点的指针，还有指向前一个节点的指针。这样可以从任何一个节点访问前一个节点，当然也可以访问后一个节点，以至整个链表。一般是在需要大批量的另外储存数据在链表中的位置的时候用。双向链表也可以配合下面的其他链表的扩展使用。</p>
+<h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><p>在一个 循环链表中, 首节点和末节点被连接在一起。这种方式在单向和双向链表中皆可实现。要转换一个循环链表，你开始于任意一个节点然后沿着列表的任一方向直到返回开始的节点。再来看另一种方法，循环链表可以被视为“无头无尾”。这种列表很利于节约数据存储缓存， 假定你在一个列表中有一个对象并且希望所有其他对象迭代在一个非特殊的排列下。</p>
+<p>指向整个列表的指针可以被称作访问指针。<br><img src="http://image.cdd9527.cn/20190412155505730643443.png" alt="20190412155505730643443.png"><br>循环链表中第一个节点之前就是最后一个节点，反之亦然。循环链表的无边界使得在这样的链表上设计算法会比普通链表更加容易。对于新加入的节点应该是在第一个节点之前还是最后一个节点之后可以根据实际要求灵活处理，区别不大(详见下面实例代码)。当然，如果只会在最后插入数据（或者只会在之前），处理也是很容易的。</p>
+<p>另外有一种模拟的循环链表，就是在访问到最后一个节点之后的时候，手工的跳转到第一个节点。访问到第一个节点之前的时候也一样。这样也可以实现循环链表的功能，在直接用循环链表比较麻烦或者可能会出现问题的时候可以用。</p>
+<h3 id="常见用途"><a href="#常见用途" class="headerlink" title="常见用途"></a>常见用途</h3><p>常用于组织删除、检索较少，而添加、遍历较多的数据。 如果与上述情形相反，应采用其他数据结构或者与其他数据结构组合使用。</p>
+<h2 id="数组-Array"><a href="#数组-Array" class="headerlink" title="数组 (Array)"></a>数组 (Array)</h2><p>数组（英语：Array），是由相同类型的元素（element）的集合所组成的数据结构，分配一块连续的内存来存储。利用元素的索引（index）可以计算出该元素对应的存储地址。</p>
+<h3 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h3><p>一维（或单维）数组是一种线性数组，其中元素的访问是以行或列索引的单一下标表示。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//JAVA数组的两种创建方式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arry1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="type">int</span>[] arry2 = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">3</span>];</span><br><span class="line">    arry2[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    arry2[<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">    arry2[<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : arry1) &#123;</span><br><span class="line">        System.out.println(i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : arry2) &#123;</span><br><span class="line">        System.out.println(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><p>多维数组就是数组中嵌套数组，我们在多维数组之中采用一系列有序的整数来标注，如在[ 3,1,5 ] 。<code>这种整数列表之中整数的个数始终相同</code>，且被称为数组的“维度”。关于每个数组维度的边界称为“维”。<code>维度为k的数组通常被称为k维</code>。</p>
+<p>如下所示：<br> {<br> {0,0,0,1,0,0,0},<br> {0,0,1,0,1,0,0},<br> {0,1,0,0,0,1,0},<br> {1,0,0,0,0,0,1},<br> {0,1,0,0,0,1,0},<br> {0,0,1,0,1,0,0},<br> {0,0,0,1,0,0,0}<br> }</p>
+<h3 id="数组特点"><a href="#数组特点" class="headerlink" title="数组特点"></a>数组特点</h3><p>因为数组在存储数据时是按顺序存储的，存储数据的内存也是连续的，所以他的特点就是寻址读取数据比较容易，插入和删除比较困难。<br>简单解释一下为什么，在读取数据时，只需要告诉数组要从哪个位置（索引）取数据就可以了，数组会直接把你想要的位置的数据取出来给你。插入和删除比较困难是因为这些存储数据的内存是连续的，要插入和删除就需要变更整个数组中的数据的位置。举个例子：一个数组中编号0-&gt;1-&gt;2-&gt;3-&gt;4这五个内存地址中都存了数组的数据，但现在你需要往4中插入一个数据，那就代表着从4开始，后面的所有内存中的数据都要往后移一个位置。这可是很耗时的。</p>
+<p><img src="http://image.cdd9527.cn/20190423155598767763310.png" alt="20190423155598767763310.png"></p>
+<h3 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h3><p>数组设计之初是在形式上依赖内存分配而成的，所以必须在使用前预先请求空间。这使得数组有以下特性：</p>
+<ol>
+<li>请求空间以后大小固定，不能再改变（数据溢出问题）；</li>
+<li>在内存中有空间连续性的表现，中间不会存在其他程序需要调用的数据，为此数组的专用内存空间；</li>
+<li>在旧式编程语言中（如有中阶语言之称的C），程序不会对数组的操作做下界判断，也就有潜在的越界操作的风险（比如会把数据写在运行中程序需要调用的核心部分的内存上）。</li>
+</ol>
+<h2 id="树（tree）"><a href="#树（tree）" class="headerlink" title="树（tree）"></a>树（tree）</h2><p><img src="http://image.cdd9527.cn/20190423155598863865385.png" alt="20190423155598863865385.png"><br>在计算机科学中，树（英语：tree）是一种抽象数据类型（ADT）或是实现这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。<code>它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合</code>。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>每个节点都只有有限个子节点或无子节点；</li>
+<li>没有父节点的节点称为根节点；</li>
+<li>每一个非根节点有且只有一个父节点；</li>
+<li>除了根节点外，每个子节点可以分为多个不相交的子树；</li>
+<li>树里面没有环路(cycle)</li>
+</ul>
+<h3 id="无序树"><a href="#无序树" class="headerlink" title="无序树"></a>无序树</h3><p>树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树；</p>
+<h3 id="有序树"><a href="#有序树" class="headerlink" title="有序树"></a>有序树</h3><p>树中任意节点的子节点之间有顺序关系，这种树称为有序树；</p>
+<h4 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h4><p>每个节点最多含有两个子树的树称为二叉树；</p>
+<h5 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h5><p><img src="http://image.cdd9527.cn/20190505155704196961130.png" alt="20190505155704196961130.png"><br>在一棵二叉树中，除最后一层外，若其余层都是满的，并且最后一层或者是满的，或者是在右边缺少连续若干节点，则此二叉树为完全二叉树（Complete Binary Tree）。</p>
+<h6 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h6><p><img src="http://image.cdd9527.cn/20190505155704198798481.png" alt="20190505155704198798481.png"><br>这种树的特点是每一层上的节点数都是最大节点数。</p>
+<h6 id="将n叉树转换为二叉树"><a href="#将n叉树转换为二叉树" class="headerlink" title="将n叉树转换为二叉树"></a>将n叉树转换为二叉树</h6><p>二叉树当且仅当根节点没有右子结点时可转换为n叉树。</p>
+<p>例如，在左边的树中，A有6个子结点{B,C,D,E,F,G}。它能被转换成右边的二叉树。<br><img src="http://image.cdd9527.cn/2019050515570431592083.png" alt="2019050515570431592083.png"></p>
+<p><strong>将一棵树转换为二叉树的方法：</strong></p>
+<ol>
+<li>在兄弟之间加一连线；</li>
+<li>对每个结点，除了其左孩子外，去除其与其余孩子之间的联系；</li>
+<li>以树的根结点为轴心，将整树顺时针转45度。</li>
+</ol>
+<h5 id="平衡二叉树（AVL树）"><a href="#平衡二叉树（AVL树）" class="headerlink" title="平衡二叉树（AVL树）"></a>平衡二叉树（AVL树）</h5><p>平衡二叉搜索树（英语：Balanced Binary Tree）是一种结构平衡的二叉搜索树，即叶节点高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。它能在O( {\displaystyle \log n} \log n)内完成插入、查找和删除操作，最早被发明的平衡二叉搜索树为<a href="https://zh.wikipedia.org/wiki/AVL%E6%A0%91">AVL树</a>。</p>
+<h6 id="常见的平衡二叉搜索树"><a href="#常见的平衡二叉搜索树" class="headerlink" title="常见的平衡二叉搜索树"></a>常见的平衡二叉搜索树</h6><ul>
+<li><a href="https://zh.wikipedia.org/wiki/AVL%E6%A0%91">AVL树</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%B4%85%E9%BB%91%E6%A8%B9">红黑树</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/Treap">Treap</a></li>
+<li><a href="https://zh.wikipedia.org/w/index.php?title=%E8%8A%82%E7%82%B9%E5%A4%A7%E5%B0%8F%E5%B9%B3%E8%A1%A1%E6%A0%91&action=edit&redlink=1">节点大小平衡树</a></li>
+</ul>
+<h5 id="排序二叉树-二叉查找树（英语：Binary-Search-Tree"><a href="#排序二叉树-二叉查找树（英语：Binary-Search-Tree" class="headerlink" title="排序二叉树(二叉查找树（英语：Binary Search Tree))"></a>排序二叉树(二叉查找树（英语：Binary Search Tree))</h5><p><img src="http://image.cdd9527.cn/20190505155704553664072.png" alt="20190505155704553664072.png"><br><a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/10905079?fromtitle=%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91&fromid=7077965">二叉查找树（英语：Binary Search Tree）</a>，也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二叉树（sorted binary tree），是指一棵空树或者具有下列性质的二叉树：</p>
+<ol>
+<li>若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；</li>
+<li>若任意节点的右子树不空，则右子树上所有节点的值均大于它的根节点的值；</li>
+<li>任意节点的左、右子树也分别为二叉查找树；</li>
+<li>没有键值相等的节点。</li>
+</ol>
+<h4 id="霍夫曼树"><a href="#霍夫曼树" class="headerlink" title="霍夫曼树"></a>霍夫曼树</h4><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>
+<h4 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h4><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>
+<h2 id="图（Graph）"><a href="#图（Graph）" class="headerlink" title="图（Graph）"></a>图（Graph）</h2><p><img src="http://image.cdd9527.cn/20190505155704655183365.png" alt="20190505155704655183365.png"><br>图（Graph）用于表示物件与物件之间的关系，是图论的基本研究对象。一张图由一些小圆点（称为顶点或结点）和连结这些圆点的直线或曲线（称为边）组成。<br><a href="https://www.jianshu.com/p/bce71b2bdbc8">稍微通俗易懂一点的阐述</a></p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h4 id="二元组定义"><a href="#二元组定义" class="headerlink" title="二元组定义"></a>二元组定义</h4><p>一张图 {\displaystyle G} G 是一个二元组 {\displaystyle (V,E)} (V,E)，其中 {\displaystyle V} V称为顶点集， {\displaystyle E} E称为边集。它们亦可写成 {\displaystyle V(G)} V(G)和 {\displaystyle E(G)} E(G)。 {\displaystyle E} E的元素是一个二元组数对，用 {\displaystyle (x,y)} (x,y)表示，其中 {\displaystyle x,y\in V} x,y \in V。</p>
+<h4 id="三元组定义"><a href="#三元组定义" class="headerlink" title="三元组定义"></a>三元组定义</h4><p>一张图 {\displaystyle G} G 是一个三元组 {\displaystyle (V,E,I)} (V,E,I)，其中 {\displaystyle V} V称为顶集（Vertices set）， {\displaystyle E} E称为边集（Edges set）， {\displaystyle E} E与 {\displaystyle V} V不相交； {\displaystyle I} I称为关联函数， {\displaystyle I} I将 {\displaystyle E} E中的每一个元素映射到 {\displaystyle V\times V} V\times V。如果 {\displaystyle I(e)&#x3D;(u,v)(e\in E,u,v\in V)} I(e)&#x3D;(u,v) (e\in E, u,v \in V)那么称边 {\displaystyle e} e连接顶点 {\displaystyle u,v} u,v，而 {\displaystyle u,v} u,v则称作 {\displaystyle e} e的端点， {\displaystyle u,v} u,v此时关于 {\displaystyle e} e相邻。同时，若两条边 {\displaystyle i,j} i,j有一个公共顶点 {\displaystyle u} u，则称 {\displaystyle i,j} i,j关于 {\displaystyle u} u相邻。</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="有向图和无向图"><a href="#有向图和无向图" class="headerlink" title="有向图和无向图"></a>有向图和无向图</h4><p>如果给图的每条边规定一个方向，那么得到的图称为<code>有向图</code>，其边也称为<code>有向边</code>。在有向图中，与一个节点相关联的边有出边和入边之分，而与一个有向边关联的两个点也有始点和终点之分。相反，边没有方向的图称为<code>无向图</code>。</p>
+<h4 id="简单图"><a href="#简单图" class="headerlink" title="简单图"></a>简单图</h4><ul>
+<li>没有两条边，它们所关联的两个点都相同（在有向图中，没有两条边的起点终点都分别相同）；</li>
+<li>每条边所关联的是两个不同的顶点<br>满足这两个条件则称为简单图（Simple graph）。</li>
+</ul>
+<h3 id="多重图"><a href="#多重图" class="headerlink" title="多重图"></a>多重图</h3><p>若允许两结点间的边数多于一条，又允许顶点通过同一条边和自己关联，则为多重图的概念。它只能用“三元组的定义”。</p>
+<h2 id="散列表（Hash-table）"><a href="#散列表（Hash-table）" class="headerlink" title="散列表（Hash table）"></a>散列表（Hash table）</h2><p>散列表（Hash table，也叫哈希表），是根据键（Key）而直接访问在内存存储位置的数据结构。也就是说，它通过计算一个关于键值的函数，将所需查询的数据映射到表中一个位置来访问记录，这加快了查找速度。这个映射函数称做散列函数，存放记录的数组称做散列表。</p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>购买二手房注意事项</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
+<span id="more"></span>
+
+<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
+<p>end :smile:</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>二手房</tag>
       </tags>
   </entry>
   <entry>
@@ -823,58 +973,6 @@ rm -rf /var/lib/mysql
       </categories>
       <tags>
         <tag>idea</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>购买二手房注意事项</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p>分享一下。手机最好长按图片保存起来放大看。如果电脑的话右键图片，然后选择在新的页面打开链接。</p>
-<span id="more"></span>
-
-<p><img src="http://image.cdd9527.cn/20190616156067628895605.png" alt="20190616156067628895605.png"></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>二手房</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot中的缓存支持</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190929156972721778897.png" alt="20190929156972721778897.png"></p>
-<p><a href="https://juejin.im/post/5c8481d95188257a323f52b5">Java缓存浅析</a></p>
-<p>随着时间的积累，应用的使用用户不断增加，数据规模也越来越大，往往数据库查询操作会成为影响用户使用体验的瓶颈，此时使用缓存往往是解决这一问题非常好的手段之一。Spring 3开始提供了强大的基于注解的缓存支持，可以通过注解配置方式低侵入的给原有Spring应用增加缓存功能，提高数据访问性能。</p>
-<p>在Spring Boot中对于缓存的支持，提供了一系列的自动化配置，使我们可以非常方便的使用缓存。下面我们通过一个简单的例子来展示，我们是如何给一个既有应用增加缓存功能的。</p>
-<span id="more"></span>
-<h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><p>首先，下载样例工程chapter3-2-2。本例通过spring-data-jpa实现了对User用户表的一些操作，若没有这个基础，可以先阅读《使用Spring-data-jpa简化数据访问层》一文对数据访问有所基础。</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>为了更好的理解缓存，我们先对该工程做一些简单的改造。</p>
-<p>application.properties文件中新增spring.jpa.properties.hibernate.show_sql&#x3D;true，开启hibernate对sql语句的打印</p>
-<p>修改单元测试ApplicationTests，初始化插入User表一条用户名为AAA，年龄为10的数据。并通过findByName函数完成两次查询。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@RunWith(SpringJUnit4ClassRunner.class)</span></span><br><span class="line"><span class="meta">@SpringApplicationConfiguration(Application.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ApplicationTests</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> UserRepository userRepository;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Before</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">before</span><span class="params">()</span> &#123;</span><br><span class="line">		userRepository.save(<span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;AAA&quot;</span>, <span class="number">10</span>));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Test</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="type">User</span> <span class="variable">u1</span> <span class="operator">=</span> userRepository.findByName(<span class="string">&quot;AAA&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;第一次查询：&quot;</span> + u1.getAge());</span><br><span class="line"></span><br><span class="line">		<span class="type">User</span> <span class="variable">u2</span> <span class="operator">=</span> userRepository.findByName(<span class="string">&quot;AAA&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;第二次查询：&quot;</span> + u2.getAge());</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>执行单元测试，我们可以在控制台中看到下面内容。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hibernate: insert into user (age, name) values (?, ?)</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第一次查询：10</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第二次查询：10</span><br></pre></td></tr></table></figure>
-<p>在测试用例执行前，插入了一条User记录。然后每次findByName调用时，都执行了一句select语句来查询用户名为AAA的记录。</p>
-<h1 id="引入缓存"><a href="#引入缓存" class="headerlink" title="引入缓存"></a>引入缓存</h1><p>在pom.xml中引入cache依赖，添加如下内容：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-cache<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>在Spring Boot主类中增加@EnableCaching注解开启缓存功能，如下：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableCaching</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		SpringApplication.run(Application.class, args);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在数据访问接口中，增加缓存配置注解，如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CacheConfig(cacheNames = &quot;users&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserRepository</span> <span class="keyword">extends</span> <span class="title class_">JpaRepository</span>&lt;User, Long&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Cacheable</span></span><br><span class="line">    User <span class="title function_">findByName</span><span class="params">(String name)</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>再来执行以下单元测试，可以在控制台中输出了下面的内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hibernate: insert into user (age, name) values (?, ?)</span><br><span class="line">Hibernate: select user0_.id as id1_0_, user0_.age as age2_0_, user0_.name as name3_0_ from user user0_ where user0_.name=?</span><br><span class="line">第一次查询：10</span><br><span class="line">第二次查询：10</span><br></pre></td></tr></table></figure>
-<p>到这里，我们可以看到，在调用第二次findByName函数时，没有再执行select语句，也就直接减少了一次数据库的读取操作。</p>
-<p><a href="http://blog.didispace.com/springbootcache1/">原文ehcache的使用</a></p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>springboot</tag>
-        <tag>cache</tag>
       </tags>
   </entry>
   <entry>
@@ -997,104 +1095,6 @@ rm -rf /var/lib/mysql
         <tag>Ubuntu</tag>
         <tag>安装教程</tag>
         <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构笔记</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<p><img src="http://image.cdd9527.cn/20190412155505554092398.png" alt="20190412155505554092398.png"></p>
-<blockquote>
-<p>好久没有温习数据结构了，今天来整理整理。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="堆栈（stack）"><a href="#堆栈（stack）" class="headerlink" title="堆栈（stack）"></a>堆栈（stack）</h2><p>堆栈（英语：stack）又称为栈或堆叠，是计算机科学中的一种抽象数据类型，只允许在有序的线性数据集合的一端（称为堆栈顶端，英语：top）进行加入数据（英语：push）和移除数据（英语：pop）的运算。因而按照后进先出（LIFO, Last In First Out）的原理运作。</p>
-<p>常与有序的线性数据集合队列相提并论。</p>
-<p>堆栈常用一维数组或链表来实现。</p>
-<p><img src="http://image.cdd9527.cn/20190411155497516974025.png" alt="20190411155497516974025.png"></p>
-<h3 id="软件堆栈"><a href="#软件堆栈" class="headerlink" title="软件堆栈"></a>软件堆栈</h3><p>堆栈可以用数组和链表两种方式实现，一般为一个堆栈预先分配一个大小固定且较合适的空间并非难事，所以较流行的做法是Stack结构下含一个数组。如果空间实在紧张，也可用链表实现，且去掉表头</p>
-<p>堆栈有时候也常用来指代<code>堆栈段</code>。<br>堆栈段（stack segment）通常是指采用堆栈方式工作的一段内存区域。当程序被执行时，程序可能会将其执行的状态加入栈的顶部；当程序结束时，它必须把栈顶的状态数据弹出（pop）。</p>
-<h3 id="硬件堆栈"><a href="#硬件堆栈" class="headerlink" title="硬件堆栈"></a>硬件堆栈</h3><p>架构层次上的堆栈通常被用以申请和访问内存。</p>
-<h2 id="队列（queue）"><a href="#队列（queue）" class="headerlink" title="队列（queue）"></a>队列（queue）</h2><p>队列，又称为伫列（queue），是先进先出（FIFO, First-In-First-Out）的线性表。在具体应用中通常用链表或者数组来实现。队列只允许在后端（称为rear）进行插入操作，在前端（称为front）进行删除操作。</p>
-<p>队列的操作方式和堆栈类似，唯一的区别在于队列只允许新数据在后端进行添加。<br><img src="http://image.cdd9527.cn/2019041115549770099188.png" alt="2019041115549770099188.png"></p>
-<h3 id="单链队列"><a href="#单链队列" class="headerlink" title="单链队列"></a>单链队列</h3><p>单链队列使用链表作为基本数据结构，所以不存在伪溢出的问题，队列长度也没有限制。但插入和读取的时间代价较高</p>
-<h3 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h3><p>循环队列可以更简单防止伪溢出的发生，但队列大小是固定的。</p>
-<h2 id="链表（link）"><a href="#链表（link）" class="headerlink" title="链表（link）"></a>链表（link）</h2><p>链表是一种数据结构，和数组同级。比如，Java 中我们使用的 ArrayList，其实现原理是数组。而<br>LinkedList 的实现原理就是链表了。链表在进行循环遍历时效率不高，但是插入和删除时优势明显。</p>
-<p><img src="http://image.cdd9527.cn/20190412155505588166695.png" alt="20190412155505588166695.png"></p>
-<h3 id="单向链表"><a href="#单向链表" class="headerlink" title="单向链表"></a>单向链表</h3><p>链表中最简单的一种是单向链表，它包含两个域，一个信息域和一个指针域。这个链接指向列表中的下一个节点，而最后一个节点则指向一个空值。<br><img src="http://image.cdd9527.cn/20190412155505656985771.png" alt="20190412155505656985771.png"><br>一个单向链表的节点被分成两个部分。第一个部分保存或者显示关于节点的信息，第二个部分存储下一个节点的地址。单向链表只可向一个方向遍历。</p>
-<p>链表最基本的结构是在每个节点保存数据和到下一个节点的地址，在最后一个节点保存一个特殊的结束标记，另外在一个固定的位置保存指向第一个节点的指针，有的时候也会同时储存指向最后一个节点的指针。一般查找一个节点的时候需要从第一个节点开始每次访问下一个节点，一直访问到需要的位置。但是也可以提前把一个节点的位置另外保存起来，然后直接访问。当然如果只是访问数据就没必要了，不如在链表上储存指向实际数据的指针。这样一般是为了访问链表中的下一个或者前一个（需要储存反向的指针，见下面的双向链表）节点。</p>
-<h3 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h3><p>每个节点有两个连接：一个指向前一个节点，（当此“连接”为第一个“连接”时，指向空值或者空列表）；而另一个指向下一个节点，（当此“连接”为最后一个“连接”时，指向空值或者空列表）<br><img src="http://image.cdd9527.cn/20190412155505679974905.png" alt="20190412155505679974905.png"><br><strong>双向链表</strong>也叫<strong>双链表</strong>。双向链表中不仅有指向后一个节点的指针，还有指向前一个节点的指针。这样可以从任何一个节点访问前一个节点，当然也可以访问后一个节点，以至整个链表。一般是在需要大批量的另外储存数据在链表中的位置的时候用。双向链表也可以配合下面的其他链表的扩展使用。</p>
-<h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><p>在一个 循环链表中, 首节点和末节点被连接在一起。这种方式在单向和双向链表中皆可实现。要转换一个循环链表，你开始于任意一个节点然后沿着列表的任一方向直到返回开始的节点。再来看另一种方法，循环链表可以被视为“无头无尾”。这种列表很利于节约数据存储缓存， 假定你在一个列表中有一个对象并且希望所有其他对象迭代在一个非特殊的排列下。</p>
-<p>指向整个列表的指针可以被称作访问指针。<br><img src="http://image.cdd9527.cn/20190412155505730643443.png" alt="20190412155505730643443.png"><br>循环链表中第一个节点之前就是最后一个节点，反之亦然。循环链表的无边界使得在这样的链表上设计算法会比普通链表更加容易。对于新加入的节点应该是在第一个节点之前还是最后一个节点之后可以根据实际要求灵活处理，区别不大(详见下面实例代码)。当然，如果只会在最后插入数据（或者只会在之前），处理也是很容易的。</p>
-<p>另外有一种模拟的循环链表，就是在访问到最后一个节点之后的时候，手工的跳转到第一个节点。访问到第一个节点之前的时候也一样。这样也可以实现循环链表的功能，在直接用循环链表比较麻烦或者可能会出现问题的时候可以用。</p>
-<h3 id="常见用途"><a href="#常见用途" class="headerlink" title="常见用途"></a>常见用途</h3><p>常用于组织删除、检索较少，而添加、遍历较多的数据。 如果与上述情形相反，应采用其他数据结构或者与其他数据结构组合使用。</p>
-<h2 id="数组-Array"><a href="#数组-Array" class="headerlink" title="数组 (Array)"></a>数组 (Array)</h2><p>数组（英语：Array），是由相同类型的元素（element）的集合所组成的数据结构，分配一块连续的内存来存储。利用元素的索引（index）可以计算出该元素对应的存储地址。</p>
-<h3 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h3><p>一维（或单维）数组是一种线性数组，其中元素的访问是以行或列索引的单一下标表示。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//JAVA数组的两种创建方式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arry1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="type">int</span>[] arry2 = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">3</span>];</span><br><span class="line">    arry2[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    arry2[<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">    arry2[<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : arry1) &#123;</span><br><span class="line">        System.out.println(i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : arry2) &#123;</span><br><span class="line">        System.out.println(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><p>多维数组就是数组中嵌套数组，我们在多维数组之中采用一系列有序的整数来标注，如在[ 3,1,5 ] 。<code>这种整数列表之中整数的个数始终相同</code>，且被称为数组的“维度”。关于每个数组维度的边界称为“维”。<code>维度为k的数组通常被称为k维</code>。</p>
-<p>如下所示：<br> {<br> {0,0,0,1,0,0,0},<br> {0,0,1,0,1,0,0},<br> {0,1,0,0,0,1,0},<br> {1,0,0,0,0,0,1},<br> {0,1,0,0,0,1,0},<br> {0,0,1,0,1,0,0},<br> {0,0,0,1,0,0,0}<br> }</p>
-<h3 id="数组特点"><a href="#数组特点" class="headerlink" title="数组特点"></a>数组特点</h3><p>因为数组在存储数据时是按顺序存储的，存储数据的内存也是连续的，所以他的特点就是寻址读取数据比较容易，插入和删除比较困难。<br>简单解释一下为什么，在读取数据时，只需要告诉数组要从哪个位置（索引）取数据就可以了，数组会直接把你想要的位置的数据取出来给你。插入和删除比较困难是因为这些存储数据的内存是连续的，要插入和删除就需要变更整个数组中的数据的位置。举个例子：一个数组中编号0-&gt;1-&gt;2-&gt;3-&gt;4这五个内存地址中都存了数组的数据，但现在你需要往4中插入一个数据，那就代表着从4开始，后面的所有内存中的数据都要往后移一个位置。这可是很耗时的。</p>
-<p><img src="http://image.cdd9527.cn/20190423155598767763310.png" alt="20190423155598767763310.png"></p>
-<h3 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h3><p>数组设计之初是在形式上依赖内存分配而成的，所以必须在使用前预先请求空间。这使得数组有以下特性：</p>
-<ol>
-<li>请求空间以后大小固定，不能再改变（数据溢出问题）；</li>
-<li>在内存中有空间连续性的表现，中间不会存在其他程序需要调用的数据，为此数组的专用内存空间；</li>
-<li>在旧式编程语言中（如有中阶语言之称的C），程序不会对数组的操作做下界判断，也就有潜在的越界操作的风险（比如会把数据写在运行中程序需要调用的核心部分的内存上）。</li>
-</ol>
-<h2 id="树（tree）"><a href="#树（tree）" class="headerlink" title="树（tree）"></a>树（tree）</h2><p><img src="http://image.cdd9527.cn/20190423155598863865385.png" alt="20190423155598863865385.png"><br>在计算机科学中，树（英语：tree）是一种抽象数据类型（ADT）或是实现这种抽象数据类型的数据结构，用来模拟具有树状结构性质的数据集合。<code>它是由n（n&gt;0）个有限节点组成一个具有层次关系的集合</code>。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。</p>
-<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
-<li>每个节点都只有有限个子节点或无子节点；</li>
-<li>没有父节点的节点称为根节点；</li>
-<li>每一个非根节点有且只有一个父节点；</li>
-<li>除了根节点外，每个子节点可以分为多个不相交的子树；</li>
-<li>树里面没有环路(cycle)</li>
-</ul>
-<h3 id="无序树"><a href="#无序树" class="headerlink" title="无序树"></a>无序树</h3><p>树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树；</p>
-<h3 id="有序树"><a href="#有序树" class="headerlink" title="有序树"></a>有序树</h3><p>树中任意节点的子节点之间有顺序关系，这种树称为有序树；</p>
-<h4 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h4><p>每个节点最多含有两个子树的树称为二叉树；</p>
-<h5 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h5><p><img src="http://image.cdd9527.cn/20190505155704196961130.png" alt="20190505155704196961130.png"><br>在一棵二叉树中，除最后一层外，若其余层都是满的，并且最后一层或者是满的，或者是在右边缺少连续若干节点，则此二叉树为完全二叉树（Complete Binary Tree）。</p>
-<h6 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h6><p><img src="http://image.cdd9527.cn/20190505155704198798481.png" alt="20190505155704198798481.png"><br>这种树的特点是每一层上的节点数都是最大节点数。</p>
-<h6 id="将n叉树转换为二叉树"><a href="#将n叉树转换为二叉树" class="headerlink" title="将n叉树转换为二叉树"></a>将n叉树转换为二叉树</h6><p>二叉树当且仅当根节点没有右子结点时可转换为n叉树。</p>
-<p>例如，在左边的树中，A有6个子结点{B,C,D,E,F,G}。它能被转换成右边的二叉树。<br><img src="http://image.cdd9527.cn/2019050515570431592083.png" alt="2019050515570431592083.png"></p>
-<p><strong>将一棵树转换为二叉树的方法：</strong></p>
-<ol>
-<li>在兄弟之间加一连线；</li>
-<li>对每个结点，除了其左孩子外，去除其与其余孩子之间的联系；</li>
-<li>以树的根结点为轴心，将整树顺时针转45度。</li>
-</ol>
-<h5 id="平衡二叉树（AVL树）"><a href="#平衡二叉树（AVL树）" class="headerlink" title="平衡二叉树（AVL树）"></a>平衡二叉树（AVL树）</h5><p>平衡二叉搜索树（英语：Balanced Binary Tree）是一种结构平衡的二叉搜索树，即叶节点高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。它能在O( {\displaystyle \log n} \log n)内完成插入、查找和删除操作，最早被发明的平衡二叉搜索树为<a href="https://zh.wikipedia.org/wiki/AVL%E6%A0%91">AVL树</a>。</p>
-<h6 id="常见的平衡二叉搜索树"><a href="#常见的平衡二叉搜索树" class="headerlink" title="常见的平衡二叉搜索树"></a>常见的平衡二叉搜索树</h6><ul>
-<li><a href="https://zh.wikipedia.org/wiki/AVL%E6%A0%91">AVL树</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E7%B4%85%E9%BB%91%E6%A8%B9">红黑树</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/Treap">Treap</a></li>
-<li><a href="https://zh.wikipedia.org/w/index.php?title=%E8%8A%82%E7%82%B9%E5%A4%A7%E5%B0%8F%E5%B9%B3%E8%A1%A1%E6%A0%91&action=edit&redlink=1">节点大小平衡树</a></li>
-</ul>
-<h5 id="排序二叉树-二叉查找树（英语：Binary-Search-Tree"><a href="#排序二叉树-二叉查找树（英语：Binary-Search-Tree" class="headerlink" title="排序二叉树(二叉查找树（英语：Binary Search Tree))"></a>排序二叉树(二叉查找树（英语：Binary Search Tree))</h5><p><img src="http://image.cdd9527.cn/20190505155704553664072.png" alt="20190505155704553664072.png"><br><a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/10905079?fromtitle=%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91&fromid=7077965">二叉查找树（英语：Binary Search Tree）</a>，也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二叉树（sorted binary tree），是指一棵空树或者具有下列性质的二叉树：</p>
-<ol>
-<li>若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；</li>
-<li>若任意节点的右子树不空，则右子树上所有节点的值均大于它的根节点的值；</li>
-<li>任意节点的左、右子树也分别为二叉查找树；</li>
-<li>没有键值相等的节点。</li>
-</ol>
-<h4 id="霍夫曼树"><a href="#霍夫曼树" class="headerlink" title="霍夫曼树"></a>霍夫曼树</h4><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>
-<h4 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h4><p>带权路径最短的二叉树称为哈夫曼树或最优二叉树；</p>
-<h2 id="图（Graph）"><a href="#图（Graph）" class="headerlink" title="图（Graph）"></a>图（Graph）</h2><p><img src="http://image.cdd9527.cn/20190505155704655183365.png" alt="20190505155704655183365.png"><br>图（Graph）用于表示物件与物件之间的关系，是图论的基本研究对象。一张图由一些小圆点（称为顶点或结点）和连结这些圆点的直线或曲线（称为边）组成。<br><a href="https://www.jianshu.com/p/bce71b2bdbc8">稍微通俗易懂一点的阐述</a></p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h4 id="二元组定义"><a href="#二元组定义" class="headerlink" title="二元组定义"></a>二元组定义</h4><p>一张图 {\displaystyle G} G 是一个二元组 {\displaystyle (V,E)} (V,E)，其中 {\displaystyle V} V称为顶点集， {\displaystyle E} E称为边集。它们亦可写成 {\displaystyle V(G)} V(G)和 {\displaystyle E(G)} E(G)。 {\displaystyle E} E的元素是一个二元组数对，用 {\displaystyle (x,y)} (x,y)表示，其中 {\displaystyle x,y\in V} x,y \in V。</p>
-<h4 id="三元组定义"><a href="#三元组定义" class="headerlink" title="三元组定义"></a>三元组定义</h4><p>一张图 {\displaystyle G} G 是一个三元组 {\displaystyle (V,E,I)} (V,E,I)，其中 {\displaystyle V} V称为顶集（Vertices set）， {\displaystyle E} E称为边集（Edges set）， {\displaystyle E} E与 {\displaystyle V} V不相交； {\displaystyle I} I称为关联函数， {\displaystyle I} I将 {\displaystyle E} E中的每一个元素映射到 {\displaystyle V\times V} V\times V。如果 {\displaystyle I(e)&#x3D;(u,v)(e\in E,u,v\in V)} I(e)&#x3D;(u,v) (e\in E, u,v \in V)那么称边 {\displaystyle e} e连接顶点 {\displaystyle u,v} u,v，而 {\displaystyle u,v} u,v则称作 {\displaystyle e} e的端点， {\displaystyle u,v} u,v此时关于 {\displaystyle e} e相邻。同时，若两条边 {\displaystyle i,j} i,j有一个公共顶点 {\displaystyle u} u，则称 {\displaystyle i,j} i,j关于 {\displaystyle u} u相邻。</p>
-<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="有向图和无向图"><a href="#有向图和无向图" class="headerlink" title="有向图和无向图"></a>有向图和无向图</h4><p>如果给图的每条边规定一个方向，那么得到的图称为<code>有向图</code>，其边也称为<code>有向边</code>。在有向图中，与一个节点相关联的边有出边和入边之分，而与一个有向边关联的两个点也有始点和终点之分。相反，边没有方向的图称为<code>无向图</code>。</p>
-<h4 id="简单图"><a href="#简单图" class="headerlink" title="简单图"></a>简单图</h4><ul>
-<li>没有两条边，它们所关联的两个点都相同（在有向图中，没有两条边的起点终点都分别相同）；</li>
-<li>每条边所关联的是两个不同的顶点<br>满足这两个条件则称为简单图（Simple graph）。</li>
-</ul>
-<h3 id="多重图"><a href="#多重图" class="headerlink" title="多重图"></a>多重图</h3><p>若允许两结点间的边数多于一条，又允许顶点通过同一条边和自己关联，则为多重图的概念。它只能用“三元组的定义”。</p>
-<h2 id="散列表（Hash-table）"><a href="#散列表（Hash-table）" class="headerlink" title="散列表（Hash table）"></a>散列表（Hash table）</h2><p>散列表（Hash table，也叫哈希表），是根据键（Key）而直接访问在内存存储位置的数据结构。也就是说，它通过计算一个关于键值的函数，将所需查询的数据映射到表中一个位置来访问记录，这加快了查找速度。这个映射函数称做散列函数，存放记录的数组称做散列表。</p>
-<p>end :smile:</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>数据结构</tag>
       </tags>
   </entry>
 </search>
